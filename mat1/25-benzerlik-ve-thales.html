@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benzerlik ve Thales | TYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>Geometri 3. Benzerlik, Thales ve Özel Doğrular</h1>
+
+<h2>Benzerlik: aynı şeklin büyütülmüş hâli</h2>
+<p>Bir fotoğrafı büyütmek ya da küçültmek şeklini bozmaz: açılar aynı kalır, uzunluklar aynı oranda değişir. İki üçgen benzerse:</p>
+<ul>
+<li>Karşılıklı açıları eşittir,</li>
+<li>Karşılıklı kenarları orantılıdır. Bu orana <b>benzerlik oranı (k)</b> denir.</li>
+</ul>
+<p><b>AA benzerliği:</b> İki üçgenin ikişer açısı eşitse üçüncüler de eşit olur (180°'den), dolayısıyla üçgenler benzerdir. Soruların çoğunda "paralellik varsa ya da iki açı eşitse benzerlik var" diye düşünün.</p>
+
+<h3>Oranlar</h3>
+<table>
+<tr><th>Büyüklük</th><th>Oran</th></tr>
+<tr><td>Kenar, yükseklik, kenarortay, açıortay, çevre</td><td>k</td></tr>
+<tr><td>Alan</td><td>k²</td></tr>
+</table>
+<p>Alan neden k²? Alan iki uzunluğun (taban ve yükseklik) çarpımıdır, ikisi de k kat büyür: k·k = k². Hacim için k³ olur.</p>
+
+<h2>Temel orantı teoremi (Thales)</h2>
+<p>Bir üçgende bir kenara paralel çizilen doğru diğer iki kenarı orantılı böler. DE // BC ise ADE ve ABC üçgenlerinin açıları (yöndeş açılar) eşit olduğundan benzerdir. Bundan:</p>
+<div class="formula">AD / DB = AE / EC &nbsp;&nbsp; ve &nbsp;&nbsp; AD / AB = AE / AC = DE / BC</div>
+
+<svg viewBox="0 0 320 210" role="img" aria-label="Üçgende tabana paralel doğru" style="max-width:340px;width:100%;display:block;margin:12px auto">
+  <polygon points="40,180 290,180 130,25" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="86" y1="105" x2="212" y2="105" stroke="currentColor" stroke-width="1.8"/>
+  <text x="115" y="20" fill="currentColor" font-size="14">A</text>
+  <text x="26" y="195" fill="currentColor" font-size="14">B</text>
+  <text x="292" y="195" fill="currentColor" font-size="14">C</text>
+  <text x="66" y="108" fill="currentColor" font-size="14">D</text>
+  <text x="216" y="108" fill="currentColor" font-size="14">E</text>
+  <text x="165" y="125" fill="currentColor" font-size="12" text-anchor="middle">DE // BC</text>
+</svg>
+
+<h2>Açıortay teoremi</h2>
+<p>Üçgenin A açısının açıortayı BC kenarını D noktasında kesiyorsa D, kenarı <b>komşu kenarların oranında</b> böler:</p>
+<div class="formula">BD / DC = AB / AC</div>
+
+<h2>Kenarortay</h2>
+<p>Bir köşeyi karşı kenarın orta noktasına birleştiren doğru parçasıdır. Üç kenarortay <b>ağırlık merkezinde</b> kesişir ve ağırlık merkezi her kenarortayı köşeden itibaren <b>2 : 1</b> oranında böler.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> ABC üçgeninde DE // BC, D ∈ [AB], E ∈ [AC]. AD = 4, DB = 2 ve AE = 6 ise EC kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">AD/DB = AE/EC → 4/2 = 6/EC → EC = <span class="ans">3</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> Benzerlik oranı 2/3 olan iki üçgenden küçüğünün alanı 12 cm² ise büyüğünün alanı kaç cm²'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Alanlar oranı k² = 4/9. 12 / A = 4/9 → A = <span class="ans">27 cm²</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> ABC üçgeninde AB = 6, AC = 9 ve BC = 10'dur. A açısının açıortayı BC'yi D'de kesiyorsa BD kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">BD/DC = AB/AC = 6/9 = 2/3. BC = 10 → BD = 10·2/5 = <span class="ans">4</span> (DC = 6).</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Güneşli bir günde 2 m boyundaki bir çubuğun gölgesi 3 m iken bir binanın gölgesi 36 m ölçülüyor. Binanın yüksekliği kaç m'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Güneş ışınları paralel olduğundan oluşan dik üçgenler benzerdir: 2/3 = h/36 → h = <span class="ans">24 m</span>.</div></div></div>
+
+<div class="pager"><a href="24-ucgenler.html">← Üçgenler</a><a href="26-cokgenler-ve-dortgenler.html">Sonraki: Çokgenler ve Dörtgenler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

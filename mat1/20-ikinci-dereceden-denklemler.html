@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İkinci Dereceden Denklemler | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>20. İkinci Dereceden Denklemler</h1>
+
+<h2>Genel biçim ve çözüm yolları</h2>
+<div class="formula">ax² + bx + c = 0 &nbsp;&nbsp; (a ≠ 0)</div>
+<p>Çözüm demek, denklemi sağlayan x değerlerine (köklere) ulaşmaktır. Üç yol:</p>
+<ul>
+<li><b>Çarpanlara ayırma:</b> (x – 2)(x – 3) = 0 ise çarpımın sıfır olması için çarpanlardan biri sıfır olmalıdır: x = 2 veya x = 3.</li>
+<li><b>Tam kare tamamlama:</b> (x + 1)² = 4 → x + 1 = ±2.</li>
+<li><b>Kök formülü</b> (aşağıda).</li>
+</ul>
+
+<h2>Diskriminant ve kök formülü</h2>
+<div class="formula">Δ = b² – 4ac &nbsp;&nbsp; x₁,₂ = (–b ± √Δ) / (2a)</div>
+<p>Formül, denklemi tam kare tamamlama ile genel olarak çözerek elde edilir: ax² + bx + c = 0 → (x + b/2a)² = Δ/4a². Δ karekökün içinde olduğundan kök sayısını belirler:</p>
+<table>
+<tr><th>Δ</th><th>Kökler</th></tr>
+<tr><td>Δ &gt; 0</td><td>İki farklı gerçel kök</td></tr>
+<tr><td>Δ = 0</td><td>Çakışık (çift katlı) kök. Denklem bir tam karedir.</td></tr>
+<tr><td>Δ &lt; 0</td><td>Gerçel kök yok (√ içi negatif)</td></tr>
+</table>
+
+<h2>Kökler toplamı ve çarpımı</h2>
+<p>Kökleri x₁, x₂ olan monik denklem (x – x₁)(x – x₂) = 0'dır. Açarsak x² – (x₁ + x₂)x + x₁x₂ = 0. Bunu ax² + bx + c = 0 ile karşılaştırınca:</p>
+<div class="formula">x₁ + x₂ = –b/a &nbsp;&nbsp; x₁ · x₂ = c/a</div>
+<p>Kökleri bilinen denklem de şöyle yazılır: <b>x² – (kökler toplamı)x + (kökler çarpımı) = 0</b>.</p>
+
+<h3>Bunlardan türeyen yararlı ifadeler</h3>
+<ul>
+<li>x₁² + x₂² = (x₁ + x₂)² – 2x₁x₂</li>
+<li>1/x₁ + 1/x₂ = (x₁ + x₂) / (x₁x₂)</li>
+</ul>
+<p>Kökleri tek tek bulmanıza gerek kalmadan, toplam ve çarpımdan bu ifadelere ulaşılır.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> x² – 5x + 6 = 0 denkleminin köklerini bulunuz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(x – 2)(x – 3) = 0 → x = <span class="ans">2</span> veya x = <span class="ans">3</span>. (Formülle: Δ = 25 – 24 = 1, x = (5 ± 1)/2 ✓.)</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> x² + 4x + k = 0 denkleminin çakışık iki kökü olması için k kaç olmalıdır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Δ = 0: 16 – 4k = 0 → k = <span class="ans">4</span>. (Denklem (x + 2)² = 0 olur.)</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> x² – 7x + 10 = 0 denkleminin kökleri x₁ ve x₂ ise x₁² + x₂² kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Toplam 7, çarpım 10. x₁² + x₂² = 7² – 2·10 = 49 – 20 = <span class="ans">29</span>. (Kökler 2 ve 5: 4 + 25 = 29 ✓.)</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Kökleri 2 ve –5 olan, başkatsayısı 1 olan ikinci dereceden denklemi yazınız.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Toplam = 2 + (–5) = –3, çarpım = 2·(–5) = –10. Denklem: x² – (–3)x + (–10) = 0 → <span class="ans">x² + 3x – 10 = 0</span>.</div></div></div>
+
+<div class="pager"><a href="19-polinomlar.html">← Polinomlar</a><a href="21-permutasyon-kombinasyon-olasilik.html">Sonraki: Permütasyon – Kombinasyon – Olasılık →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

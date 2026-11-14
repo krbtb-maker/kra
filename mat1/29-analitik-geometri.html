@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analitik Geometri | TYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>Geometri 7. Analitik Geometri</h1>
+
+<h2>Noktaları sayılarla göstermek</h2>
+<p>Koordinat düzleminde yatay eksene x, dikey eksene y denir. Bir noktanın yeri (x, y) sıralı ikilisiyle belirtilir: önce yatay, sonra dikey konum yazılır. Eksenlerin kesiştiği orijin O(0, 0)'dır.</p>
+
+<h2>İki nokta arasındaki uzaklık</h2>
+<p>A(x₁, y₁) ve B(x₂, y₂) noktalarını birleştirdiğimizde yatay fark |x₂ − x₁|, dikey fark |y₂ − y₁| olur. Bu farklar dik üçgenin dik kenarlarıdır; uzaklık Pisagor'dan gelir.</p>
+<div class="formula">|AB| = √((x₂ − x₁)² + (y₂ − y₁)²)</div>
+<p>Orta noktanın koordinatları, uç noktaların koordinatlarının ortalamasıdır:</p>
+<div class="formula">Orta nokta = ((x₁ + x₂)/2, (y₁ + y₂)/2)</div>
+
+<h2>Eğim: doğrunun ne kadar yükseldiği</h2>
+<p>Eğim, yatayda ne kadar ilerlerken dikeyde ne kadar değiştiğimizi söyler. Sağa doğru ilerlerken yukarı çıkan doğrunun eğimi pozitif, aşağı inenin eğimi negatiftir.</p>
+<div class="formula">m = (y₂ − y₁) / (x₂ − x₁) &nbsp; (x₂ ≠ x₁)</div>
+<p>Yatay doğrunun eğimi 0'dır. Dikey doğrunun eğimi tanımsızdır; çünkü yatay değişim sıfır olur ve sıfıra bölme yapılamaz.</p>
+<ul>
+<li>Paralel ve dikey olmayan doğruların eğimleri eşittir.</li>
+<li>Dik kesişen, dikey olmayan doğrular için m₁ · m₂ = −1'dir.</li>
+</ul>
+
+<h2>Doğru denklemi</h2>
+<p>Eğimi m olan bir doğru, (x₁, y₁) noktasından geçiyorsa bir noktadaki eğim tanımını korur: y − y₁ = m(x − x₁). Bu eşitlik, doğru üzerindeki her noktanın aynı eğime sahip olduğunu ifade eder.</p>
+<div class="formula">Nokta-eğim biçimi: y − y₁ = m(x − x₁)<br>Eğim-kesişim biçimi: y = mx + n</div>
+<p>y = mx + n denkleminde m eğim, n doğrunun y eksenini kestiği değerdir. x = a biçimindeki dikey doğrular bu biçimde yazılamaz.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> A(1, 2) ile B(4, 6) arasındaki uzaklık kaç birimdir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Yatay fark 3, dikey fark 4. Uzaklık = √(3² + 4²) = <span class="ans">5</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> A(−2, 1) ile B(4, 5) doğru parçasının orta noktası nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Koordinatları ayrı ayrı ortalarız: ((−2 + 4)/2, (1 + 5)/2) = <span class="ans">(1, 3)</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> A(2, 1) ve B(6, 9) noktalarından geçen doğrunun eğimi kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">m = (9 − 1)/(6 − 2) = 8/4 = <span class="ans">2</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Eğimi 3 olan ve (1, 2) noktasından geçen doğrunun denklemi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">y − 2 = 3(x − 1). Düzenlersek <span class="ans">y = 3x − 1</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 5.</b> y = 2x + 1 doğrusuna dik olan bir doğrunun eğimi kaç olabilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Dik doğruların eğim çarpımı −1 olduğundan 2·m = −1, m = <span class="ans">−1/2</span>.</div></div></div>
+
+<div class="pager"><a href="28-kati-cisimler.html">← Katı Cisimler</a><a href="30-trigonometri.html">Sonraki: Trigonometri →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

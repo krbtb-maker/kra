@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denklem Çözme | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>12. Denklem Çözme</h1>
+
+<h2>Denklem bir terazidir</h2>
+<p>Eşitliğin iki kefesi dengededir. Dengeyi bozmamak için iki kefeye <b>aynı işlemi</b> uygularız (aynı sayıyı ekleriz, aynı sayıyla çarparız). Amaç, x'i yalnız bırakmaktır.</p>
+
+<h2>Birinci dereceden denklem</h2>
+<div class="formula">ax + b = 0 &nbsp;⇒&nbsp; x = –b/a &nbsp; (a ≠ 0)</div>
+<p>Parantez varsa önce açın, benzer terimleri toplayın, x'li terimleri bir tarafa, sayıları diğer tarafa toplayın.</p>
+
+<h3>Parametreli denklemde üç durum</h3>
+<p>(m – 2)x = 5 denkleminde x'in katsayısı m – 2'dir.</p>
+<ul>
+<li><b>m ≠ 2:</b> tek çözüm var, x = 5/(m – 2).</li>
+<li><b>m = 2:</b> 0·x = 5 olur, bu hiçbir x için doğru değil. <b>Çözüm yok.</b></li>
+<li>(m – 2)x = 0 olsaydı m = 2 için 0·x = 0 olurdu, her x doğru: <b>sonsuz çözüm</b>.</li>
+</ul>
+
+<h2>İki bilinmeyenli denklem sistemi</h2>
+<p>İki yöntem vardır:</p>
+<ul>
+<li><b>Yok etme:</b> Denklemleri toplayıp çıkararak bir bilinmeyeni yok edersiniz. (Eşitlik korunduğu için iki denklemi taraf tarafa toplayabilirsiniz.)</li>
+<li><b>Yerine koyma:</b> Bir denklemden x'i y cinsinden yazıp diğerinde yerine koyarsınız.</li>
+</ul>
+
+<h3>Çözüm sayısı: doğrular gibi düşünün</h3>
+<p>Her denklem koordinat düzleminde bir doğrudur. a₁x + b₁y = c₁ ve a₂x + b₂y = c₂ için:</p>
+<table>
+<tr><th>Oranlar</th><th>Doğrular</th><th>Çözüm</th></tr>
+<tr><td>a₁/a₂ ≠ b₁/b₂</td><td>Kesişir</td><td>Tek çözüm</td></tr>
+<tr><td>a₁/a₂ = b₁/b₂ ≠ c₁/c₂</td><td>Paralel</td><td>Çözüm yok</td></tr>
+<tr><td>a₁/a₂ = b₁/b₂ = c₁/c₂</td><td>Çakışık</td><td>Sonsuz çözüm</td></tr>
+</table>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> 3(x – 2) + 5 = 2x + 7 denkleminin çözümü kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">3x – 6 + 5 = 2x + 7 → 3x – 1 = 2x + 7 → x = <span class="ans">8</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> x + y = 10 ve x – y = 4 ise x·y kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Taraf tarafa toplayalım: 2x = 14 → x = 7, y = 3. Çarpım 7·3 = <span class="ans">21</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> 2x + 3y = 12 ve 4x + 6y = m denklem sisteminin sonsuz çözümü olması için m kaç olmalıdır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">İkinci denklemin x ve y katsayıları birincinin 2 katı. Sonsuz çözüm için sabit de 2 katı olmalı: m = 2·12 = <span class="ans">24</span>. (m ≠ 24 olsaydı doğrular paralel olur, çözüm olmazdı.)</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> (m – 3)x = m² – 9 denkleminin sonsuz çözümü olması için m kaç olmalıdır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Katsayı ve sabit aynı anda 0 olmalı: m – 3 = 0 ve m² – 9 = 0. İkisini de m = <span class="ans">3</span> sağlar. (m ≠ 3 için çözüm tektir: x = m + 3.)</div></div></div>
+
+<div class="pager"><a href="11-oran-oranti.html">← Oran – Orantı</a><a href="13-problemler-1-sayi-kesir-yas.html">Sonraki: Problemler I: Sayı, Kesir, Yaş →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

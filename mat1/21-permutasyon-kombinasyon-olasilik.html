@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permütasyon – Kombinasyon – Olasılık | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>21. Permütasyon – Kombinasyon – Olasılık</h1>
+
+<h2>Sayma kuralları</h2>
+<ul>
+<li><b>Toplama kuralı ("veya"):</b> İşi A yolu ya da B yoluyla yapabiliyorsanız, yollar toplanır. 3 otobüs veya 2 metro hattı varsa 3 + 2 = 5 yol.</li>
+<li><b>Çarpma kuralı ("ve", adım adım):</b> İş birbirini izleyen adımlardan oluşuyorsa seçenekler çarpılır. 3 gömlek ve 4 pantolonla 3·4 = 12 kombin.</li>
+</ul>
+
+<h2>Faktöriyel</h2>
+<p>n! = n·(n–1)·…·2·1. n farklı nesnenin sıralanış sayısıdır: ilk yere n, ikinci yere n–1… seçenek vardır. 0! = 1 olarak tanımlanır.</p>
+
+<h2>Permütasyon: sıra önemli</h2>
+<p>n nesne arasından r tanesini <b>sıralayarak</b> seçmek:</p>
+<div class="formula">P(n, r) = n! / (n – r)!</div>
+<p>Başkan ve yardımcısını seçmek gibi, "kim hangi görevde" önemliyse permütasyondur. İlk görev için n, ikincisi için n–1 seçenek (çarpma kuralı).</p>
+
+<h2>Kombinasyon: sıra önemsiz</h2>
+<p>Sadece <b>grup</b> seçilir, kimin önce seçildiği fark etmez:</p>
+<div class="formula">C(n, r) = n! / (r! · (n – r)!)</div>
+<p><b>r! ile bölmenin nedeni:</b> Permütasyonda aynı r kişilik grubu r! farklı sırayla saymıştık. Sıra önemsiz olunca bu tekrarları ortadan kaldırmak için r!'e böleriz. Ayrıca C(n, r) = C(n, n–r).</p>
+<div class="note"><b>Ayırt etmek için sorun:</b> "Seçtiklerimin sırasını değiştirirsem farklı bir durum olur mu?" Evet → permütasyon. Hayır → kombinasyon.</div>
+
+<h2>Tekrarlı permütasyon</h2>
+<p>n nesnenin içinde aynı olanlar varsa (a tane aynı, b tane aynı…) sıralanış sayısı n! / (a!·b!·…) olur. Aynı olanları kendi aralarında sıralamak yeni bir durum yaratmaz.</p>
+
+<h2>Olasılık</h2>
+<div class="formula">P(A) = İstenen durum sayısı / Tüm durum sayısı</div>
+<ul>
+<li>0 ≤ P(A) ≤ 1. Kesin olay 1, imkânsız olay 0.</li>
+<li>P(A′) = 1 – P(A) ("olmama" olasılığı)</li>
+<li>P(A ∪ B) = P(A) + P(B) – P(A ∩ B) (kümeler konusundaki formül)</li>
+<li><b>Bağımsız olaylar:</b> biri diğerini etkilemiyorsa P(A ∩ B) = P(A)·P(B).</li>
+</ul>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> 5 kişi arasından bir başkan ve bir başkan yardımcısı kaç farklı şekilde seçilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Görevler farklı, sıra önemli: P(5, 2) = 5·4 = <span class="ans">20</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> 10 kişilik bir gruptan 3 kişilik bir kurul kaç farklı şekilde seçilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Sıra önemsiz: C(10, 3) = (10·9·8)/(3·2·1) = <span class="ans">120</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> "ANKARA" kelimesinin harfleri ile anlamlı ya da anlamsız kaç farklı kelime yazılabilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">6 harf var, içinde 3 tane A tekrarlı: 6! / 3! = 720 / 6 = <span class="ans">120</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> İki zar atıldığında üst yüzlerin toplamının 7 gelme olasılığı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Tüm durum 6·6 = 36. Toplamı 7 olanlar: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 tane. Olasılık 6/36 = <span class="ans">1/6</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 5.</b> Bir madeni para 3 kez atılıyor. Tam 2 kez yazı gelme olasılığı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Tüm durum 2³ = 8. 3 atıştan hangi 2'sinin yazı olacağı C(3, 2) = 3 şekilde seçilir. Olasılık <span class="ans">3/8</span>.</div></div></div>
+
+<div class="pager"><a href="20-ikinci-dereceden-denklemler.html">← İkinci Dereceden Denklemler</a><a href="22-veri-istatistik.html">Sonraki: Veri – İstatistik →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

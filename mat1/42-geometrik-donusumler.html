@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analitik Düzlemde Dönüşümler | AYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Geometri 1. Analitik Düzlemde Dönüşümler</h1>
+
+<h2>Dönüşüm: noktaları taşımanın kuralı</h2>
+<p>Bir dönüşüm, düzlemdeki her (x, y) noktasını yeni bir noktaya götüren kuraldır. Öteleme, yansıma ve dönme şeklin <b>uzunluklarını ve açılarını korur</b> (izometri); yalnızca yerini ve yönünü değiştirir.</p>
+
+<h2>Öteleme</h2>
+<p>(a, b) kadar öteleme her noktayı a birim yatay, b birim düşey kaydırır:</p>
+<div class="formula">(x, y) → (x + a, y + b)</div>
+<p>Bir fonksiyonun grafiğini ötelemek: y = f(x) grafiğini (a, b) kadar ötelemek, y = f(x − a) + b grafiğini verir.</p>
+
+<h2>Yansımalar (simetri)</h2>
+<table>
+<tr><th>Neye göre?</th><th>Kural</th><th>Örnek: (3, −2)</th></tr>
+<tr><td>x ekseni</td><td>(x, y) → (x, −y)</td><td>(3, 2)</td></tr>
+<tr><td>y ekseni</td><td>(x, y) → (−x, y)</td><td>(−3, −2)</td></tr>
+<tr><td>Orijin</td><td>(x, y) → (−x, −y)</td><td>(−3, 2)</td></tr>
+<tr><td>y = x doğrusu</td><td>(x, y) → (y, x)</td><td>(−2, 3)</td></tr>
+<tr><td>y = −x doğrusu</td><td>(x, y) → (−y, −x)</td><td>(2, −3)</td></tr>
+<tr><td>x = a doğrusu</td><td>(x, y) → (2a − x, y)</td><td>—</td></tr>
+<tr><td>y = b doğrusu</td><td>(x, y) → (x, 2b − y)</td><td>—</td></tr>
+<tr><td>P(a, b) noktası</td><td>(x, y) → (2a − x, 2b − y)</td><td>—</td></tr>
+</table>
+<div class="note">Mantık: Bir noktanın bir doğruya göre simetriği, o doğruya <b>dik</b> inen ve doğru tarafından <b>tam ortadan</b> bölünen doğru parçasının diğer ucudur. x = a doğrusuna göre yansımada nokta ile görüntüsünün apsislerinin ortalaması a olmalıdır: (x + x')/2 = a → x' = 2a − x.</div>
+<h3>Eğrilerin yansıması</h3>
+<p>Denklemde x ve y yerine kuraldaki ifadeleri yazmak yeterlidir. y = 2x + 1 doğrusunun x eksenine göre yansıması: −y = 2x + 1 → y = −2x − 1.</p>
+
+<h2>Dönme</h2>
+<p>Orijin etrafında pozitif yönde (saat yönünün tersi):</p>
+<div class="formula">90°: (x, y) → (−y, x)<br>180°: (x, y) → (−x, −y)   (orijine göre yansımayla aynı)<br>270°: (x, y) → (y, −x)   (negatif yönde 90° ile aynı)</div>
+<p>Orijin dışındaki bir M noktası etrafında döndürmek için: önce M'yi orijine taşıyacak şekilde ötele, döndür, sonra geri ötele.</p>
+<svg viewBox="0 0 260 220" role="img" aria-label="Bir noktanın orijin etrafında 90 derece dönmesi" style="max-width:300px;width:100%;display:block;margin:12px auto">
+  <line x1="20" y1="120" x2="240" y2="120" stroke="currentColor" stroke-width="1"/>
+  <line x1="130" y1="10" x2="130" y2="210" stroke="currentColor" stroke-width="1"/>
+  <circle cx="190" cy="80" r="4" fill="currentColor"/>
+  <text x="196" y="76" fill="currentColor" font-size="12">A(3, 2)</text>
+  <circle cx="90" cy="60" r="4" fill="currentColor"/>
+  <text x="40" y="54" fill="currentColor" font-size="12">A'(−2, 3)</text>
+  <line x1="130" y1="120" x2="190" y2="80" stroke="currentColor" stroke-dasharray="4 3"/>
+  <line x1="130" y1="120" x2="90" y2="60" stroke="currentColor" stroke-dasharray="4 3"/>
+  <path d="M152 106 A26 26 0 0 0 117 99" fill="none" stroke="currentColor"/>
+  <text x="140" y="96" fill="currentColor" font-size="11">90°</text>
+</svg>
+
+<h2>Dönüşümlerin bileşkesi</h2>
+<p>Birden çok dönüşüm art arda uygulanacaksa <b>sırayla</b> uygulanır; sıra değişirse sonuç değişebilir. Örneğin x eksenine sonra y eksenine göre yansıma, orijine göre yansımaya (180° dönme) eşittir.</p>
+
+<h2>Kısa özet</h2>
+<p>Öteleme koordinatlara sabit ekler; yansımada nokta ile görüntüsünün orta noktası simetri doğrusu üzerindedir; orijin etrafında 90° dönme (x, y)'yi (−y, x)'e götürür. Bu dönüşümler uzunluk ve açıyı korur. Eğrilerin dönüşümü, kuralı denkleme uygulayarak bulunur.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>y = x'e göre yansımayı (−y, −x) sanmak; (y, x)'tir.</li>
+<li>90° dönmede işareti yanlış koordinata koymak: (x, y) → (−y, x).</li>
+<li>Bileşke dönüşümlerde sırayı değiştirmek.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> A(3, −2) noktasının y = x doğrusuna göre yansıması nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">(−2, 3)</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> B(4, 1) noktası orijin etrafında pozitif yönde 90° döndürülürse hangi noktaya gelir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(x, y) → (−y, x): <span class="ans">(−1, 4)</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> C(1, 5) noktasının x = 3 doğrusuna göre simetriği nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(2·3 − 1, 5) = <span class="ans">(5, 5)</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> y = x² + 1 parabolünün x eksenine göre yansıması nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">−y = x² + 1: <span class="ans">y = −x² − 1</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> P(2, 3) noktası önce (5, −1) kadar ötelenip sonra orijine göre yansıtılırsa son konumu nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(7, 2) → <span class="ans">(−7, −2)</span>.</div></div></div>
+<div class="pager"><a href="41-binom-acilimi.html">← Binom Açılımı</a><a href="43-cemberin-analitik-incelemesi.html">Sonraki: Çemberin Analitik İncelemesi →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

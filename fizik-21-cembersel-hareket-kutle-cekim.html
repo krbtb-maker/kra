@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çembersel Hareket ve Kütle Çekim | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 21. Çembersel Hareket ve Kütle Çekim</h1>
+
+<h2>Düzgün çembersel hareket</h2>
+<p>Sabit süratle çember çizen cismin hızının büyüklüğü sabittir ama <b>yönü sürekli değişir</b>; bu yüzden ivmesi vardır ve bu ivme çemberin merkezine yöneliktir.</p>
+<div class="formula">v = 2πr / T,   ω = 2π / T,   v = ω·r<br>Merkezcil ivme: a = v² / r<br>Merkezcil kuvvet: F = m·v² / r</div>
+<div class="note">Merkezcil kuvvet ayrı bir kuvvet türü değildir; cismi çembersel yörüngede tutan mevcut kuvvetlerin (ip gerilmesi, sürtünme, kütle çekim) bileşkesidir. İp koparsa cisim çembere teğet doğrultuda gider.</div>
+
+<h2>Uygulamalar</h2>
+<ul>
+<li><b>Yatay virajda</b> merkezcil kuvveti sürtünme sağlar: Savrulmadan dönülebilecek en büyük hız v_max = √(k·g·r). Yollar bu yüzden virajlarda eğimli yapılır.</li>
+<li><b>Düşey çember</b> (lunapark, kova): Tepe noktasında ipin gevşememesi için en küçük hız v = √(g·r).</li>
+<li>Dönme dolap ve santrifüj makinesi.</li>
+</ul>
+
+<h2>Dönerek öteleme ve açısal momentum</h2>
+<p>Yuvarlanan cisim hem öteleme hem dönme kinetik enerjisine sahiptir. Dönme hareketinde kütlenin karşılığı <b>eylemsizlik momenti</b>dir (I); kütle eksenden uzaklaştıkça büyür.</p>
+<div class="formula">Açısal momentum: L = I·ω</div>
+<p>Dış tork yoksa açısal momentum korunur. Buz patencisi kollarını kapatınca I azalır, dönme hızı ω artar. Dalgıçların takla atarken bedenlerini toplaması da aynı nedenledir.</p>
+
+<h2>Newton'un kütle çekim yasası</h2>
+<div class="formula">F = G·m₁·m₂ / d²   (G = 6,67·10⁻¹¹ N·m²/kg²)</div>
+<ul>
+<li>Yer çekimi ivmesi: g = G·M / R². Yükseldikçe azalır: Dünya yüzeyinden R kadar yükseklikte (merkezden 2R) g dörtte birine iner.</li>
+<li>Uydular için merkezcil kuvveti kütle çekim sağlar: v = √(G·M / r). Yörünge yarıçapı arttıkça uydunun hızı azalır.</li>
+<li>Uydudaki astronot ağırlıksız değildir; uyduyla birlikte sürekli serbest düştüğü için ağırlıksızlık hisseder.</li>
+</ul>
+
+<h2>Kepler yasaları</h2>
+<p>1. Gezegenler Güneş'in etrafında, Güneş odakta olacak şekilde <b>elips</b> yörüngelerde dolanır.</p>
+<p>2. Gezegeni Güneş'e bağlayan doğru eşit zamanlarda <b>eşit alanlar</b> tarar: Gezegen Güneş'e yakınken hızlı, uzakken yavaştır (açısal momentumun korunumu).</p>
+<p>3. Periyodun karesi yörünge yarı büyük ekseninin küpüyle orantılıdır: T² ∝ r³.</p>
+
+<h2>Kısa özet</h2>
+<p>Düzgün çembersel harekette ivme merkeze yöneliktir: a = v²/r. Merkezcil kuvveti mevcut kuvvetler sağlar. Dış tork yoksa açısal momentum korunur. Kütle çekim kuvveti uzaklığın karesiyle ters orantılıdır; Kepler yasaları gezegen hareketlerini açıklar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Düzgün çembersel harekette ivmenin sıfır olduğunu sanmak.</li>
+<li>Merkezcil kuvveti ayrı bir kuvvet gibi serbest cisim diyagramına eklemek.</li>
+<li>Uydudaki astronotun ağırlığının sıfır olduğunu düşünmek.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 0,5 m uzunluğundaki ipe bağlı 2 kg'lık cisim yatay düzlemde 4 m/s süratle döndürülüyor. İpteki gerilme kuvveti kaç N'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">F = 2·16/0,5 = <span class="ans">64 N</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> Dünya yüzeyinden Dünya yarıçapı kadar yükseklikte yer çekimi ivmesi yüzeydekinin kaçta kaçıdır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Merkezden uzaklık 2R: <span class="ans">1/4'ü</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Sürtünme katsayısı 0,4, yarıçapı 40 m olan yatay virajda en fazla hangi hızla dönülebilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">v = √(0,4·10·40) = √160 ≈ <span class="ans">12,6 m/s</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Kollarını açıkken dönen patenci kollarını kapatınca dönme hızı neden artar?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">eylemsizlik momenti azalır, açısal momentum korunduğu için açısal hız artar</span>.</div></div></div>
+<div class="pager"><a href="fizik-20-manyetik-kuvvet-induksiyon-ac.html">← Manyetik Kuvvet, İndüksiyon ve Alternatif Akım</a><a href="fizik-22-basit-harmonik-hareket.html">Sonraki: Basit Harmonik Hareket →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

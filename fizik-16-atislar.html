@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atış Hareketleri | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 16. Atış Hareketleri</h1>
+
+<h2>Ana fikir: iki hareketi ayrı ayrı çözmek</h2>
+<p>Atış hareketlerinde cisim aynı anda iki bağımsız hareket yapar: <b>yatayda sabit hızlı hareket</b> (yatayda kuvvet yok) ve <b>düşeyde sabit ivmeli hareket</b> (yer çekimi). İki hareketi birbirine bağlayan tek ortak büyüklük <b>zamandır</b>.</p>
+
+<h2>Yatay atış</h2>
+<p>h yüksekliğinden v₀ hızıyla yatay atılan cisim:</p>
+<div class="formula">Düşey: h = ½·g·t²  →  uçuş süresi yalnızca h'ye bağlıdır<br>Yatay: x = v₀·t</div>
+<p>Aynı yükseklikten biri yatay atılan, diğeri serbest bırakılan iki cisim yere <b>aynı anda</b> düşer.</p>
+
+<h2>Eğik atış</h2>
+<p>v hızıyla yatayla θ açısı yapacak şekilde atılan cisim:</p>
+<div class="formula">v_x = v·cos θ (sabit),  v_y = v·sin θ (her saniye g kadar azalır)<br>Tepe noktasına çıkış süresi: t_çıkış = v_y / g<br>Maksimum yükseklik: h_max = v_y² / (2g)<br>Uçuş süresi: 2·t_çıkış;  Menzil: x = v_x · t_uçuş = v²·sin 2θ / g</div>
+<ul>
+<li>Tepe noktasında düşey hız sıfır, yatay hız v·cos θ'dır; ivme her yerde g'dir.</li>
+<li>Menzil en büyük değerine <b>45°</b>'de ulaşır. Toplamı 90° olan açılarla (30° ve 60°, 37° ve 53°) atılan cisimler aynı menzile düşer.</li>
+</ul>
+
+<h2>Hava direnci</h2>
+<p>Gerçekte hava direnci hızla artar. Düşen bir cisimde hava direnci ağırlığa eşit olunca ivme sıfırlanır ve cisim <b>limit hızla</b> düşer. Paraşüt, yüzey alanını büyüterek limit hızı düşürür.</p>
+
+<h2>Kısa özet</h2>
+<p>Atış hareketlerinde yatay ve düşey hareketler ayrı çözülür, zaman ortaktır. Yatay atışta uçuş süresi yalnızca yüksekliğe bağlıdır. Eğik atışta menzil 45°'de en büyüktür ve tamamlayıcı açılar aynı menzili verir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Yatay hızı büyük olan cismin daha geç düştüğünü sanmak.</li>
+<li>Tepe noktasında hızın sıfır olduğunu düşünmek; yalnızca düşey bileşen sıfırdır.</li>
+<li>Eğik atışta yatay hızın azaldığını sanmak; hava direnci yoksa sabittir.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 45 m yükseklikten 20 m/s hızla yatay atılan cisim kaç m uzağa düşer?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">45 = 5t² → t = 3 s; x = 20·3 = <span class="ans">60 m</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 50 m/s hızla yatayla 37° açıyla atılan cismin tepe noktasına çıkış süresi ve maksimum yüksekliği nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">v_y = 50·0,6 = 30 m/s; t = 3 s; h = 900/20 = 45 m: <span class="ans">3 s, 45 m</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Aynı cismin menzili kaç m'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">v_x = 50·0,8 = 40 m/s; uçuş 6 s; x = 40·6 = <span class="ans">240 m</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Menzilin en büyük olduğu atış açısı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">sin 2θ = 1 → <span class="ans">45°</span>.</div></div></div>
+<div class="pager"><a href="fizik-15-newton-ve-ivmeli-hareket.html">← Newton Yasaları ve Sabit İvmeli Hareket</a><a href="fizik-17-enerji-itme-momentum.html">Sonraki: Enerji, İtme ve Momentum →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

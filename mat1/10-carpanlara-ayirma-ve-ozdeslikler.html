@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çarpanlara Ayırma ve Özdeşlikler | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>10. Çarpanlara Ayırma ve Özdeşlikler</h1>
+
+<h2>Temel fikir</h2>
+<p>Çarpanlara ayırma, çarpma işleminin <b>geri alınmasıdır</b>. a(b + c) = ab + ac dağılma özelliğini bir yönde "açma", diğer yönde "çarpanlara ayırma" diye adlandırırız. İfadeyi çarpım hâline getirmek sadeleştirme, denklem çözme ve kesirlerle işlem yapmayı kolaylaştırır.</p>
+
+<h2>Ortak çarpan ve gruplama</h2>
+<ul>
+<li><b>Ortak çarpan:</b> 6x² + 9x = 3x(2x + 3)</li>
+<li><b>Gruplama:</b> ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)</li>
+</ul>
+
+<h2>Özdeşlikler ve nedenleri</h2>
+<p>Kenarı (a + b) olan bir karenin alanı, içindeki parçaların alanları toplamıdır: bir a×a kare, bir b×b kare ve iki tane a×b dikdörtgen.</p>
+<div class="formula">(a + b)² = a² + 2ab + b²</div>
+<div class="formula">(a – b)² = a² – 2ab + b²</div>
+<div class="formula">a² – b² = (a – b)(a + b)</div>
+<p>Üçüncüsünün nedeni: (a – b)(a + b) açılınca a² + ab – ab – b² olur, ortadaki terimler birbirini götürür. Yani "iki kare farkı" daima çarpım hâline gelir.</p>
+
+<h3>Üçüncü dereceden olanlar</h3>
+<ul>
+<li>(a + b)³ = a³ + 3a²b + 3ab² + b³</li>
+<li>a³ + b³ = (a + b)(a² – ab + b²)</li>
+<li>a³ – b³ = (a – b)(a² + ab + b²)</li>
+</ul>
+
+<h2>x² + bx + c ayrımı</h2>
+<p>(x + p)(x + q) = x² + (p + q)x + pq olduğundan, x² + bx + c'yi ayırmak için <b>çarpımı c, toplamı b olan iki sayı</b> bulunur.</p>
+<p>x² – 5x + 6 için çarpımı 6, toplamı –5 olan sayılar –2 ve –3'tür. Sonuç (x – 2)(x – 3).</p>
+
+<h2>Sık kullanılan dönüşümler</h2>
+<ul>
+<li>a² + b² = (a + b)² – 2ab = (a – b)² + 2ab</li>
+<li>x² + 1/x² = (x + 1/x)² – 2 = (x – 1/x)² + 2</li>
+</ul>
+
+<h2>Kısa özet</h2>
+<p>Çarpanlara ayırma, ifadeleri daha sade ve çözümü kolay bir biçime dönüştürür. Özellikle iki kare farkı, tam kare özdeşlikleri ve x² + bx + c ayrımı sık kullanılan araçlardır. Bu yöntemler yalnızca cebirsel işlemi değil, denklemleri ve problem çözümlerini de hızlandırır. Bu yüzden “özdeşlikleri görme” ve “hangi formül burada işe yarar?” soruları çok önemlidir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>(a + b)² = a² + b² diye düşünmek; ortadaki 2ab terimini unutmak.</li>
+<li>a² – b² = (a – b)² gibi yanlış çarpanlama yapmak.</li>
+<li>x² + bx + c için çarpım-toplam ilişkisini görmeden denemeyle çözmeye kalkmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> x + y = 7 ve x·y = 10 ise x² + y² kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x² + y² = (x + y)² – 2xy = 49 – 20 = <span class="ans">29</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> x² – 5x + 6 ifadesini çarpanlarına ayırınız.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Çarpımı 6, toplamı –5 olan sayılar: –2 ve –3. Cevap: <span class="ans">(x – 2)(x – 3)</span>. Kontrol: x² – 3x – 2x + 6 ✓.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> 51² – 49² işleminin sonucu kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">İki kare farkı: (51 – 49)(51 + 49) = 2·100 = <span class="ans">200</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> x – 1/x = 3 ise x² + 1/x² kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Her iki tarafın karesini alalım: x² – 2 + 1/x² = 9. Buradan x² + 1/x² = <span class="ans">11</span>.</div></div></div>
+
+<div class="pager"><a href="09-koklu-sayilar.html">← Köklü Sayılar</a><a href="11-oran-oranti.html">Sonraki: Oran – Orantı →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

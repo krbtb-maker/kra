@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doğruda ve Üçgende Açılar | TYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>Geometri 1. Doğruda ve Üçgende Açılar</h1>
+
+<h2>Temel kavramlar</h2>
+<p>Başlangıç noktaları ortak iki ışının oluşturduğu şekle <b>açı</b> denir. Açının büyüklüğü, bir ışının diğerine ne kadar "döndüğünü" gösterir ve derece (°) ile ölçülür. Tam bir dönüş 360°'dir.</p>
+<table>
+<tr><th>Açı</th><th>Ölçüsü</th></tr>
+<tr><td>Dar açı</td><td>0° ile 90° arası</td></tr>
+<tr><td>Dik açı</td><td>90°</td></tr>
+<tr><td>Geniş açı</td><td>90° ile 180° arası</td></tr>
+<tr><td>Doğru açı</td><td>180° (düz çizgi)</td></tr>
+<tr><td>Tam açı</td><td>360°</td></tr>
+</table>
+
+<h3>Özel açı çiftleri</h3>
+<ul>
+<li><b>Tümler açılar:</b> toplamları 90°. x'in tümleri 90° – x.</li>
+<li><b>Bütünler açılar:</b> toplamları 180°. x'in bütünleri 180° – x.</li>
+<li><b>Komşu bütünler açılar:</b> bir doğru üzerinde yan yana duran iki açı, doğru açıyı paylaşır, toplamları 180°.</li>
+<li><b>Ters açılar:</b> iki doğru kesişince karşılıklı oluşan açılar <b>eşittir</b>. (Her ikisi de aynı komşu açıyla toplanınca 180° eder.)</li>
+</ul>
+
+<h2>Paralel iki doğruyu bir doğru keserse</h2>
+<p>Kesen doğru paralel doğrulara <b>aynı eğimle</b> yaklaşır, bu yüzden iki paralel doğrudaki karşılık gelen açılar aynıdır. Harf yöntemiyle hatırlayabilirsiniz:</p>
+<table>
+<tr><th>Açı çifti</th><th>Harf</th><th>İlişki</th></tr>
+<tr><td>Yöndeş açılar</td><td>F</td><td>Eşit</td></tr>
+<tr><td>İç ters açılar</td><td>Z</td><td>Eşit</td></tr>
+<tr><td>Dış ters açılar</td><td>—</td><td>Eşit</td></tr>
+<tr><td>Kesenin aynı tarafındaki iç (ya da dış) açılar</td><td>C</td><td>Toplamları 180°</td></tr>
+</table>
+
+<h2>Üçgenin iç açıları toplamı neden 180°?</h2>
+<p>Üçgenin bir köşesinden karşı kenara paralel çizelim. Üstteki doğrunun A köşesindeki üç açısı yan yana dizilir ve <b>doğru açıyı</b> (180°) oluşturur. Yanlardaki açılar paralel doğrular nedeniyle B ve C açılarına (iç ters) eşittir. Yani A + B + C = 180°.</p>
+
+<svg viewBox="0 0 340 190" role="img" aria-label="Üçgenin iç açıları toplamının ispatı" style="max-width:360px;width:100%;display:block;margin:12px auto">
+  <line x1="20" y1="45" x2="320" y2="45" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="50,160 290,160 170,45" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="38" y="178" fill="currentColor" font-size="14">B</text>
+  <text x="290" y="178" fill="currentColor" font-size="14">C</text>
+  <text x="165" y="35" fill="currentColor" font-size="14">A</text>
+  <text x="74" y="156" fill="currentColor" font-size="13">β</text>
+  <text x="262" y="156" fill="currentColor" font-size="13">γ</text>
+  <text x="138" y="62" fill="currentColor" font-size="13">β</text>
+  <text x="196" y="62" fill="currentColor" font-size="13">γ</text>
+  <text x="165" y="72" fill="currentColor" font-size="13">α</text>
+  <text x="170" y="188" fill="currentColor" font-size="12" text-anchor="middle">BC'ye paralel çizilen doğru</text>
+</svg>
+
+<h2>Dış açı</h2>
+<p>Üçgenin bir kenarını uzattığımızda dışta oluşan açıya <b>dış açı</b> denir. Dış açı + komşusu olan iç açı = 180° olduğuna göre:</p>
+<div class="formula">Dış açı = kendisine komşu olmayan iki iç açının toplamı</div>
+<p>Çünkü iç açılar toplamı 180° ve dış açı da aynı iç açıdan "180° eksiği"dir. Ayrıca üçgenin her köşesinde birer dış açı alınırsa <b>dış açılar toplamı 360°</b>'dir.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> Tümleyeni 35° olan açının bütünleyeni kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Açı 90° – 35° = 55°. Bütünleyeni 180° – 55° = <span class="ans">125°</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> Bir açının ölçüsü, tümleyeninin 2 katıdır. Bu açı kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x = 2·(90° – x) → x = 180° – 2x → 3x = 180° → x = <span class="ans">60°</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> İki paralel doğruyu kesen bir doğrunun aynı tarafındaki iç açılardan biri 70° ise diğeri kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Aynı taraftaki iç açılar bütünlerdir (C şekli): 180° – 70° = <span class="ans">110°</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Bir üçgenin iki iç açısı 50° ve 60° ise üçüncü açının dış açısı kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Üçüncü iç açı 180° – 110° = 70°. Dış açısı kendisine komşu olmayan iki açının toplamıdır: 50° + 60° = <span class="ans">110°</span>. (180° – 70° = 110° ile aynı.)</div></div></div>
+
+<div class="q"><p><b>Soru 5.</b> Bir üçgende bir dış açı 120° ve komşusu olmayan iç açılardan biri 50° ise diğeri kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Dış açı = komşu olmayan iki iç açının toplamı: 120° = 50° + x → x = <span class="ans">70°</span>.</div></div></div>
+
+<div class="pager"><a href="22-veri-istatistik.html">← Veri – İstatistik</a><a href="24-ucgenler.html">Sonraki: Üçgenler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veri – İstatistik | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>22. Veri – İstatistik</h1>
+
+<h2>Merkezi eğilim ölçüleri</h2>
+<p>Bir veri grubunu tek bir sayıyla özetlemeye çalışırız. Üç farklı "merkez" vardır:</p>
+<table>
+<tr><th>Ölçü</th><th>Nasıl bulunur?</th><th>Anlamı</th></tr>
+<tr><td><b>Aritmetik ortalama</b></td><td>Tüm değerlerin toplamı / değer sayısı</td><td>Herkes eşit paylaşsaydı kişi başına düşen değer</td></tr>
+<tr><td><b>Medyan</b></td><td>Veriyi küçükten büyüğe sıralayıp ortadakini alın (çift sayıdaysa ortadaki ikisinin ortalaması)</td><td>Verinin tam ortası</td></tr>
+<tr><td><b>Mod</b></td><td>En çok tekrar eden değer</td><td>En yaygın değer</td></tr>
+</table>
+<p><b>Açıklık</b> = en büyük değer – en küçük değer. Verinin ne kadar yayıldığını kabaca gösterir.</p>
+
+<div class="note"><b>Hangisi ne zaman?</b> Ortalama uç değerlerden çok etkilenir: 1, 2, 3, 4, 100 verisinin ortalaması 22 ama medyanı 3'tür. Aşırı uç değer varsa medyan veriyi daha iyi temsil eder.</div>
+
+<h2>Verilere işlem yapınca ne olur?</h2>
+<ul>
+<li>Her değere <b>aynı sayı eklenirse</b>: ortalama, medyan ve mod o sayı kadar artar. Açıklık <b>değişmez</b> (iki ucun farkı aynı kalır).</li>
+<li>Her değer <b>aynı sayıyla çarpılırsa</b>: ortalama, medyan, mod ve açıklık o sayıyla çarpılır.</li>
+<li>Ortalamaya yeni bir değer eklenirse: yeni ortalama = (eski toplam + yeni değer) / (eski sayı + 1). Toplamı hatırlamak çoğu soruyu çözer.</li>
+</ul>
+
+<h2>Grafikleri okuma</h2>
+<ul>
+<li><b>Sütun grafiği:</b> yüksekliklerle karşılaştırma.</li>
+<li><b>Çizgi grafiği:</b> zamanla değişim, eğimlerle artış/azalış hızı.</li>
+<li><b>Daire grafiği:</b> bütünün parçaları. Dilimin merkez açısı = oran · 360°. (%25 → 90°; 72° dilim bütünün 72/360 = 1/5'i)</li>
+</ul>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> 4, 7, 7, 9, 13 veri grubunun ortalamasını, medyanını, modunu ve açıklığını bulunuz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Ortalama: (4 + 7 + 7 + 9 + 13)/5 = 40/5 = <span class="ans">8</span>. Medyan (ortadaki, 3. değer): <span class="ans">7</span>. Mod (en çok tekrar eden): <span class="ans">7</span>. Açıklık: 13 – 4 = <span class="ans">9</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> 5 sayının ortalaması 12'dir. Gruba 6 sayısı eklenirse yeni ortalama kaç olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Eski toplam 5·12 = 60. Yeni toplam 60 + 6 = 66, sayı adedi 6. Ortalama 66/6 = <span class="ans">11</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> Bir daire grafiğinde merkez açısı 72° olan dilim 40 kişiyi göstermektedir. Grafikteki toplam kişi sayısı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">72/360 = 1/5. Toplamın 1/5'i 40 ise toplam 40·5 = <span class="ans">200 kişi</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Bir veri grubunun ortalaması 8, açıklığı 9'dur. Her değer 2 ile çarpılıp sonuca 3 eklenirse yeni ortalama ve açıklık kaç olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Ortalama: 8·2 + 3 = <span class="ans">19</span>. Açıklık: çarpma açıklığı 2 katına çıkarır (9·2 = 18), toplama değiştirmez: <span class="ans">18</span>.</div></div></div>
+
+<div class="pager"><a href="21-permutasyon-kombinasyon-olasilik.html">← Permütasyon – Kombinasyon – Olasılık</a><a href="23-acilar.html">Sonraki: Doğruda ve Üçgende Açılar →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

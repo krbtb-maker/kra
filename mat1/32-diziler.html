@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diziler | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 3. Diziler</h1>
+
+<h2>Dizi: sıraya konmuş sayılar</h2>
+<p>Dizi, her doğal sayı sırasına bir değer eşleyen listedir. aₙ, dizinin n'inci terimini gösterir. Genel terim, sıradaki n bilindiğinde terimi doğrudan bulmamızı sağlar.</p>
+<p>Örneğin 3, 7, 11, 15, … dizisinde her adımda 4 ekleniyor. İlk terim 3 olduğundan n'inci terim 3 + (n − 1)·4'tür.</p>
+
+<h2>Aritmetik dizi</h2>
+<p>Ardışık terimler arasındaki fark sabitse dizi aritmetiktir. Ortak fark d, ilk terim a₁ ise her adımda d eklemek:</p>
+<div class="formula">aₙ = a₁ + (n − 1)d</div>
+<p>İlk n terimin toplamında ilk ve son terimleri eşleştiririz: her çiftin toplamı a₁ + aₙ olur. Bu nedenle:</p>
+<div class="formula">Sₙ = n(a₁ + aₙ)/2</div>
+
+<h2>Geometrik dizi</h2>
+<p>Ardışık terimlerin oranı sabitse dizi geometriktir. Ortak çarpan r, ilk terim a₁ ise her adımda r ile çarpılır:</p>
+<div class="formula">aₙ = a₁ · rⁿ⁻¹</div>
+<p>r ≠ 1 için ilk n terimin toplamı:</p>
+<div class="formula">Sₙ = a₁(rⁿ − 1)/(r − 1)</div>
+<p>Formülün mantığı, toplamı r ile çarpıp ilk toplamdan çıkarmaktır; terimlerin çoğu birbirini götürür. r = 1 ise her terim a₁ olur ve Sₙ = na₁.</p>
+
+<h2>Dizi sorularını okuma yolu</h2>
+<ul>
+<li>Ardışık terimler arasında sabit fark varsa aritmetik, sabit oran varsa geometrik diziyi deneyin.</li>
+<li>Önce ilk terimi, ortak farkı veya oranı doğru belirleyin; sonra istenen n'inci terimi ya da toplamı seçin.</li>
+<li>Bir örüntüde ilk birkaç terimin uyması tek başına genel terimi kanıtlamaz; verilen dizi kuralını kullanın.</li>
+</ul>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> İlk terimi 5, ortak farkı 3 olan aritmetik dizinin 10. terimi kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">a₁₀ = 5 + (10 − 1)·3 = 5 + 27 = <span class="ans">32</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> 2, 5, 8, … aritmetik dizisinin ilk 10 teriminin toplamı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">a₁₀ = 2 + 9·3 = 29. S₁₀ = 10(2 + 29)/2 = <span class="ans">155</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> 3, 6, 12, 24, … geometrik dizisinin 6. terimi kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">a₁ = 3, r = 2. a₆ = 3·2⁵ = <span class="ans">96</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> 1, 2, 4, 8 dizisinin ilk dört teriminin toplamı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Terimleri toplarsak 1 + 2 + 4 + 8 = <span class="ans">15</span>. Formülle de 1·(2⁴ − 1)/(2 − 1) = 15.</div></div></div>
+
+<div class="pager"><a href="31-usel-ve-logaritma.html">← Üstel ve Logaritma</a><a href="33-karmasik-sayilar.html">Sonraki: Karmaşık Sayılar →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

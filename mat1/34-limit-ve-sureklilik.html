@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limit ve Süreklilik | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 5. Limit ve Süreklilik</h1>
+
+<h2>Limit: noktaya yaklaşırken fonksiyon nereye yaklaşıyor?</h2>
+<p>x, a değerine yaklaşırken f(x) değerleri L'ye yaklaşıyorsa “x, a'ya giderken f(x)'in limiti L'dir” deriz. Buradaki soru, fonksiyonun tam x = a noktasındaki değerinden çok, çevresindeki davranışıdır.</p>
+<div class="formula">lim<sub>x→a</sub> f(x) = L</div>
+<p>İki taraftan yaklaşma aynı değere gidiyorsa iki yönlü limit vardır. Sağdan ve soldan limit farklıysa iki yönlü limit yoktur.</p>
+
+<h2>Limit kuralları ve belirsizlik</h2>
+<p>Toplamın, farkın ve çarpımın limitleri; ilgili limitlerin toplamı, farkı ve çarpımıdır. Bölümde paydanın limitinin sıfır olmaması gerekir. Polinomlarda çoğu zaman doğrudan yerine koymak yeterlidir.</p>
+<div class="formula">lim(f ± g) = lim f ± lim g<br>lim(fg) = (lim f)(lim g)<br>lim(f/g) = (lim f)/(lim g), paydanın limiti ≠ 0</div>
+<p>Yerine koyunca 0/0 çıkması, sonucun 0 olduğu anlamına gelmez; bu bir belirsizliktir. Çarpanlara ayırıp ortak çarpanı sadeleştirmek gibi yöntemlerle yaklaşım incelenir.</p>
+
+<h2>Süreklilik</h2>
+<p>Bir fonksiyon x = a noktasında sürekli ise grafikte o noktada kopma veya delik yoktur. Bunun matematiksel karşılığı üç koşuldur:</p>
+<ul>
+<li>f(a) tanımlı olmalı,</li>
+<li>lim<sub>x→a</sub> f(x) bulunmalı,</li>
+<li>Bu limit f(a)'ya eşit olmalı.</li>
+</ul>
+<p>Polinomlar her gerçek sayıda süreklidir. Rasyonel fonksiyonlarda paydanın sıfır olmadığı noktalar süreklidir.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> lim<sub>x→2</sub>(3x + 1) kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Polinom ifadesinde doğrudan x = 2 yazılır: 3·2 + 1 = <span class="ans">7</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> lim<sub>x→3</sub>(x² − 9)/(x − 3) kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Doğrudan koyunca 0/0 çıkar. x² − 9 = (x − 3)(x + 3). x ≠ 3 iken sadeleştirip x + 3'e yaklaşırız: limit <span class="ans">6</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> f(x) = (x² − 1)/(x − 1), x ≠ 1 için tanımlı. f(1) = 2 olarak ayrıca belirlenirse fonksiyon x = 1'de sürekli midir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x ≠ 1 iken f(x) = x + 1, bu nedenle x → 1 limiti 2'dir. f(1) de 2 olduğundan limit değere eşit: <span class="ans">evet, süreklidir</span>.</div></div></div>
+
+<div class="pager"><a href="33-karmasik-sayilar.html">← Karmaşık Sayılar</a><a href="35-turev.html">Sonraki: Türev →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gazlar | Kimya</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Kimya 12. Gazlar</h1>
+
+<h2>Gazı tanımlayan dört değişken</h2>
+<p>Bir gazın durumu basınç (P), hacim (V), sıcaklık (T, mutlaka <b>kelvin</b>) ve mol sayısı (n) ile tanımlanır. Bu dört değişken arasındaki ilişkiler gaz yasalarıdır.</p>
+<table>
+<tr><th>Yasa</th><th>Sabit tutulan</th><th>İlişki</th></tr>
+<tr><td>Boyle</td><td>n, T</td><td>P·V = sabit (basınç artınca hacim azalır)</td></tr>
+<tr><td>Charles</td><td>n, P</td><td>V / T = sabit (ısıtılan gaz genleşir)</td></tr>
+<tr><td>Gay-Lussac</td><td>n, V</td><td>P / T = sabit (kapalı kapta ısıtılan gazın basıncı artar)</td></tr>
+<tr><td>Avogadro</td><td>P, T</td><td>V / n = sabit</td></tr>
+</table>
+
+<h2>İdeal gaz denklemi</h2>
+<div class="formula">P·V = n·R·T   (R = 0,082 L·atm / mol·K)<br>P₁V₁ / (n₁T₁) = P₂V₂ / (n₂T₂)</div>
+<p>Yoğunluk ve mol kütlesi de bu denklemden türetilebilir: P·M_A = d·R·T.</p>
+
+<h2>Kinetik teori: neden böyle davranırlar?</h2>
+<ul>
+<li>Gaz tanecikleri sürekli, gelişigüzel hareket eder; kendi hacimleri kabın hacmine göre ihmal edilebilir.</li>
+<li>Tanecikler arasında çekim–itme yoktur (ideal gaz); çarpışmalar esnektir.</li>
+<li><b>Ortalama kinetik enerji yalnızca mutlak sıcaklıkla</b> orantılıdır; gazın cinsine bağlı değildir.</li>
+<li>Basınç, taneciklerin kabın çeperlerine çarpmasından doğar. Sıcaklık artınca tanecikler daha hızlı ve daha sık çarpar.</li>
+</ul>
+
+<h2>Difüzyon ve efüzyon (Graham)</h2>
+<p>Aynı sıcaklıkta bütün gazların ortalama kinetik enerjisi aynı olduğuna göre, hafif gazlar daha hızlı hareket etmelidir:</p>
+<div class="formula">v₁ / v₂ = √(M₂ / M₁)</div>
+<p>Odanın bir köşesindeki parfümün kokusunun yayılması difüzyon, balonun gazının küçük delikten kaçması efüzyondur. Helyum balonu hava balonundan çabuk söner.</p>
+
+<h2>Gaz karışımları: kısmi basınç (Dalton)</h2>
+<p>Karışımdaki her gaz, kapta tek başına bulunuyormuş gibi basınç yapar.</p>
+<div class="formula">P_toplam = P₁ + P₂ + …,   P₁ = X₁ · P_toplam   (X: mol kesri)</div>
+<p>Su üzerinde toplanan gazın basıncı hesaplanırken suyun buhar basıncı çıkarılır.</p>
+
+<h2>Gerçek gazlar</h2>
+<p>Yüksek basınç ve düşük sıcaklıkta tanecikler birbirine yaklaşır; hacimleri ve aralarındaki çekim ihmal edilemez, gaz idealden sapar. Gazlar <b>düşük basınç ve yüksek sıcaklıkta</b> ideale yaklaşır. Kritik sıcaklığın üstündeki bir gaz ne kadar sıkıştırılırsa sıkıştırılsın sıvılaşmaz.</p>
+
+<h2>Kısa özet</h2>
+<p>Gaz yasaları P, V, T ve n arasındaki ilişkileri verir; hepsi PV = nRT'de birleşir. Ortalama kinetik enerji yalnızca mutlak sıcaklığa bağlıdır; bu yüzden hafif gazlar daha hızlı yayılır. Karışımlarda kısmi basınçlar toplanır. Gazlar düşük basınç ve yüksek sıcaklıkta ideale yaklaşır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Sıcaklığı santigrat olarak kullanmak; mutlaka kelvin olmalı.</li>
+<li>Aynı sıcaklıkta farklı gazların ortalama kinetik enerjilerinin farklı olduğunu sanmak.</li>
+<li>Gerçek gazların yüksek basınçta ideale yaklaştığını düşünmek.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 27 °C'de 6 L hacim kaplayan gaz, sabit basınçta 327 °C'ye ısıtılırsa hacmi kaç L olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">300 K → 600 K, V ∝ T: <span class="ans">12 L</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 0 °C'de 44,8 L'lik kapta 2 mol ideal gazın basıncı kaç atm'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">P = 2·0,082·273 / 44,8 ≈ <span class="ans">1 atm</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Aynı koşullarda H₂ gazının yayılma hızı O₂'nin kaç katıdır? (H = 1, O = 16)</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">√(32/2) = <span class="ans">4 katı</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 3 mol N₂ ve 1 mol O₂ içeren karışımın toplam basıncı 2 atm ise O₂'nin kısmi basıncı nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">X = 1/4 → <span class="ans">0,5 atm</span>.</div></div></div>
+<div class="pager"><a href="kimya-11-modern-atom-teorisi.html">← Modern Atom Teorisi</a><a href="kimya-13-cozeltiler-cozunurluk.html">Sonraki: Sıvı Çözeltiler ve Çözünürlük →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

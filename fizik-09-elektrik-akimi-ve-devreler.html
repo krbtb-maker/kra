@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elektrik Akımı ve Devreler | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 9. Elektrik Akımı ve Devreler</h1>
+
+<h2>Akım, gerilim ve direnç: su borusu benzetmesi</h2>
+<p>Bir su devresi düşünün: Pompa suya basınç farkı sağlar, su borudan akar, dar boru akışı zorlaştırır. Elektrikte <b>üreteç</b> potansiyel farkı (gerilim) sağlar, <b>akım</b> yüklerin akışıdır, <b>direnç</b> akışı zorlaştırır.</p>
+<div class="formula">I = q / t   (amper)<br>V = I · R   (Ohm yasası)<br>R = ρ · L / A   (ρ: özdirenç; L: uzunluk; A: kesit alanı)</div>
+<p>Tel uzadıkça direnç artar, kalınlaştıkça azalır. Akımın yönü geleneksel olarak + kutuptan − kutba doğru alınır.</p>
+
+<h2>Seri ve paralel bağlama</h2>
+<table>
+<tr><th></th><th>Seri</th><th>Paralel</th></tr>
+<tr><td>Akım</td><td>Her dirençte aynı</td><td>Kollara bölünür</td></tr>
+<tr><td>Gerilim</td><td>Dirençlere paylaştırılır</td><td>Her kolda aynı</td></tr>
+<tr><td>Eşdeğer direnç</td><td>R_eş = R₁ + R₂ + …</td><td>1/R_eş = 1/R₁ + 1/R₂ + …</td></tr>
+<tr><td>Bir lamba bozulursa</td><td>Hepsi söner</td><td>Diğerleri yanmaya devam eder</td></tr>
+</table>
+<p>İki paralel direnç için kısa yol: R_eş = R₁·R₂ / (R₁ + R₂). Evlerdeki prizler ve lambalar paralel bağlıdır.</p>
+<h3>Ölçü aletleri</h3>
+<p>Ampermetre devreye <b>seri</b> bağlanır (iç direnci çok küçük). Voltmetre ölçülecek elemana <b>paralel</b> bağlanır (iç direnci çok büyük).</p>
+
+<h2>Elektrik gücü ve enerji</h2>
+<div class="formula">P = V · I = I² · R = V² / R   (watt)<br>W = P · t   (joule veya kWh)</div>
+<p>Lambanın parlaklığı harcadığı güçle ilgilidir. Seri bağlı lambalarda direnci büyük olan, paralel bağlı lambalarda direnci küçük olan daha parlak yanar. Faturalarda enerji <b>kilowatt-saat</b> (kWh) ile ölçülür: 1 kWh = 3,6·10⁶ J.</p>
+
+<h2>Güvenlik</h2>
+<p>Sigorta ve kaçak akım rölesi aşırı akımda devreyi keser. Topraklama, cihaz gövdesine sızan akımı toprağa ileterek çarpılmayı önler. Islak elle prize dokunmak tehlikelidir çünkü vücut direnci düşer.</p>
+
+<h2>Kısa özet</h2>
+<p>Akım yük akışı, gerilim itici etki, direnç zorlaştırıcı etkendir; V = IR. Seride akım aynı, paralelde gerilim aynıdır. Güç P = VI ile, enerji W = Pt ile hesaplanır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Paralel bağlı dirençlerin eşdeğerini toplayarak bulmak; eşdeğer en küçük dirençten bile küçüktür.</li>
+<li>Voltmetreyi seri bağlamak.</li>
+<li>Seri devrede her lambanın aynı parlaklıkta yandığını sanmak; dirençleri farklıysa parlaklık da farklıdır.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 3 Ω ve 6 Ω'luk dirençler paralel bağlanıp 4 Ω'luk dirence seri bağlanıyor. 12 V'luk üreteçten çekilen akım kaç A olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">3·6/9 = 2 Ω; 2 + 4 = 6 Ω; I = 12/6 = <span class="ans">2 A</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 2000 W gücündeki ısıtıcı 3 saat çalışırsa kaç kWh enerji harcar?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">2 kW · 3 h = <span class="ans">6 kWh</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Bir telin boyu 2 katına çıkarılıp kesit alanı yarıya indirilirse direnci nasıl değişir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">R ∝ L/A → 2 / (1/2) = <span class="ans">4 katına çıkar</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 220 V'ta 1100 W güç harcayan cihazdan geçen akım kaç A'dır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">I = P/V = 1100/220 = <span class="ans">5 A</span>.</div></div></div>
+<div class="pager"><a href="fizik-08-elektrostatik.html">← Elektrostatik</a><a href="fizik-10-manyetizma.html">Sonraki: Mıknatıslar ve Manyetizma →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

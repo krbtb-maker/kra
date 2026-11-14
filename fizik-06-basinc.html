@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basınç | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 6. Basınç</h1>
+
+<h2>Basınç: kuvvetin yüzeye yayılması</h2>
+<p>Aynı kuvvet küçük bir yüzeye uygulanırsa etkisi büyük olur. İğnenin batması, karda kayakla batmadan yürümek bu yüzdendir.</p>
+<div class="formula">P = F / A   (birim: N/m² = pascal, Pa)</div>
+<p>Katılar kuvveti <b>uygulandığı doğrultuda</b> iletir. Bir tuğlayı yan yatırınca ağırlık değişmez ama taban alanı değiştiği için basınç değişir.</p>
+
+<h2>Sıvı basıncı</h2>
+<p>Sıvılar ağırlıklarından dolayı kabın tabanına ve çeperlerine basınç yapar.</p>
+<div class="formula">P_sıvı = h · d · g   (h: derinlik, d: sıvının öz kütlesi)</div>
+<ul>
+<li>Sıvı basıncı <b>kabın şekline ve sıvının miktarına bağlı değildir</b>; yalnızca derinliğe ve öz kütleye bağlıdır.</li>
+<li>Aynı derinlikte her yönde aynıdır. Barajların tabanı bu yüzden kalın yapılır.</li>
+<li><b>Bileşik kaplar</b>: Tek sıvı varsa açık kollarda sıvı yüzeyleri aynı yükseklikte olur (çaydanlık, su terazisi).</li>
+</ul>
+<h3>Pascal ilkesi</h3>
+<p>Kapalı kaptaki sıvıya uygulanan basınç, sıvının her noktasına aynen iletilir. Hidrolik fren ve kriko bununla çalışır:</p>
+<div class="formula">F₁ / A₁ = F₂ / A₂</div>
+<p>Küçük pistona küçük kuvvet uygulayarak büyük pistonda büyük kuvvet elde edilir; ama küçük piston daha çok yol alır (iş kazancı yoktur).</p>
+
+<h2>Gaz ve açık hava basıncı</h2>
+<ul>
+<li>Kapalı kaptaki gaz basıncı moleküllerin çarpışmalarından doğar. Sabit sıcaklıkta: <b>P · V = sabit</b> (Boyle).</li>
+<li><b>Açık hava basıncı</b>: Atmosferin ağırlığından doğar. Torricelli deniz seviyesinde 76 cm cıva yüksekliği ölçmüştür (1 atm ≈ 10⁵ Pa). Yükseldikçe azalır; bu yüzden dağda su daha düşük sıcaklıkta kaynar, düdüklü tencere ise basıncı artırarak kaynama noktasını yükseltir.</li>
+<li>Pipetle su içmek, vantuzun yapışması açık hava basıncıyla açıklanır.</li>
+</ul>
+
+<h2>Akışkanlarda hız ve basınç (Bernoulli)</h2>
+<p>Akışkanın hızlandığı yerde basınç <b>azalır</b>. Uçak kanadının üstünde hava daha hızlı aktığı için basınç düşer ve kaldırma oluşur. Rüzgârlı havada şemsiyenin ters dönmesi, hızlı geçen trenin yanındaki kişinin trene doğru çekilmesi aynı ilkeyle açıklanır.</p>
+
+<h2>Kısa özet</h2>
+<p>Katı basıncı kuvvet/alan, sıvı basıncı hdg'dir; sıvı basıncı kabın şekline bağlı değildir. Pascal ilkesine göre kapalı sıvı basıncı her yere aynen iletir. Açık hava basıncı yükseklikle azalır. Akışkan hızlandıkça basıncı düşer.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Sıvı basıncının sıvının miktarına bağlı olduğunu sanmak.</li>
+<li>Hidrolik sistemde enerji kazanıldığını düşünmek; kuvvetten kazanç yoldan kayıptır.</li>
+<li>Hızlı akan havada basıncın arttığını sanmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 20 N ağırlığındaki bir tuğla 0,1 m²'lik yüzeyi üzerinde durursa zemine yaptığı basınç kaç Pa'dır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">P = 20 / 0,1 = <span class="ans">200 Pa</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> Suyun 2 m derinliğindeki sıvı basıncı kaç Pa'dır? (d = 1000 kg/m³, g = 10 m/s²)</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">P = 2·1000·10 = <span class="ans">20 000 Pa</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Hidrolik bir sistemde büyük piston alanı küçük pistonun 10 katıdır. Küçük pistona 50 N uygulanırsa büyük pistonda kaç N kuvvet oluşur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">F₂ = 50 · 10 = <span class="ans">500 N</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Yüksek bir dağda suyun daha düşük sıcaklıkta kaynamasının nedeni nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">açık hava basıncının azalması</span>.</div></div></div>
+<div class="pager"><a href="fizik-05-isi-sicaklik-genlesme.html">← Isı, Sıcaklık ve Genleşme</a><a href="fizik-07-kaldirma-kuvveti.html">Sonraki: Kaldırma Kuvveti →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

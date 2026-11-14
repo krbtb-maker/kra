@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Türev | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 6. Türev</h1>
+
+<h2>Türev: anlık değişim ve teğetin eğimi</h2>
+<p>Bir aralıkta ortalama değişim, fonksiyon değerindeki değişimin x'teki değişime oranıdır. Aralığı küçülterek iki noktayı birbirine yaklaştırınca bu oran anlık değişime ve grafiğin teğet eğimine dönüşür.</p>
+<div class="formula">f'(a) = lim<sub>h→0</sub> [f(a + h) − f(a)] / h</div>
+<p>f'(a) pozitifse fonksiyon o noktada artma eğilimindedir; negatifse azalma eğilimindedir. Türevin sıfır olması yatay teğet olduğunu söyler, ancak tek başına yerel maksimum veya minimum olduğunu garanti etmez.</p>
+
+<h2>Temel türev kuralları</h2>
+<div class="formula">(c)' = 0<br>(xⁿ)' = n xⁿ⁻¹<br>(c f)' = c f'<br>(f ± g)' = f' ± g'</div>
+<p>Çarpım ve bölüm için kurallar:</p>
+<div class="formula">(fg)' = f'g + fg'<br>(f/g)' = (f'g − fg')/g² &nbsp; (g ≠ 0)</div>
+<p>Bileşik fonksiyonun türevinde dış fonksiyonun türevi alınır, iç fonksiyonun türeviyle çarpılır: (f(g(x)))' = f'(g(x))·g'(x).</p>
+
+<h2>Artma-azalma ve ekstremum</h2>
+<p>Bir aralıkta f'(x) &gt; 0 ise f artar; f'(x) &lt; 0 ise azalır. Artmadan azalmaya geçiş yerel maksimumu, azalmadan artmaya geçiş yerel minimumu verir. Bu noktaları ararken önce f'(x) = 0 veya türevin tanımsız olduğu adayları bulur, sonra işaret değişimini inceleriz.</p>
+<p>Bir aralıkta en büyük/en küçük değer sorularında kritik noktalarla birlikte kapalı aralığın uçları da kontrol edilir.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> f(x) = 3x² − 4x + 1 ise f'(x) nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(3x²)' = 6x, (−4x)' = −4, sabitin türevi 0: <span class="ans">f'(x) = 6x − 4</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> f(x) = x² ise x = 3 noktasındaki teğetin eğimi kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f'(x) = 2x. f'(3) = <span class="ans">6</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> f(x) = x² − 4x fonksiyonu hangi aralıklarda azalır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f'(x) = 2x − 4. Türev x &lt; 2 iken negatif, x &gt; 2 iken pozitiftir; fonksiyon <span class="ans">(−∞, 2)</span> aralığında azalır.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> f(x) = x² + 2x fonksiyonunun yerel minimum noktası nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f'(x) = 2x + 2 = 0 → x = −1. Türev −1'in solunda negatif, sağında pozitiftir; minimum değeri f(−1) = −1. Nokta <span class="ans">(−1, −1)</span>.</div></div></div>
+
+<div class="pager"><a href="34-limit-ve-sureklilik.html">← Limit ve Süreklilik</a><a href="36-integral.html">Sonraki: İntegral →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

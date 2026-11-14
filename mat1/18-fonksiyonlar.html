@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonksiyonlar | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>18. Fonksiyonlar</h1>
+
+<h2>Fonksiyon bir makinedir</h2>
+<p>Makineye bir sayı (girdi) koyarsınız, makine ona bir kural uygular ve bir sonuç (çıktı) verir. <b>Fonksiyon olmanın şartı:</b> her girdi için <b>tam bir</b> çıktı olmasıdır. Aynı girdiye iki farklı çıktı veren makine fonksiyon değildir.</p>
+<ul>
+<li><b>Tanım kümesi (A):</b> makineye girebilen değerler.</li>
+<li><b>Değer kümesi (B):</b> çıktıların bulunabileceği küme.</li>
+<li><b>Görüntü kümesi:</b> gerçekten çıkan değerler (değer kümesinin içinde, ondan küçük olabilir).</li>
+<li><b>Grafikte:</b> her dikey doğru grafiği en fazla bir noktada keserse fonksiyondur.</li>
+</ul>
+
+<h2>Fonksiyon sayısı</h2>
+<p>s(A) = m, s(B) = n olsun. A'nın her elemanı için B'den n seçenek var. Seçimler bağımsız olduğundan A'dan B'ye yazılabilen fonksiyon sayısı <b>nᵐ</b>'dir.</p>
+
+<h2>Bileşke fonksiyon</h2>
+<p>İki makineyi arka arkaya bağlamaktır. (f∘g)(x) = f(g(x)): önce g, sonra f uygulanır (içten dışa).</p>
+<div class="note"><b>Sıra önemlidir.</b> Genellikle f∘g ≠ g∘f. Önce çorap sonra ayakkabı giymekle tersi aynı sonucu vermez.</div>
+
+<h2>Ters fonksiyon</h2>
+<p>f'nin yaptığı işlemi <b>geri alan</b> fonksiyondur. f(a) = b ise f⁻¹(b) = a. Bir fonksiyonun tersinin olması için birebir ve örten olması gerekir.</p>
+<p><b>Ters bulma yöntemi:</b> y = f(x) yazın, x'i yalnız bırakın, sonra x ile y'nin yerini değiştirin.</p>
+<div class="formula">f(x) = ax + b ⇒ f⁻¹(x) = (x – b) / a</div>
+<p>Örneğin f(x) = 2x + 1 "ikiyle çarp, bir ekle" dediğinden tersi "bir çıkar, ikiye böl": f⁻¹(x) = (x – 1)/2.</p>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> f(x) = x + 2 ve g(x) = 3x ise (f∘g)(2) ile (g∘f)(2) değerlerini bulunuz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(f∘g)(2) = f(g(2)) = f(6) = <span class="ans">8</span>. (g∘f)(2) = g(f(2)) = g(4) = <span class="ans">12</span>. Sıra önemli.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> f(x) = 3x – 6 ise f⁻¹(9) kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">y = 3x – 6 → x = (y + 6)/3, yani f⁻¹(x) = (x + 6)/3. f⁻¹(9) = 15/3 = <span class="ans">5</span>. Kontrol: f(5) = 15 – 6 = 9 ✓.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> f(2x – 1) = 4x + 3 ise f(5) kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">2x – 1 = 5 olacak şekilde x = 3. Sağ tarafta yerine koyalım: 4·3 + 3 = <span class="ans">15</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> A = {1, 2}, B = {a, b, c} ise A'dan B'ye kaç farklı fonksiyon tanımlanabilir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">1 için 3 seçenek, 2 için 3 seçenek: 3² = <span class="ans">9</span>.</div></div></div>
+
+<div class="pager"><a href="17-mantik.html">← Mantık</a><a href="19-polinomlar.html">Sonraki: Polinomlar →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

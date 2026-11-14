@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elektrostatik | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 8. Elektrostatik</h1>
+
+<h2>Yük nedir?</h2>
+<p>Maddeler atomlardan, atomlar proton (+), nötron (yüksüz) ve elektronlardan (−) oluşur. Elektrikle yüklenme her zaman <b>elektron alışverişiyle</b> olur; protonlar yer değiştirmez. Elektron kaybeden cisim pozitif, elektron kazanan negatif yüklenir. Toplam yük korunur.</p>
+<ul>
+<li><b>Aynı işaretli yükler birbirini iter, zıt işaretliler çeker.</b></li>
+<li><b>İletkenlerde</b> (metaller) yükler serbestçe hareket eder ve dış yüzeye yayılır; <b>yalıtkanlarda</b> (plastik, cam) yük sürtünülen yerde kalır.</li>
+</ul>
+
+<h2>Elektriklenme yolları</h2>
+<table>
+<tr><th>Yol</th><th>Nasıl olur?</th><th>Sonuç</th></tr>
+<tr><td>Sürtünme</td><td>İki yalıtkan sürtülür, elektron biri diğerine geçer</td><td>Zıt işaretli, eşit miktarda yük</td></tr>
+<tr><td>Dokunma</td><td>Yüklü iletken nötr veya yüklü iletkene dokundurulur</td><td>Aynı işaretli yük; özdeş kürelerde toplam yük eşit paylaşılır, farklı kürelerde yarıçaplarla orantılı</td></tr>
+<tr><td>Etki (indüksiyon)</td><td>Yüklü cisim dokunmadan yaklaştırılır</td><td>Yakın uçta zıt, uzak uçta aynı işaretli yük toplanır; topraklanırsa cisim zıt işaretle yüklenir</td></tr>
+</table>
+<div class="note">Dokunmada son yük: q_son = (q₁ + q₂) / 2 (özdeş küreler için). Yükler işaretleriyle toplanır: +6 ve −2 birleşince toplam +4, her biri +2 olur.</div>
+
+<h2>Elektroskop ve topraklama</h2>
+<p>Elektroskop, yaprakların açılıp kapanmasıyla cismin yüklü olup olmadığını ve yük işaretini anlamaya yarar. Aynı işaretli yükle yaklaşılırsa yapraklar daha çok açılır, zıt işaretliyle yaklaşılırsa kapanır. <b>Topraklama</b>: Yüklü iletkenin toprağa bağlanmasıyla yükünün boşalması; elektrikli cihazların güvenliği için kullanılır. Yıldırımdan korunmak için binalara <b>paratoner</b> takılır.</p>
+
+<h2>Coulomb yasası</h2>
+<div class="formula">F = k · q₁ · q₂ / d²   (k = 9·10⁹ N·m²/C²)</div>
+<p>Kuvvet yüklerin çarpımıyla doğru, aradaki uzaklığın karesiyle ters orantılıdır. Uzaklık 2 katına çıkarsa kuvvet 4'te birine iner. İki yük birbirine eşit büyüklükte, zıt yönde kuvvet uygular (etki–tepki).</p>
+
+<h2>Kısa özet</h2>
+<p>Elektriklenme elektron alışverişidir. Sürtünmede zıt, dokunmada aynı işaretli yük oluşur; etkiyle yüklenmede yakın uçta zıt yük birikir. Coulomb kuvveti yüklerle doğru, uzaklığın karesiyle ters orantılıdır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Pozitif yüklenmeyi proton kazanmak sanmak; elektron kaybıdır.</li>
+<li>Dokunmada yükün her zaman eşit paylaşıldığını sanmak; yalnızca özdeş kürelerde eşittir.</li>
+<li>Uzaklık iki katına çıkınca kuvvetin yarıya indiğini düşünmek; dörtte birine iner.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> +6q ve −2q yüklü özdeş iki iletken küre birbirine dokundurulup ayrılırsa her birinin yükü ne olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(6q − 2q)/2 = <span class="ans">+2q</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> İki noktasal yük arasındaki uzaklık 3 katına çıkarılırsa aralarındaki elektriksel kuvvet nasıl değişir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">1/3² → <span class="ans">9'da birine iner</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Cam çubuk ipek kumaşa sürtülünce cam pozitif yükleniyor. Kumaş hangi yükle yüklenir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Sürtünmede zıt işaretli, eşit yük: <span class="ans">negatif</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Pozitif yüklü elektroskoba negatif yüklü çubuk yaklaştırılırsa yapraklar ne yapar?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Negatif çubuk topuzdaki elektronları yapraklara doğru iter; yapraklardaki pozitif yük azalır: <span class="ans">yapraklar biraz kapanır</span>.</div></div></div>
+<div class="pager"><a href="fizik-07-kaldirma-kuvveti.html">← Kaldırma Kuvveti</a><a href="fizik-09-elektrik-akimi-ve-devreler.html">Sonraki: Elektrik Akımı ve Devreler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

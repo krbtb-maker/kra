@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trigonometrik Denklemler | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 9. Trigonometrik Denklemler</h1>
+
+<h2>Neden birden fazla çözüm çıkar?</h2>
+<p>Sinüs ve kosinüs birim çemberde koordinatları gösterir. Aynı yatay ya da dikey koordinata çember üzerinde birden fazla açı karşılık gelebilir. Ayrıca bir tam tur eklendiğinde aynı noktaya dönülür; bu nedenle genel çözümlerde tam tur katları yer alır.</p>
+<p>Aşağıdaki genel çözümlerde açılar derece cinsindendir ve k herhangi bir tam sayıdır:</p>
+<div class="formula">sin x = sin α → x = α + 360°k veya x = 180° − α + 360°k<br>cos x = cos α → x = 360°k ± α<br>tan x = tan α → x = α + 180°k</div>
+<p>Tanjantın periyodu 180°'dir; çünkü 180° dönünce sinüs ve kosinüsün ikisi de işaret değiştirir, oranları değişmez. Sinüs ve kosinüsün periyodu 360°'dir.</p>
+
+<h2>Belirli aralıkta çözüm</h2>
+<p>Soru bir aralık veriyorsa genel çözümdeki k değerlerini seçip yalnızca o aralığa düşen açıları yazın. Birim çemberde önce referans açıyı bulun, sonra istenen trigonometrik oranı sağlayan bölgeleri kontrol edin.</p>
+<div class="note"><b>Kontrol:</b> Bulduğunuz açıları başlangıç denkleminde yerine koyun. Özellikle bölme veya kare alma yaptıysanız, denklemde olmayan aday çözüm oluşmadığını denetleyin.</div>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 0° ≤ x &lt; 360° aralığında sin x = 1/2 denklemini çözünüz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Referans açı 30°'dir. Sinüs I. ve II. bölgede pozitif: x = 30° veya 150°. Çözüm kümesi <span class="ans">{30°, 150°}</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 0° ≤ x &lt; 360° aralığında cos x = 1/2 denklemini çözünüz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Referans açı 60°'dir. Kosinüs I. ve IV. bölgede pozitif: <span class="ans">x = 60°, 300°</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> tan x = 1 denkleminin genel çözümünü yazınız.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Temel açı 45° ve tanjantın periyodu 180° olduğundan <span class="ans">x = 45° + 180°k, k ∈ ℤ</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 0° ≤ x &lt; 360° aralığında 2 sin x − 1 = 0 denklemini çözünüz.</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">sin x = 1/2 olur. Birinci ve ikinci bölgelerde çözümler <span class="ans">30° ve 150°</span>.</div></div></div>
+<div class="pager"><a href="37-parabol.html">← Parabol</a><a href="39-ikinci-dereceden-esitsizlikler.html">Sonraki: İkinci Dereceden Eşitsizlikler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

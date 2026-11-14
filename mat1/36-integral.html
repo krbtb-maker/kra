@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İntegral | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 7. İntegral</h1>
+
+<h2>İntegral: küçük birikimleri toplamak</h2>
+<p>Bir eğrinin altında kalan alanı, genişliği çok küçük dikdörtgenlerin alanlarını toplayarak düşünebiliriz. Belirli integral bu birikimli değişimi verir. Eğri x ekseninin altındaysa integral işaretli alanı verir; gerçek geometrik alan için işaret dikkate alınır.</p>
+<p>Belirsiz integral ise türevi verilen fonksiyonun hangi fonksiyon olabileceğini bulur. Her türevi aynı olan fonksiyonlar yalnızca sabit kadar farklıdır:</p>
+<div class="formula">∫ f(x) dx = F(x) + C, burada F'(x) = f(x)</div>
+
+<h2>Temel integral kuralları</h2>
+<p>Kuvvet kuralı, türev kuralını tersine çevirir: üs bir artırılır, yeni üssüne bölünür. Sabitlerin integrali sabit ile x'in çarpımıdır.</p>
+<div class="formula">∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C &nbsp; (n ≠ −1)<br>∫ c dx = cx + C<br>∫ (f ± g) dx = ∫f dx ± ∫g dx</div>
+<p>Örneğin x²'nin integrali x³/3'tür; çünkü x³/3'ün türevi x² olur.</p>
+
+<h2>Belirli integral ve temel teorem</h2>
+<p>F, f'nin bir ilkeli ise [a, b] aralığındaki belirli integral uç değerlerin farkıdır. Böylece alan toplamını, bir antitürevin iki uçtaki değerlerini hesaplayarak buluruz.</p>
+<div class="formula">∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)</div>
+<p>f(x) ≥ 0 ise bu değer, eğri ile x ekseni arasında kalan alanı verir. İşaret değişiyorsa geometrik alan için eksenin altındaki parçaların mutlak değerini alıp toplarız.</p>
+<p>İki eğri arasındaki alan, üstteki fonksiyon eksi alttaki fonksiyonun belirli integralidir; kesişme noktaları integral aralığının sınırlarını belirler.</p>
+<div class="formula">Alan = ∫<sub>a</sub><sup>b</sup> (üstteki fonksiyon − alttaki fonksiyon) dx</div>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> ∫ 3x² dx nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">∫x²dx = x³/3; 3 ile çarpınca <span class="ans">x³ + C</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> ∫<sub>0</sub><sup>2</sup> x dx kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Bir ilkel F(x) = x²/2. F(2) − F(0) = 2 − 0 = <span class="ans">2</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> y = x doğrusu ile x ekseni arasında, x = 0 ile x = 3 arasındaki alan kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Alan = ∫₀³ x dx = [x²/2]₀³ = <span class="ans">9/2 birim²</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> y = 4 ile y = x² eğrileri arasında x = 0 ve x = 2 aralığındaki alan kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Bu aralıkta üst eğri 4, alt eğri x². Alan = ∫₀²(4 − x²)dx = [4x − x³/3]₀² = <span class="ans">16/3 birim²</span>.</div></div></div>
+<div class="pager"><a href="35-turev.html">← Türev</a><a href="37-parabol.html">Sonraki: Parabol →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

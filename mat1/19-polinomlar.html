@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polinomlar | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>19. Polinomlar</h1>
+
+<h2>Polinom nedir?</h2>
+<p>P(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₁x + a₀ biçimindeki ifadelerdir. <b>Şart:</b> x'in üsleri 0, 1, 2… gibi doğal sayı olmalı. x paydada (1/x) ya da kök içinde (√x) olursa polinom değildir.</p>
+<ul>
+<li><b>Derece:</b> en büyük üs. (x³ – 2x + 5'in derecesi 3)</li>
+<li><b>Katsayılar:</b> x'lerin önündeki sayılar. <b>Sabit terim:</b> x'siz terim.</li>
+</ul>
+
+<h2>Yararlı kısayollar</h2>
+<p>P(x)'e x = 1 yazarsanız tüm x'ler 1 olur, geriye katsayıların toplamı kalır. x = 0 yazarsanız yalnız sabit terim kalır.</p>
+<div class="formula">Katsayılar toplamı = P(1) &nbsp;&nbsp; Sabit terim = P(0)</div>
+<ul>
+<li>Çift dereceli terimlerin katsayıları toplamı: (P(1) + P(–1)) / 2</li>
+<li>Tek dereceli terimlerin katsayıları toplamı: (P(1) – P(–1)) / 2</li>
+</ul>
+
+<h2>İşlemler</h2>
+<ul>
+<li><b>Toplama:</b> aynı dereceli terimler toplanır. Derece en fazla büyük olanın derecesi kadardır.</li>
+<li><b>Çarpma:</b> derece(P·Q) = derece(P) + derece(Q).</li>
+<li><b>Bölme:</b> Sayılardaki "17 = 5·3 + 2" mantığıyla aynıdır:</li>
+</ul>
+<div class="formula">P(x) = B(x)·Q(x) + K(x) &nbsp;&nbsp; derece(K) &lt; derece(B)</div>
+
+<h2>Kalan teoremi</h2>
+<p>P(x) polinomunu (x – a)'ya bölelim: P(x) = (x – a)·Q(x) + K. Bölen birinci derece olduğundan kalan sabit sayıdır. İki tarafa x = a yazarsak (x – a) çarpanı sıfır olur ve geriye <b>K = P(a)</b> kalır.</p>
+<div class="formula">P(x)'in (x – a)'ya bölümünden kalan = P(a)</div>
+<ul>
+<li>P(a) = 0 ise kalan 0'dır: P(x), (x – a) ile <b>tam bölünür</b>, yani (x – a) bir çarpandır.</li>
+<li>Bölen (ax + b) ise ax + b = 0 → x = –b/a değerini yazın.</li>
+</ul>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> P(x) = 2x³ – x + 5 polinomunun katsayılar toplamı ve sabit terimi kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Katsayılar toplamı P(1) = 2 – 1 + 5 = <span class="ans">6</span>. Sabit terim P(0) = <span class="ans">5</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> P(x) = x³ – 2x + 3 polinomunun (x – 2)'ye bölümünden kalan kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">P(2) = 8 – 4 + 3 = <span class="ans">7</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> P(x) = x² + mx – 6 polinomu (x – 2) ile tam bölünüyorsa m kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Tam bölünme: P(2) = 0 → 4 + 2m – 6 = 0 → m = <span class="ans">1</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> P(x + 1) = x² + 3x + 5 ise P(2) kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x + 1 = 2 → x = 1. Sağ tarafa yazalım: 1 + 3 + 5 = <span class="ans">9</span>.</div></div></div>
+
+<div class="pager"><a href="18-fonksiyonlar.html">← Fonksiyonlar</a><a href="20-ikinci-dereceden-denklemler.html">Sonraki: İkinci Dereceden Denklemler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

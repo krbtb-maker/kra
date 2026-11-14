@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klasik Mantık | Mantık</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Mantık 1. Klasik Mantık</h1>
+
+<h2>Mantık neyi inceler?</h2>
+<p>Mantık, doğru düşünmenin kurallarını inceler. Ama dikkat: Mantık bir önermenin gerçekten doğru olup olmadığıyla değil, <b>akıl yürütmenin biçiminin geçerli olup olmadığıyla</b> ilgilenir. "Bütün kuşlar uçar, penguen kuştur, öyleyse penguen uçar." çıkarımı biçimce geçerlidir; ama ilk öncül yanlış olduğu için sonuç yanlıştır. Geçerlilik biçime, doğruluk içeriğe aittir.</p>
+
+<h2>Akıl ilkeleri</h2>
+<table>
+<tr><th>İlke</th><th>Formül</th><th>Anlamı</th></tr>
+<tr><td>Özdeşlik</td><td>A, A'dır</td><td>Her şey kendisiyle aynıdır</td></tr>
+<tr><td>Çelişmezlik</td><td>A hem A hem A-olmayan olamaz</td><td>Bir şey aynı anda ve aynı bakımdan hem olup hem olmayamaz</td></tr>
+<tr><td>Üçüncü hâlin imkânsızlığı</td><td>A ya B'dir ya B değildir</td><td>Üçüncü bir seçenek yoktur</td></tr>
+<tr><td>Yeter sebep (Leibniz)</td><td>Her şeyin bir nedeni vardır</td><td>Hiçbir şey sebepsiz değildir</td></tr>
+</table>
+
+<h2>Kavram, terim ve tanım</h2>
+<ul>
+<li><b>Kavram</b>: Nesnelerin zihindeki genel tasarımı. <b>Terim</b>: Kavramın dildeki ifadesi.</li>
+<li><b>İçlem</b>: Kavramın içerdiği özellikler. <b>Kaplam</b>: Kavramın kapsadığı nesneler. İçlem ile kaplam ters orantılıdır: "Canlı" kavramı az özellik ama çok nesne içerir; "kedi" daha çok özellik, daha az nesne.</li>
+<li><b>Beş tümel</b>: Cins (hayvan), tür (insan), ayrım (düşünen), öz nitelik (gülebilen), ilinek (uzun boylu).</li>
+<li><b>Tanım</b>: En iyi tanım, yakın cins + ayrım ile yapılır: "İnsan düşünen bir hayvandır."</li>
+</ul>
+<div class="note">Tanım kuralları: Tanım tanımlanandan daha açık olmalı, olumsuz olmamalı (gerekmedikçe), tanımlanan kavramı içinde tekrar etmemeli (kısır döngü) ve ne dar ne geniş olmalı.</div>
+
+<h2>Önermeler</h2>
+<p>Önerme doğru ya da yanlış olabilen yargı cümlesidir. Kategorik önermeler nicelik (tümel/tikel) ve niteliğe (olumlu/olumsuz) göre dörde ayrılır:</p>
+<table>
+<tr><th>Sembol</th><th>Tür</th><th>Örnek</th><th>Dağıtılmış terim</th></tr>
+<tr><td>A</td><td>Tümel olumlu</td><td>Bütün S'ler P'dir.</td><td>Konu</td></tr>
+<tr><td>E</td><td>Tümel olumsuz</td><td>Hiçbir S, P değildir.</td><td>Konu ve yüklem</td></tr>
+<tr><td>I</td><td>Tikel olumlu</td><td>Bazı S'ler P'dir.</td><td>Hiçbiri</td></tr>
+<tr><td>O</td><td>Tikel olumsuz</td><td>Bazı S'ler P değildir.</td><td>Yüklem</td></tr>
+</table>
+<p>Bir terimin "dağıtılmış" olması, önermenin o terimin kapsamındaki bütün nesneler hakkında bir şey söylemesidir.</p>
+
+<h2>Karşı olma karesi</h2>
+<table>
+<tr><th>İlişki</th><th>Önermeler</th><th>Kural</th></tr>
+<tr><td>Çelişik</td><td>A–O, E–I</td><td>Biri doğruysa öteki yanlış; biri yanlışsa öteki doğru</td></tr>
+<tr><td>Karşıt</td><td>A–E</td><td>İkisi birden doğru olamaz; ikisi birden yanlış olabilir</td></tr>
+<tr><td>Alt karşıt</td><td>I–O</td><td>İkisi birden yanlış olamaz; ikisi birden doğru olabilir</td></tr>
+<tr><td>Alt–üst (altık)</td><td>A–I, E–O</td><td>Tümel doğruysa tikel doğrudur; tikel yanlışsa tümel yanlıştır</td></tr>
+</table>
+
+<h2>Çıkarım türleri</h2>
+<ul>
+<li><b>Tümdengelim</b>: Genelden özele; öncüller doğru ve biçim geçerliyse sonuç zorunlu olarak doğrudur.</li>
+<li><b>Tümevarım</b>: Özelden genele; sonuç olasılıklıdır.</li>
+<li><b>Analoji</b>: Benzerlikten benzerliğe; sonuç olasılıklıdır.</li>
+</ul>
+<h3>Kıyas</h3>
+<p>İki öncül ve bir sonuçtan oluşan tümdengelimdir.</p>
+<div class="formula">Bütün insanlar ölümlüdür. (büyük öncül)<br>Sokrates bir insandır. (küçük öncül)<br>O hâlde Sokrates ölümlüdür. (sonuç)</div>
+<p><b>Orta terim</b> (insan) öncüllerde bulunur, sonuçta bulunmaz. Sonucun yüklemi büyük terim (ölümlü), konusu küçük terimdir (Sokrates).</p>
+<h3>Geçerli kıyasın kuralları</h3>
+<ul>
+<li>Orta terim öncüllerde en az bir kez dağıtılmış olmalıdır.</li>
+<li>Öncüllerde dağıtılmamış bir terim sonuçta dağıtılmış olamaz.</li>
+<li>İki olumsuz öncülden sonuç çıkmaz; iki tikel öncülden sonuç çıkmaz.</li>
+<li>Öncüllerden biri olumsuzsa sonuç olumsuz, biri tikelse sonuç tikel olur.</li>
+</ul>
+
+<h2>Kısa özet</h2>
+<p>Mantık geçerli akıl yürütmeyi inceler. Kavramın içlemi arttıkça kaplamı azalır. Kategorik önermeler A, E, I, O olarak dörde ayrılır ve karşı olma karesindeki ilişkilerle birbirine bağlanır. Kıyas iki öncülden zorunlu bir sonuç çıkarır ve belirli kurallara uymak zorundadır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Geçerlilik ile doğruluğu karıştırmak.</li>
+<li>Karşıt (A–E) önermelerin ikisinin birden yanlış olamayacağını sanmak; olabilirler.</li>
+<li>I önermesinde terimlerin dağıtılmış olduğunu düşünmek; I'da hiçbir terim dağıtılmamıştır.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> "Bütün öğrenciler çalışkandır." önermesi doğruysa, "Bazı öğrenciler çalışkan değildir." önermesi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">A ile O çelişiktir: <span class="ans">yanlıştır</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> "Hiçbir kuş memeli değildir." önermesinde hangi terimler dağıtılmıştır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">E önermesi: <span class="ans">konu ve yüklem (ikisi de)</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> "İnsan düşünen bir hayvandır." tanımında "hayvan" beş tümelden hangisidir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">cins</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> İki tikel öncülden oluşan bir kıyasın sonucu hakkında ne söylenir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">Geçerli bir sonuç çıkmaz</span>.</div></div></div>
+<div class="pager"><a href="mantik-02-sembolik-mantik-ve-dil.html">Sonraki: Sembolik Mantık, Mantık ve Dil →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

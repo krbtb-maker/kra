@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaldırma Kuvveti | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 7. Kaldırma Kuvveti</h1>
+
+<h2>Kaldırma kuvveti nereden gelir?</h2>
+<p>Sıvı içindeki bir cismin alt yüzü üst yüzünden daha derindedir. Derinlik arttıkça basınç arttığı için alttan gelen itme, üstten gelenden büyüktür. Bu farka <b>kaldırma kuvveti</b> denir.</p>
+<div class="formula">F_k = V_batan · d_sıvı · g</div>
+<p>Kaldırma kuvveti cismin kendi öz kütlesine değil, <b>batan hacmine ve sıvının öz kütlesine</b> bağlıdır. Bu, Arşimet ilkesidir: Kaldırma kuvveti, cismin yerini değiştirdiği sıvının ağırlığına eşittir.</p>
+
+<h2>Yüzme, askıda kalma, batma</h2>
+<table>
+<tr><th>Durum</th><th>Öz kütle karşılaştırması</th><th>Kuvvet</th></tr>
+<tr><td>Yüzme</td><td>d_cisim &lt; d_sıvı</td><td>F_k = G (yalnızca bir kısmı batar)</td></tr>
+<tr><td>Askıda kalma</td><td>d_cisim = d_sıvı</td><td>F_k = G (tamamı batar, dibe değmez)</td></tr>
+<tr><td>Batma</td><td>d_cisim > d_sıvı</td><td>F_k &lt; G (dibe gider)</td></tr>
+</table>
+<p>Yüzen cisim için batan hacim oranı:</p>
+<div class="formula">V_batan / V_cisim = d_cisim / d_sıvı</div>
+<p>Öz kütlesi 0,6 g/cm³ olan tahta suda hacminin %60'ı batmış olarak yüzer.</p>
+
+<h2>Görünür ağırlık</h2>
+<p>Dinamometreye asılı cisim sıvıya daldırılınca dinamometre daha az gösterir:</p>
+<div class="formula">G_görünür = G − F_k</div>
+<p>Havada 50 N, suda 30 N gösteren cisme 20 N kaldırma kuvveti etki ediyor demektir. Buradan cismin hacmi ve öz kütlesi bulunabilir.</p>
+
+<h2>Uygulamalar</h2>
+<ul>
+<li><b>Gemiler</b>: Çelik suya batar; ama gemi içi boş geniş bir gövde olduğu için ortalama öz kütlesi sudan küçüktür.</li>
+<li>Gemi tatlı sudan tuzlu suya geçince kaldırma kuvveti değişmez (hâlâ ağırlığa eşittir) ama tuzlu suyun öz kütlesi büyük olduğu için <b>batan hacim azalır</b>, gemi biraz yükselir.</li>
+<li><b>Denizaltı</b>: Tanklarına su alarak ağırlığını artırır (batar), suyu boşaltarak azaltır (yükselir).</li>
+<li><b>Balon</b>: Havada da kaldırma kuvveti vardır; sıcak hava veya helyum dolu balonun ortalama öz kütlesi havadan küçüktür.</li>
+</ul>
+
+<h2>Kısa özet</h2>
+<p>Kaldırma kuvveti batan hacim ile sıvının öz kütlesine bağlıdır. Yüzen ve askıdaki cisimlerde kaldırma kuvveti ağırlığa eşittir; batanlarda küçüktür. Dinamometre farkı kaldırma kuvvetini verir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Ağır cisimlere daha büyük kaldırma kuvveti etki ettiğini sanmak; belirleyici olan batan hacimdir.</li>
+<li>Gemi tuzlu suya geçince kaldırma kuvvetinin arttığını düşünmek; değişmez, batan hacim azalır.</li>
+<li>Batan cisimde kaldırma kuvveti olmadığını sanmak; vardır ama ağırlıktan küçüktür.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> Öz kütlesi 0,8 g/cm³ olan bir cisim suda yüzerken hacminin yüzde kaçı batar?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">0,8 / 1 = <span class="ans">%80</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> Hacmi 2 dm³ olan bir cisim suya tamamen batırılırsa kaldırma kuvveti kaç N olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">0,002 m³ · 1000 · 10 = <span class="ans">20 N</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Havada 50 N, suda 30 N gösteren cismin öz kütlesi kaç kg/m³'tür?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">F_k = 20 N → V = 20/(1000·10) = 0,002 m³; m = 5 kg → d = 5/0,002 = <span class="ans">2500 kg/m³</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Bir gemi nehirden denize çıkınca suya batan hacmi nasıl değişir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Kaldırma kuvveti aynı, deniz suyu daha yoğun: <span class="ans">azalır (gemi yükselir)</span>.</div></div></div>
+<div class="pager"><a href="fizik-06-basinc.html">← Basınç</a><a href="fizik-08-elektrostatik.html">Sonraki: Elektrostatik →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

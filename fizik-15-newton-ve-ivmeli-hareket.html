@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newton Yasaları ve Sabit İvmeli Hareket | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 15. Newton Yasaları ve Sabit İvmeli Hareket</h1>
+
+<h2>Sabit ivmeli hareket denklemleri</h2>
+<p>İvme sabitse hız her saniye eşit miktarda değişir.</p>
+<div class="formula">v = v₀ + a·t<br>x = v₀·t + ½·a·t²<br>v² = v₀² + 2·a·x</div>
+
+<h2>Grafikleri okumak</h2>
+<table>
+<tr><th>Grafik</th><th>Eğim</th><th>Alan</th></tr>
+<tr><td>Konum–zaman</td><td>Hız</td><td>—</td></tr>
+<tr><td>Hız–zaman</td><td>İvme</td><td>Yer değiştirme</td></tr>
+<tr><td>İvme–zaman</td><td>—</td><td>Hız değişimi</td></tr>
+</table>
+<div class="note">Hız–zaman grafiğinde doğru yatay ise hareket düzgün (a = 0), eğik ise düzgün hızlanan/yavaşlayandır. Grafik zaman ekseninin altına geçerse cisim yön değiştirmiştir.</div>
+
+<h2>Serbest düşme ve düşey atış</h2>
+<p>Hava direnci ihmal edilirse bütün cisimler kütlelerinden bağımsız olarak aynı ivmeyle (g ≈ 10 m/s²) düşer.</p>
+<div class="formula">h = ½·g·t²,  v = g·t,  v² = 2·g·h</div>
+<p>Yukarı atılan cisim her saniye 10 m/s yavaşlar; tepe noktasında hızı sıfırdır ama ivmesi hâlâ g'dir. Çıkış ve iniş süreleri eşittir.</p>
+
+<h2>Newton yasaları</h2>
+<p>1. <b>Eylemsizlik</b>: Net kuvvet sıfırsa cisim durumunu korur (durur ya da sabit hızla gider).</p>
+<p>2. <b>Temel yasa</b>: F_net = m·a. İvme net kuvvetle aynı yöndedir.</p>
+<p>3. <b>Etki–tepki</b>: Etkileşen iki cisim birbirine eşit büyüklükte, zıt yönde kuvvet uygular; bu kuvvetler farklı cisimlere etki eder.</p>
+
+<h2>Sürtünme kuvveti</h2>
+<div class="formula">f = k · N   (k: sürtünme katsayısı, N: yüzeyin tepki kuvveti)</div>
+<p>Sürtünme harekete ya da hareket eğilimine zıt yöndedir. Duran cismi harekete geçirmek için gereken kuvvet (statik sürtünme sınırı) genellikle hareket hâlindeki sürtünmeden büyüktür. Sürtünme yüzey alanına bağlı değildir; yüzeylerin cinsine ve dik kuvvete bağlıdır.</p>
+
+<h2>Bağlı sistemler</h2>
+<p>İple bağlı cisimlerde önce bütün sistem tek cisim gibi düşünülür:</p>
+<div class="formula">a = (sistemi hareket ettiren net kuvvet) / (toplam kütle)</div>
+<p>Sonra ip gerilmesini bulmak için tek bir cisme F = m·a uygulanır. Eğik düzlemde ağırlığın eğim boyunca bileşeni mg·sin θ, yüzeye dik bileşeni mg·cos θ'dır.</p>
+
+<h2>Kısa özet</h2>
+<p>Sabit ivmeli harekette üç denklem kullanılır. Hız–zaman grafiğinin eğimi ivme, alanı yer değiştirmedir. Serbest düşmede ivme kütleden bağımsızdır. F = ma ile ivme bulunur; sürtünme f = kN'dir. Bağlı sistemlerde önce toplam kütleyle ivme, sonra tek cisimle ip gerilmesi hesaplanır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Tepe noktasında ivmenin sıfır olduğunu sanmak; hız sıfırdır, ivme g'dir.</li>
+<li>Etki–tepki kuvvetlerinin birbirini dengelediğini düşünmek; farklı cisimlere etki ederler.</li>
+<li>Ağır cisimlerin daha hızlı düştüğünü sanmak (hava direnci yokken).</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> Durgun hâlden 2 m/s² ivmeyle hızlanan araç 5 s sonunda hangi hıza ulaşır ve kaç m yol alır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">v = 2·5 = 10 m/s; x = ½·2·25 = 25 m: <span class="ans">10 m/s, 25 m</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 80 m yükseklikten serbest bırakılan cisim kaç saniyede yere düşer ve yere çarpma hızı nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">80 = 5t² → t = 4 s; v = 40 m/s: <span class="ans">4 s, 40 m/s</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Sürtünmesiz yatay düzlemde 2 kg ve 3 kg'lık bloklar iple bağlı; 3 kg'lık blok 50 N ile çekiliyor. İpteki gerilme kuvveti kaç N'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">a = 50/5 = 10 m/s²; ip yalnızca 2 kg'ı çeker: T = 2·10 = <span class="ans">20 N</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 4 kg'lık kutu, sürtünme katsayısı 0,5 olan yatay yüzeyde 30 N ile çekiliyor. İvmesi kaç m/s²'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f = 0,5·40 = 20 N; F_net = 10 N; a = 10/4 = <span class="ans">2,5 m/s²</span>.</div></div></div>
+<div class="pager"><a href="fizik-14-vektorler-ve-bagil-hareket.html">← Vektörler ve Bağıl Hareket</a><a href="fizik-16-atislar.html">Sonraki: Atış Hareketleri →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sembolik Mantık, Mantık ve Dil | Mantık</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Mantık 2. Sembolik Mantık, Mantık ve Dil</h1>
+
+<h2>Neden sembol?</h2>
+<p>Gündelik dilde aynı sözcük farklı anlamlara gelebilir ve bu, akıl yürütmede yanılgılara yol açar. Sembolik (modern) mantık önermeleri <b>harflerle</b>, ilişkileri <b>sembollerle</b> göstererek matematik gibi kesin bir dil kurar. Frege, Russell ve Whitehead bu mantığın kurucularıdır; Leibniz ise evrensel bir sembolik dil fikrini daha önce ortaya atmıştı.</p>
+
+<h2>Bağlaçlar ve doğruluk tablosu</h2>
+<table>
+<tr><th>Bağlaç</th><th>Sembol</th><th>Okunuşu</th><th>Ne zaman doğru?</th></tr>
+<tr><td>Değilleme</td><td>~p</td><td>p değil</td><td>p yanlışsa</td></tr>
+<tr><td>Ve (tümel evetleme)</td><td>p ∧ q</td><td>p ve q</td><td>İkisi de doğruysa</td></tr>
+<tr><td>Veya (tikel evetleme)</td><td>p ∨ q</td><td>p veya q</td><td>En az biri doğruysa</td></tr>
+<tr><td>İse (koşul)</td><td>p → q</td><td>p ise q</td><td>Yalnızca p doğru, q yanlışken yanlış</td></tr>
+<tr><td>Ancak ve ancak</td><td>p ↔ q</td><td>p ancak ve ancak q</td><td>İkisi aynı değerdeyse</td></tr>
+</table>
+<div class="note">Koşullu önermenin mantığı bir söz gibidir: "Sınavı geçersen sana bisiklet alacağım." Sınavı geçip bisiklet alınmazsa söz bozulmuştur (yanlış). Sınavı geçemediğinde bisiklet alınsa da alınmasa da söz bozulmamıştır (doğru).</div>
+
+<h2>Totoloji, çelişme, olumsal</h2>
+<ul>
+<li><b>Totoloji</b>: Her durumda doğru (p ∨ ~p).</li>
+<li><b>Çelişme</b>: Her durumda yanlış (p ∧ ~p).</li>
+<li><b>Olumsal</b>: Bazen doğru bazen yanlış (p → q).</li>
+</ul>
+
+<h2>Geçerli çıkarım kuralları</h2>
+<table>
+<tr><th>Kural</th><th>Biçim</th><th>Örnek</th></tr>
+<tr><td>Modus ponens (evetleme)</td><td>p → q, p ⊢ q</td><td>Yağmur yağarsa yol ıslanır. Yağmur yağdı. Yol ıslanır.</td></tr>
+<tr><td>Modus tollens (değilleme)</td><td>p → q, ~q ⊢ ~p</td><td>Yağmur yağarsa yol ıslanır. Yol ıslak değil. Yağmur yağmadı.</td></tr>
+<tr><td>Zincir (hipotetik) kıyas</td><td>p → q, q → r ⊢ p → r</td><td>Çalışırsam kazanırım; kazanırsam sevinirim; çalışırsam sevinirim.</td></tr>
+<tr><td>Ayırıcı kıyas</td><td>p ∨ q, ~p ⊢ q</td><td>Ya trenle ya otobüsle gitti. Trenle gitmedi. Otobüsle gitti.</td></tr>
+</table>
+<h3>İki geçersiz biçim (sık tuzak)</h3>
+<ul>
+<li><b>Sonucu evetleme</b>: p → q, q ⊢ p. "Yağmur yağarsa yol ıslanır. Yol ıslak. Öyleyse yağmur yağdı." — Geçersiz; yolu başka bir şey ıslatmış olabilir.</li>
+<li><b>Öncülü değilleme</b>: p → q, ~p ⊢ ~q. Geçersiz.</li>
+</ul>
+
+<h2>Mantık ve dil</h2>
+<p>Dilin farklı işlevleri vardır: <b>bilgi verme</b> (doğru–yanlış olabilir, mantığın konusu), <b>duygu ifade etme</b>, <b>yönlendirme</b> (emir, rica), <b>törensel</b> (selamlaşma). Mantık yalnızca bilgi veren, yargı bildiren cümlelerle ilgilenir.</p>
+<h3>Safsatalar (yanıltıcı akıl yürütmeler)</h3>
+<table>
+<tr><th>Safsata</th><th>Ne yapar?</th></tr>
+<tr><td>Kişiye saldırı (ad hominem)</td><td>Görüş yerine görüşü savunan kişiyi hedef alır</td></tr>
+<tr><td>Otoriteye başvurma</td><td>Konuyla ilgisiz bir otoritenin sözünü kanıt sayar</td></tr>
+<tr><td>Çoğunluğa başvurma</td><td>"Herkes böyle düşünüyor" demeyi kanıt sayar</td></tr>
+<tr><td>Acındırma</td><td>Mantık yerine merhamete seslenir</td></tr>
+<tr><td>Korkuya başvurma</td><td>Tehdit ederek kabul ettirir</td></tr>
+<tr><td>Aceleci genelleme</td><td>Az örnekten genel yargıya varır</td></tr>
+<tr><td>Yanlış neden (post hoc)</td><td>Ardışıklığı nedensellik sanır</td></tr>
+<tr><td>Yanlış ikilem</td><td>İki seçenek varmış gibi gösterir</td></tr>
+<tr><td>Kaygan zemin</td><td>Küçük bir adımın kaçınılmaz felaketlere yol açacağını iddia eder</td></tr>
+<tr><td>Saman adam (korkuluk)</td><td>Karşı görüşü çarpıtıp çarpıtılmış hâlini çürütür</td></tr>
+<tr><td>Kısır döngü (döngüsel akıl yürütme)</td><td>Kanıtlanacak şeyi kanıt olarak kullanır</td></tr>
+<tr><td>Bilgisizliğe başvurma</td><td>"Yanlış olduğu kanıtlanmadı, öyleyse doğru" der</td></tr>
+</table>
+
+<h2>Kısa özet</h2>
+<p>Sembolik mantık önermeleri harflerle, ilişkileri bağlaçlarla gösterir. Koşullu önerme yalnızca öncül doğru, sonuç yanlışken yanlıştır. Modus ponens ve modus tollens geçerli; sonucu evetleme ve öncülü değilleme geçersizdir. Safsatalar ikna edici görünen ama mantıkça hatalı akıl yürütmelerdir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Koşullu önermenin öncül yanlışken yanlış olduğunu sanmak; öncül yanlışsa önerme doğrudur.</li>
+<li>"Veya" bağlacını yalnızca biri doğruyken doğru saymak; ikisi de doğruyken de doğrudur.</li>
+<li>Sonucu evetlemeyi geçerli sanmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> p doğru, q yanlış ise p → q önermesinin değeri nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">yanlış</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> "Çok çalışan başarır. Ali başarılı. O hâlde Ali çok çalışmıştır." akıl yürütmesindeki hata nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">sonucu evetleme (geçersiz biçim)</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> "Bu teoriyi savunan kişi daha önce yalan söylemiş, o yüzden teori yanlıştır." hangi safsatadır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">kişiye saldırı (ad hominem)</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> p ∨ ~p önermesi hangi türdendir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Her durumda doğrudur: <span class="ans">totoloji</span>.</div></div></div>
+<div class="pager"><a href="mantik-01-klasik-mantik.html">← Klasik Mantık</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

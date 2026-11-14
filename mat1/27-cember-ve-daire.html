@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çember ve Daire | TYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>Geometri 5. Çember ve Daire</h1>
+
+<h2>Çember ve daire aynı şey değildir</h2>
+<p><b>Çember</b>, merkezden eşit uzaklıktaki noktaların oluşturduğu çizgidir. <b>Daire</b> ise çemberin iç bölgesiyle birlikte oluşturduğu alandır. Merkezden çember üzerindeki bir noktaya uzaklık <b>yarıçap (r)</b>, merkezden geçen ve çemberin iki noktasını birleştiren doğru parçası <b>çap (2r)</b> olarak adlandırılır.</p>
+
+<h2>Çevre ve alan</h2>
+<p>Bir çemberin çevresinin çapına oranı her zaman aynı sayıdır: π (pi). Bu nedenle çevre, çapla; dairenin alanı ise yarıçapın karesiyle orantılıdır.</p>
+<div class="formula">Çemberin çevresi = 2πr = πd<br>Dairenin alanı = πr²</div>
+<p>Yarıçap 2 katına çıkarsa çevre 2 katına, alan 4 katına çıkar. Çünkü alan formülünde yarıçapın karesi vardır.</p>
+
+<h2>Yay ve daire dilimi</h2>
+<p>Merkez açının tüm çembere oranı, gördüğü yayın tüm çevreye oranına eşittir. Aynı oran daire diliminin tüm daireye oranında da geçerlidir.</p>
+<div class="formula">Yay uzunluğu = (merkez açı / 360°) · 2πr<br>Daire diliminin alanı = (merkez açı / 360°) · πr²</div>
+<p>Örneğin 90°'lik açı, tam turun dörtte biri olduğu için çemberin dörtte birlik yayını ve dairenin dörtte birlik dilimini görür.</p>
+
+<h2>Merkez açı ve çevre açı</h2>
+<p><b>Merkez açının</b> köşesi çemberin merkezindedir. <b>Çevre açının</b> köşesi çember üzerindedir. İkisi de aynı yayı görüyorsa çevre açı, merkez açının yarısıdır:</p>
+<div class="formula">Aynı yayı gören çevre açı = merkez açı / 2</div>
+<p>Aynı yayı gören çevre açılar birbirine eşittir. Çapı gören çevre açı ise 180°'lik yarım yayı gördüğünden 90°'dir; bu nedenle çapı gören üçgen dik üçgendir.</p>
+
+<svg viewBox="0 0 300 230" role="img" aria-label="Aynı yayı gören merkez açı ve çevre açı" style="max-width:320px;width:100%;display:block;margin:12px auto">
+  <circle cx="150" cy="115" r="85" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="150" y1="115" x2="95" y2="50" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="150" y1="115" x2="205" y2="50" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="60" y1="145" x2="95" y2="50" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="60" y1="145" x2="205" y2="50" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="150" cy="115" r="3" fill="currentColor"/>
+  <text x="158" y="130" fill="currentColor" font-size="13">O</text>
+  <text x="87" y="45" fill="currentColor" font-size="13">A</text>
+  <text x="208" y="45" fill="currentColor" font-size="13">B</text>
+  <text x="44" y="158" fill="currentColor" font-size="13">C</text>
+  <text x="143" y="93" fill="currentColor" font-size="12">merkez açı</text>
+  <text x="80" y="134" fill="currentColor" font-size="12">çevre açı</text>
+</svg>
+
+<h2>Kiriş ve teğet</h2>
+<p>Çemberin iki noktasını birleştiren doğru parçasına <b>kiriş</b> denir. Merkezden kirişe indirilen dikme kirişi ortalar. Eşit kirişler merkeze eşit uzaklıktadır; merkezden daha uzakta olan kiriş daha kısadır.</p>
+<p>Çembere yalnızca bir noktada değen doğruya <b>teğet</b> denir. Yarıçap, teğet değme noktasında teğete diktir. Çember dışındaki aynı noktadan çizilen iki teğet parçasının uzunlukları eşittir.</p>
+<div class="formula">Yarıçap ⟂ teğet (değme noktasında)<br>Aynı dış noktadan çizilen teğet parçaları eşittir.</div>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> Yarıçapı 5 cm olan çemberin çevresi ve dairenin alanı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Çevre = 2π·5 = <span class="ans">10π cm</span>. Alan = π·5² = <span class="ans">25π cm²</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> Yarıçapı 6 cm olan çemberde 60°'lik merkez açının gördüğü yay kaç cm'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">60° tam turun 1/6'sıdır. Çevre 2π·6 = 12π olduğundan yay uzunluğu 12π/6 = <span class="ans">2π cm</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> Aynı yayı gören merkez açı 100° ise çevre açı kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Çevre açı, aynı yayı gören merkez açının yarısıdır: 100°/2 = <span class="ans">50°</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> Çapı gören çevre açı kaç derecedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Çapın gördüğü merkez açı 180°'dir. Aynı yayı gören çevre açı bunun yarısı olduğundan <span class="ans">90°</span>'dir.</div></div></div>
+
+<div class="q"><p><b>Soru 5.</b> Çemberin dışındaki P noktasından çizilen teğetlerin değme noktaları A ve B'dir. PA = 8 cm ise PB kaç cm'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Aynı dış noktadan çizilen teğet parçaları eşittir: PB = PA = <span class="ans">8 cm</span>.</div></div></div>
+
+<div class="pager"><a href="26-cokgenler-ve-dortgenler.html">← Çokgenler ve Dörtgenler</a><a href="28-kati-cisimler.html">Sonraki: Katı Cisimler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

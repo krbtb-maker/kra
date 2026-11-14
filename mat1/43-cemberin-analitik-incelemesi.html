@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çemberin Analitik İncelemesi | AYT Geometri</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Geometri 2. Çemberin Analitik İncelemesi</h1>
+
+<h2>Çember denklemi nereden gelir?</h2>
+<p>Çember, bir merkeze eşit uzaklıktaki noktaların kümesidir. Merkez M(a, b), yarıçap r ise çember üzerindeki her P(x, y) için |PM| = r'dir. İki nokta arası uzaklık formülünün karesini almak denklemi verir:</p>
+<div class="formula">(x − a)² + (y − b)² = r²   (standart denklem)</div>
+<p>Merkez orijindeyse: x² + y² = r².</p>
+<svg viewBox="0 0 240 200" role="img" aria-label="Merkezi M ve yarıçapı r olan çember" style="max-width:280px;width:100%;display:block;margin:12px auto">
+  <line x1="10" y1="170" x2="230" y2="170" stroke="currentColor" stroke-width="1"/>
+  <line x1="30" y1="190" x2="30" y2="10" stroke="currentColor" stroke-width="1"/>
+  <circle cx="130" cy="90" r="60" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="130" cy="90" r="3.5" fill="currentColor"/>
+  <text x="112" y="86" fill="currentColor" font-size="12">M(a, b)</text>
+  <line x1="130" y1="90" x2="172" y2="47" stroke="currentColor" stroke-dasharray="4 3"/>
+  <text x="152" y="76" fill="currentColor" font-size="12">r</text>
+  <circle cx="172" cy="47" r="3.5" fill="currentColor"/>
+  <text x="178" y="44" fill="currentColor" font-size="12">P(x, y)</text>
+</svg>
+
+<h2>Genel denklem</h2>
+<p>Standart denklem açılınca x² + y² + Dx + Ey + F = 0 biçimine gelir. Tersine bu denklemden merkez ve yarıçap bulunur:</p>
+<div class="formula">M(−D/2, −E/2),   r = ½·√(D² + E² − 4F)</div>
+<p>Bir denklemin çember belirtmesi için: x² ve y²'nin katsayıları eşit olmalı, xy terimi bulunmamalı ve D² + E² − 4F > 0 olmalıdır (= 0 ise tek nokta, &lt; 0 ise hiçbir nokta).</p>
+<div class="note">Kareye tamamlama ile aynı sonuç bulunur: x² − 6x = (x − 3)² − 9. Bu yöntem formül unutulduğunda hayat kurtarır.</div>
+
+<h2>Özel konumlar</h2>
+<ul>
+<li>x eksenine teğet çember: r = |b|. y eksenine teğet: r = |a|. İki eksene de teğet: |a| = |b| = r.</li>
+<li>Bir P(x₀, y₀) noktasının konumu: (x₀ − a)² + (y₀ − b)² değeri r²'den küçükse içte, eşitse üstte, büyükse dışta.</li>
+</ul>
+
+<h2>Doğru ile çemberin konumu</h2>
+<p>Merkezin doğruya uzaklığı d ile yarıçap karşılaştırılır:</p>
+<div class="formula">d = |A·a + B·b + C| / √(A² + B²)   (doğru: Ax + By + C = 0)</div>
+<table>
+<tr><th>Durum</th><th>Konum</th><th>Ortak nokta</th></tr>
+<tr><td>d &lt; r</td><td>Kesen</td><td>2</td></tr>
+<tr><td>d = r</td><td>Teğet</td><td>1</td></tr>
+<tr><td>d > r</td><td>Dışında</td><td>0</td></tr>
+</table>
+<p>Aynı sonuç, doğru denklemini çember denkleminde yerine yazıp elde edilen ikinci dereceden denklemin diskriminantından da bulunur (Δ > 0 kesen, Δ = 0 teğet, Δ &lt; 0 kesişmez).</p>
+<h3>Teğet</h3>
+<p>Teğet, değme noktasındaki yarıçapa <b>diktir</b>. Çember üzerindeki T(x₁, y₁) noktasındaki teğetin denklemi:</p>
+<div class="formula">(x₁ − a)(x − a) + (y₁ − b)(y − b) = r²</div>
+
+<h2>İki çemberin konumu</h2>
+<p>Merkezler arası uzaklık d, yarıçaplar r₁ ve r₂ ise: d > r₁ + r₂ ayrık; d = r₁ + r₂ dıştan teğet; |r₁ − r₂| &lt; d &lt; r₁ + r₂ iki noktada kesişir; d = |r₁ − r₂| içten teğet; d &lt; |r₁ − r₂| biri diğerinin içinde.</p>
+
+<h2>Kısa özet</h2>
+<p>Çemberin standart denklemi (x − a)² + (y − b)² = r²'dir; genel denklemde merkez (−D/2, −E/2), yarıçap ½√(D² + E² − 4F)'dir. Doğru–çember konumu merkezin doğruya uzaklığıyla, iki çemberin konumu merkezler arası uzaklıkla belirlenir. Teğet, değme noktasındaki yarıçapa diktir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Merkezi (D/2, E/2) almak; işaretler terstir.</li>
+<li>(x + 3)² ifadesinde merkezin apsisini +3 sanmak; −3'tür.</li>
+<li>x² ve y² katsayıları farklı olan denklemleri çember sanmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> Merkezi (2, −3) ve yarıçapı 4 olan çemberin denklemi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">(x − 2)² + (y + 3)² = 16</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> x² + y² − 6x + 8y = 0 çemberinin merkezi ve yarıçapı nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">M(3, −4), r = ½√(36 + 64) = 5: <span class="ans">M(3, −4), r = 5</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Merkezi (3, 4) olan ve x eksenine teğet olan çemberin yarıçapı kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">r = |b| = <span class="ans">4</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 3x + 4y − 5 = 0 doğrusu ile x² + y² = 1 çemberinin konumu nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">d = |−5|/5 = 1 = r: <span class="ans">teğet</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> (x − 1)² + (y − 2)² = 25 çemberine üzerindeki (4, 6) noktasından çizilen teğetin denklemi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">3(x − 1) + 4(y − 2) = 25 → <span class="ans">3x + 4y = 36</span>.</div></div></div>
+<div class="pager"><a href="42-geometrik-donusumler.html">← Analitik Düzlemde Dönüşümler</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

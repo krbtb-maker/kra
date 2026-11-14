@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manyetik Kuvvet, İndüksiyon ve Alternatif Akım | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 20. Manyetik Kuvvet, İndüksiyon ve Alternatif Akım</h1>
+
+<h2>Manyetik kuvvet</h2>
+<ul>
+<li>Akım taşıyan tele: F = B·I·L·sin θ. Alana paralel telde kuvvet sıfır, dik telde en büyüktür.</li>
+<li>Hareketli yüklü parçacığa: F = q·v·B·sin θ. Kuvvet hıza her zaman diktir; bu yüzden parçacığın <b>hızının büyüklüğünü değiştirmez</b>, yalnızca yönünü değiştirir. Alana dik giren parçacık düzgün çembersel hareket yapar: r = m·v / (q·B).</li>
+<li>Paralel iki tel: Aynı yönde akım taşıyorsa birbirini <b>çeker</b>, zıt yönde akım taşıyorsa <b>iter</b>.</li>
+</ul>
+
+<h2>Manyetik akı ve indüksiyon</h2>
+<div class="formula">Φ = B·A·cos θ   (weber)</div>
+<p>Bir devreden geçen manyetik akı <b>değişirse</b> devrede gerilim (emk) oluşur. Bu, Faraday'ın keşfidir; akı sabitse hiçbir şey olmaz.</p>
+<div class="formula">ε = −N · ΔΦ / Δt   (Faraday)<br>Manyetik alanda hareket eden çubuk: ε = B·L·v</div>
+<p><b>Lenz kuralı</b> (eksi işaretin anlamı): İndüksiyon akımı, kendisini oluşturan akı değişimine <b>karşı koyacak</b> yönde oluşur. Mıknatıs halkaya yaklaştırılınca halka onu iter, uzaklaştırılınca çeker. Bu, enerjinin korunumunun bir sonucudur.</p>
+<div class="note">Uygulamalar: Jeneratör, indüksiyonlu ocak, kartlı geçiş sistemleri, metal dedektörü, elektrikli gitarın manyetiği, kablosuz şarj.</div>
+
+<h2>Jeneratör ve alternatif akım</h2>
+<p>Manyetik alanda döndürülen bobinden geçen akı sürekli değiştiği için yönü ve büyüklüğü periyodik olarak değişen <b>alternatif akım (AC)</b> oluşur. Türkiye'de şebeke frekansı 50 Hz'dir.</p>
+<div class="formula">V_etkin = V_max / √2</div>
+<p>Evlerdeki 220 V etkin değerdir. Elektrik motoru ve jeneratör aynı yapının ters çalışmasıdır: Motor elektrik → hareket, jeneratör hareket → elektrik.</p>
+<h3>AC'de bobin ve kondansatör</h3>
+<p>Bobin akım değişimine direnç gösterir (indüktif reaktans, frekansla artar); kondansatör ise doğru akımı geçirmez, alternatif akımı geçirir (kapasitif reaktans, frekansla azalır).</p>
+
+<h2>Transformatör</h2>
+<p>İki bobin ortak demir çekirdeğe sarılıdır; birincildeki alternatif akım çekirdekte değişen akı oluşturur, bu da ikincilde gerilim indükler. Doğru akımla çalışmaz.</p>
+<div class="formula">V₁ / V₂ = N₁ / N₂ = I₂ / I₁   (ideal transformatör)</div>
+<p><b>Neden yüksek gerilimle iletim?</b> Aynı gücü taşımak için gerilim artırılırsa akım azalır; hatlardaki ısı kaybı I²·R olduğu için kayıp çok düşer. Santralde gerilim yükseltilir, şehre gelince düşürülür.</p>
+
+<h2>Kısa özet</h2>
+<p>Manyetik alan akımlı tele ve hareketli yüke kuvvet uygular; yüke etkiyen kuvvet hızın yönünü değiştirir. Akı değişimi gerilim indükler (Faraday); indüklenen akım değişime karşı koyar (Lenz). Jeneratör AC üretir; transformatör gerilimi sarım sayısı oranında değiştirir; iletimde yüksek gerilim kaybı azaltır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Sabit manyetik alanda duran bir bobinde akım oluştuğunu sanmak; akı değişmeli.</li>
+<li>Manyetik kuvvetin yüklü parçacığı hızlandırdığını düşünmek.</li>
+<li>Transformatörün enerji ya da güç artırdığını sanmak; gerilim artarken akım azalır.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> 0,5 T'lık alanda 0,4 m uzunluğundaki çubuk alana dik olarak 10 m/s ile hareket ediyor. Uçları arasındaki emk kaç V'tur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">ε = 0,5·0,4·10 = <span class="ans">2 V</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> 50 sarımlı bobinden geçen akı 0,1 s'de 0,2 Wb'den sıfıra iniyor. Ortalama indüksiyon emk'sı kaç V'tur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">ε = 50·0,2/0,1 = <span class="ans">100 V</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Birincil sarımı 200, ikincil sarımı 1000 olan transformatörün birincili 220 V'a bağlanırsa ikincil gerilim kaç V olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">220·(1000/200) = <span class="ans">1100 V</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Elektriğin uzak mesafelere yüksek gerilimle iletilmesinin nedeni nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">akım küçülür, I²R ısı kaybı azalır</span>.</div></div></div>
+<div class="pager"><a href="fizik-19-elektrik-alan-potansiyel-sigac.html">← Elektrik Alan, Potansiyel ve Kondansatörler</a><a href="fizik-21-cembersel-hareket-kutle-cekim.html">Sonraki: Çembersel Hareket ve Kütle Çekim →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

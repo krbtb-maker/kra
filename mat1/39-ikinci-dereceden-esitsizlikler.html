@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İkinci Dereceden Eşitsizlikler | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 10. İkinci Dereceden Eşitsizlikler</h1>
+
+<h2>Ana fikir: parabolün eksenin üstünde mi altında mı olduğu</h2>
+<p>f(x) = ax² + bx + c ifadesinin işaretini sormak, y = f(x) parabolünün hangi x değerlerinde x ekseninin <b>üstünde</b> (pozitif), hangilerinde <b>altında</b> (negatif) olduğunu sormaktır. Parabol x eksenini köklerde keser; kökler arasında bir tarafta, dışında diğer tarafta kalır. Bu yüzden işaret tablosunun kuralı ezber değil, resimdir.</p>
+
+<h2>İşaret tablosu kuralları</h2>
+<table>
+<tr><th>Diskriminant</th><th>Kökler</th><th>İşaret</th></tr>
+<tr><td>Δ > 0</td><td>İki farklı kök x₁ &lt; x₂</td><td>Köklerin <b>dışında a'nın işareti</b>, <b>arasında a'nın tersi</b></td></tr>
+<tr><td>Δ = 0</td><td>Çift katlı kök x₁</td><td>Kökte sıfır, her yerde a'nın işareti</td></tr>
+<tr><td>Δ &lt; 0</td><td>Gerçek kök yok</td><td>Her x için <b>a'nın işareti</b></td></tr>
+</table>
+<div class="note">Akılda tutma yolu: a > 0 ise parabol "gülümser" (kollar yukarı). Kökler arasında eksenin altına iner, dışında üstündedir. a &lt; 0 ise tam tersi.</div>
+
+<h2>Çarpım ve bölüm eşitsizlikleri</h2>
+<p>Birden çok çarpanın işaretini birlikte incelemek için:</p>
+<p>1. Her çarpanı sıfır yapan değerleri (kökleri) bul ve sayı doğrusuna sırala.</p>
+<p>2. En sağdaki aralığın işareti, x'in en büyük kuvvetli terimlerinin <b>katsayılarının çarpımının</b> işaretidir.</p>
+<p>3. Sola doğru her <b>tek katlı</b> kökte işaret değişir, <b>çift katlı</b> kökte değişmez.</p>
+<p>4. Paydayı sıfır yapan değerler, eşitsizlik "≥" ya da "≤" olsa bile <b>çözüme alınmaz</b>.</p>
+<h3>Örnek</h3>
+<p>(x − 1)(x + 2) / (x − 3) ≥ 0 eşitsizliğinde kökler −2, 1, 3. En sağda işaret +; sonra her kökte değişir: (3, ∞) +, (1, 3) −, (−2, 1) +, (−∞, −2) −. Pay kökleri dahil, payda kökü hariç:</p>
+<div class="formula">Ç.K. = [−2, 1] ∪ (3, ∞)</div>
+
+<h2>Her x için sağlanma</h2>
+<p>ax² + bx + c > 0 eşitsizliğinin <b>her gerçek x</b> için doğru olması, parabolün tamamen eksenin üstünde olması demektir:</p>
+<div class="formula">Her x için ax² + bx + c > 0  ⇔  a > 0 ve Δ &lt; 0<br>Her x için ax² + bx + c &lt; 0  ⇔  a &lt; 0 ve Δ &lt; 0</div>
+
+<h2>Köklerin işaretine göre koşullar</h2>
+<p>x₁ + x₂ = −b/a ve x₁·x₂ = c/a bilgileriyle:</p>
+<table>
+<tr><th>İstenen</th><th>Koşullar</th></tr>
+<tr><td>Zıt işaretli iki kök</td><td>c/a &lt; 0 (Δ > 0 kendiliğinden sağlanır)</td></tr>
+<tr><td>İki pozitif kök</td><td>Δ > 0, x₁ + x₂ > 0, x₁·x₂ > 0</td></tr>
+<tr><td>İki negatif kök</td><td>Δ > 0, x₁ + x₂ &lt; 0, x₁·x₂ > 0</td></tr>
+</table>
+
+<h2>Eşitsizlik sistemleri</h2>
+<p>Birden çok eşitsizliğin birlikte sağlanması istenir. Her birinin çözüm kümesi ayrı bulunur ve <b>kesişimleri</b> alınır. Sayı doğrusunda tarama yapmak hata riskini azaltır.</p>
+
+<h2>Kısa özet</h2>
+<p>İkinci dereceden ifadenin işareti, parabolün x eksenine göre konumudur: Δ > 0 ise köklerin dışında a'nın işareti. Çarpım–bölüm eşitsizliklerinde en sağdaki işaret bulunur, tek katlı köklerde işaret değişir; payda kökleri alınmaz. Her x için pozitiflik a > 0 ve Δ &lt; 0 ile sağlanır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Paydayı sıfır yapan değeri "≥" yüzünden çözüme katmak.</li>
+<li>Çift katlı kökte işaret değiştirmek.</li>
+<li>Her iki tarafı x içeren bir ifadeyle çarpmak ya da bölmek (ifadenin işareti bilinmediği için yön kontrolsüz değişir).</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> x² − x − 12 ≤ 0 eşitsizliğini sağlayan kaç tam sayı vardır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(x − 4)(x + 3) ≤ 0 → −3 ≤ x ≤ 4: <span class="ans">8 tam sayı</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> (x − 2)²·(x + 1) &lt; 0 eşitsizliğinin çözüm kümesi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(x − 2)² ≥ 0 olduğundan işaret (x + 1)'e bağlı; x = 2'de ifade sıfır: <span class="ans">x &lt; −1</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> x² + mx + 9 > 0 eşitsizliği her gerçek x için doğruysa m'nin alabileceği kaç tam sayı değeri vardır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">a = 1 > 0 ve Δ = m² − 36 &lt; 0 → −6 &lt; m &lt; 6: <span class="ans">11</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> x² − 6x + m = 0 denkleminin zıt işaretli iki kökü varsa m için ne söylenir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x₁·x₂ = m &lt; 0: <span class="ans">m &lt; 0</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> x² − 4 &lt; 0 ve x − 1 > 0 eşitsizlik sisteminin çözüm kümesi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">−2 &lt; x &lt; 2 ile x > 1'in kesişimi: <span class="ans">1 &lt; x &lt; 2</span>.</div></div></div>
+<div class="pager"><a href="38-trigonometrik-denklemler.html">← Trigonometrik Denklemler</a><a href="40-fonksiyon-grafikleri-ve-donusumler.html">Sonraki: Fonksiyon Grafikleri ve Dönüşümler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vektörler ve Bağıl Hareket | Fizik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="index.html">← Ders listesi</a></div>
+<h1>Fizik 14. Vektörler ve Bağıl Hareket</h1>
+
+<h2>Skaler ve vektörel büyüklükler</h2>
+<p>Bazı büyüklükler yalnızca sayı ve birimle tam anlatılır: kütle, zaman, sıcaklık, enerji (<b>skaler</b>). Bazılarında yön de gerekir: kuvvet, hız, ivme, yer değiştirme (<b>vektörel</b>). "Batıya 5 m/s" ile "doğuya 5 m/s" aynı değildir.</p>
+
+<h2>Vektör toplama</h2>
+<ul>
+<li><b>Uç uca ekleme</b>: İkinci vektörün başlangıcı birincinin ucuna konur; bileşke ilk vektörün başlangıcından son vektörün ucuna çizilir.</li>
+<li><b>Paralelkenar yöntemi</b>: Başlangıçları aynı noktaya getirilen iki vektörün oluşturduğu paralelkenarın köşegeni bileşkedir.</li>
+</ul>
+<div class="formula">|a − b| ≤ R ≤ a + b<br>Dik vektörler: R = √(a² + b²)<br>Aralarında θ açısı varsa: R² = a² + b² + 2ab·cos θ</div>
+<h3>Bileşenlere ayırma</h3>
+<p>Bir vektör iki dik bileşene ayrılabilir: Fx = F·cos θ, Fy = F·sin θ. Çok sayıda vektörü toplamak için önce x ve y bileşenleri ayrı ayrı toplanır, sonra Pisagor uygulanır.</p>
+<div class="note">Sorularda sık kullanılan değerler: sin 37° = cos 53° = 0,6; sin 53° = cos 37° = 0,8.</div>
+
+<h2>Bağıl hareket</h2>
+<p>Hareket, gözlemciye göre değişir. Trende oturan yolcu, trendeki birine göre durgun, yoldaki birine göre hareketlidir.</p>
+<div class="formula">v_bağıl = v_cisim − v_gözlemci   (vektörel çıkarma)</div>
+<ul>
+<li>Aynı yönde giden araçlar: bağıl hız büyüklüğü = hızlar farkı.</li>
+<li>Zıt yönde giden araçlar: bağıl hız büyüklüğü = hızlar toplamı.</li>
+</ul>
+
+<h2>Nehir problemleri</h2>
+<p>Nehirdeki yüzücünün (ya da kayığın) yere göre hızı = kendi hızı + akıntı hızı (vektörel).</p>
+<ul>
+<li>Karşı kıyıya geçiş süresi yalnızca hızın <b>kıyıya dik bileşenine</b> bağlıdır: t = genişlik / v_dik. Akıntı bu süreyi değiştirmez.</li>
+<li>Akıntı yönündeki kayma: x = (akıntı yönündeki hız) · t.</li>
+<li>En kısa sürede geçmek için kıyıya dik yüzülür; en kısa yoldan (tam karşıya) geçmek için akıntıya karşı açılı yüzülür (yüzücü hızı akıntıdan büyükse).</li>
+</ul>
+
+<h2>Kısa özet</h2>
+<p>Vektörel büyüklüklerde yön önemlidir; toplama uç uca ya da paralelkenar yöntemiyle yapılır. Bağıl hız, cismin hızından gözlemcinin hızının vektörel olarak çıkarılmasıdır. Nehirde karşıya geçiş süresi yalnızca dik hız bileşenine bağlıdır.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Vektörleri büyüklükleriyle doğrudan toplamak (3 + 4 = 7 sanmak; dik ise bileşke 5'tir).</li>
+<li>Akıntı hızının karşıya geçiş süresini uzattığını sanmak.</li>
+<li>Bağıl hızı gözlemciden değil cisimden çıkarmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> Büyüklükleri 3 N ve 4 N olan iki dik kuvvetin bileşkesi kaç N'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">√(9 + 16) = <span class="ans">5 N</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> Aynı yönde 20 m/s ve 30 m/s ile giden iki aracın birbirine göre hız büyüklüğü nedir? Zıt yönde gitselerdi?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Aynı yönde 30 − 20 = 10 m/s; zıt yönde 50 m/s: <span class="ans">10 m/s ve 50 m/s</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> Genişliği 60 m olan nehirde suya göre 3 m/s hızla kıyıya dik yüzen yüzücü, akıntı hızı 4 m/s ise kaç saniyede karşıya geçer ve ne kadar sürüklenir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">t = 60/3 = 20 s; x = 4·20 = 80 m: <span class="ans">20 s, 80 m</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 10 N'luk kuvvet yatayla 37° açı yapıyor. Yatay bileşeni kaç N'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">10 · cos 37° = 10 · 0,8 = <span class="ans">8 N</span>.</div></div></div>
+<div class="pager"><a href="fizik-13-optik-kirilma-mercekler-renk.html">← Optik II: Kırılma, Mercekler ve Renk</a><a href="fizik-15-newton-ve-ivmeli-hareket.html">Sonraki: Newton Yasaları ve Sabit İvmeli Hareket →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+</body>
+</html>

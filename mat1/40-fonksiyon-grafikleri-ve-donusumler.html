@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonksiyon Grafikleri ve Dönüşümler | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 11. Fonksiyon Grafikleri ve Dönüşümler</h1>
+
+<h2>Grafikten bilgi okumak</h2>
+<p>y = f(x) grafiğindeki her nokta (x, f(x)) biçimindedir.</p>
+<ul>
+<li>f(a) değeri: x = a'da grafiğin yüksekliği.</li>
+<li><b>Kökler</b> (f(x) = 0): Grafiğin x eksenini kestiği noktaların apsisleri.</li>
+<li>y eksenini kestiği nokta: (0, f(0)).</li>
+<li>f(x) > 0: Grafiğin x ekseninin <b>üstünde</b> kaldığı x'ler.</li>
+<li><b>Artan</b>: x büyüdükçe f(x) büyür (grafik soldan sağa yükselir); <b>azalan</b>: tersi.</li>
+<li>En büyük ve en küçük değer: Grafiğin en yüksek ve en alçak noktalarının ordinatları.</li>
+<li>Bir doğrunun grafiği kestiği nokta sayısı, denklemin çözüm sayısını verir: f(x) = k denkleminin kök sayısı = y = k yatay doğrusunun grafiği kestiği nokta sayısı.</li>
+</ul>
+
+<h2>Grafiklerin dönüşümü</h2>
+<table>
+<tr><th>Yeni fonksiyon</th><th>Grafiğe ne olur?</th></tr>
+<tr><td>y = f(x) + k</td><td>k birim <b>yukarı</b> (k &lt; 0 ise aşağı)</td></tr>
+<tr><td>y = f(x − a)</td><td>a birim <b>sağa</b> (a &lt; 0 ise sola)</td></tr>
+<tr><td>y = −f(x)</td><td>x eksenine göre yansıma</td></tr>
+<tr><td>y = f(−x)</td><td>y eksenine göre yansıma</td></tr>
+<tr><td>y = k·f(x)</td><td>Düşey doğrultuda k kat uzama (0 &lt; k &lt; 1 ise kısalma)</td></tr>
+<tr><td>y = f(kx)</td><td>Yatay doğrultuda 1/k kat sıkışma</td></tr>
+<tr><td>y = |f(x)|</td><td>x ekseninin altında kalan kısım yukarı katlanır</td></tr>
+</table>
+<div class="note">f(x − a) neden sağa kayar? Eski grafikte x = 0'da olan değer, yeni fonksiyonda x − a = 0, yani x = a'da elde edilir. Değer sağa taşınmıştır. "Parantez içi ters çalışır" kuralı buradan gelir.</div>
+
+<h2>Tek ve çift fonksiyonlar</h2>
+<ul>
+<li><b>Çift</b>: f(−x) = f(x) — grafik <b>y eksenine göre simetrik</b>. Örnek: x², cos x, |x|.</li>
+<li><b>Tek</b>: f(−x) = −f(x) — grafik <b>orijine göre simetrik</b>. Örnek: x³, sin x, 1/x.</li>
+<li>İkisi de olmayabilir: x² + x.</li>
+</ul>
+
+<h2>Ortalama değişim hızı</h2>
+<p>[a, b] aralığında fonksiyonun ortalama değişim hızı, grafikteki iki noktayı birleştiren doğrunun eğimidir:</p>
+<div class="formula">Ortalama değişim hızı = (f(b) − f(a)) / (b − a)</div>
+<p>Bu fikir, türevdeki anlık değişim hızının temelidir.</p>
+
+<h2>Parçalı ve ters fonksiyonların grafiği</h2>
+<p>Parçalı fonksiyonda her parça kendi aralığında çizilir; sınır noktalarının dahil olup olmadığı dolu–boş nokta ile gösterilir. Bir fonksiyon ile tersinin grafikleri <b>y = x doğrusuna göre simetriktir</b>.</p>
+
+<h2>Kısa özet</h2>
+<p>Grafikte kökler x eksenini kesen noktalar, pozitiflik eksenin üstü, artanlık sağa doğru yükselmedir. f(x) + k düşey, f(x − a) yatay öteler; −f(x) ve f(−x) eksenlere göre yansıtır. Çift fonksiyon y eksenine, tek fonksiyon orijine göre simetriktir. Ortalama değişim hızı iki nokta arasındaki eğimdir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>f(x − 3) grafiğini sola kaydırmak.</li>
+<li>−f(x) ile f(−x) dönüşümlerini karıştırmak.</li>
+<li>Tek fonksiyonun y eksenine göre simetrik olduğunu sanmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> f(x) = x² grafiği 3 birim sağa ve 2 birim yukarı ötelenirse yeni fonksiyon ve tepe noktası nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody"><span class="ans">y = (x − 3)² + 2, tepe (3, 2)</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> f(x) = x³ − x fonksiyonu tek mi, çift mi?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f(−x) = −x³ + x = −f(x): <span class="ans">tek fonksiyon</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> f(x) = x² fonksiyonunun [1, 3] aralığındaki ortalama değişim hızı nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">(9 − 1)/(3 − 1) = <span class="ans">4</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> y = f(x) grafiği (2, 5) noktasından geçiyorsa y = f(x + 1) − 3 grafiği hangi noktadan geçer?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">x + 1 = 2 → x = 1; y = 5 − 3 = 2: <span class="ans">(1, 2)</span>.</div></div></div>
+<div class="pager"><a href="39-ikinci-dereceden-esitsizlikler.html">← İkinci Dereceden Eşitsizlikler</a><a href="41-binom-acilimi.html">Sonraki: Binom Açılımı →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

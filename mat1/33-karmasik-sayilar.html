@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karmaşık Sayılar | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="main">
+<a name="top"></a>
+<div class="themebar"><table class="bar"><tr><td><a href="#" class="themebtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;y&uuml; gizle</span><span class="lbl-mshow">Men&uuml;y&uuml; g&ouml;ster</span></a></td><td><a href="#" class="themebtn" onclick="return toggleTheme();"><span class="lbl-night">Gece modu</span><span class="lbl-day">G&uuml;nd&uuml;z modu</span></a></td></tr></table></div>
+<div class="top"><a href="../index.html">← Konu listesi</a></div>
+<h1>AYT Matematik 4. Karmaşık Sayılar</h1>
+
+<h2>Gerçek sayılardan daha geniş bir sayı düzlemi</h2>
+<p>Gerçek sayılarda karesi −1 olan bir sayı yoktur. Bu eksikliği gidermek için i² = −1 olacak şekilde sanal birim i tanımlanır. Her karmaşık sayı a + bi biçimindedir; a gerçek kısım, b sanal kısmın katsayısıdır.</p>
+<div class="formula">i² = −1<br>z = a + bi</div>
+<p>i'nin kuvvetleri dörderli döngüyle tekrar eder: i, −1, −i, 1, sonra yeniden i. Büyük kuvveti bulmak için üs 4'e bölünür ve kalan kullanılır.</p>
+
+<h2>İşlemler</h2>
+<p>Toplama ve çıkarmada gerçek ve sanal kısımları ayrı işleriz. Çarpmada dağılma özelliğini kullanıp i² yerine −1 yazarız.</p>
+<div class="formula">(a + bi) + (c + di) = (a + c) + (b + d)i<br>(a + bi)(c + di) = (ac − bd) + (ad + bc)i</div>
+<p>a + bi'nin eşleniği a − bi'dir. Eşlenikle çarpınca sanal kısımlar yok olur:</p>
+<div class="formula">(a + bi)(a − bi) = a² + b²</div>
+<p>Bu nedenle paydası karmaşık olan kesri gerçel yapmak için pay ve paydayı paydanın eşleniğiyle çarparız.</p>
+
+<h2>Karmaşık düzlem ve mutlak değer</h2>
+<p>a + bi sayısı karmaşık düzlemde (a, b) noktasıdır. Orijine uzaklığı Pisagor'dan gelir ve karmaşık sayının modülü olarak adlandırılır:</p>
+<div class="formula">|a + bi| = √(a² + b²)</div>
+
+
+<h2>Kısa özet</h2>
+<p>Bu ünite, temel tanımı, işlem mantığını ve soru çözümünün ana fikrini bir arada kullanarak güvenli bir yaklaşım geliştirmeyi hedefler. Soruda verilen bilgiyi doğru okuma, uygun kuralı seçme ve sonucu kontrol etme becerisi burada en kritik aşamadır. Temel kavramları unutmadan, işlem basamaklarını düzenli uygulamak hem hız hem de doğruluk sağlar.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Verilen bilgiyi gereksiz yere değiştirerek soru cümlesini bozmamak.</li>
+<li>İşlem sırasını veya işaret kurallarını karıştırmak.</li>
+<li>Bulunan sonucu kontrol etmeden doğrudan yazmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+
+<div class="q"><p><b>Soru 1.</b> i²⁷ kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">27'nin 4 ile bölümünden kalan 3'tür. i²⁷ = i³ = <span class="ans">−i</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 2.</b> (2 + 3i) + (4 − i) işleminin sonucu nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Gerçek kısımlar 2 + 4, sanal katsayılar 3 − 1: <span class="ans">6 + 2i</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 3.</b> (1 + 2i)(3 − i) işleminin sonucu nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">3 − i + 6i − 2i² = 3 + 5i + 2 = <span class="ans">5 + 5i</span>.</div></div></div>
+
+<div class="q"><p><b>Soru 4.</b> 3 + 4i sayısının modülü kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">|3 + 4i| = √(3² + 4²) = <span class="ans">5</span>.</div></div></div>
+
+<div class="pager"><a href="32-diziler.html">← Diziler</a><a href="34-limit-ve-sureklilik.html">Sonraki: Limit ve Süreklilik →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>
