@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satran&ccedil; | Oyunlar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb"><a href="index.html" id="tb-resume" class="tbtn" title="Kald&#305;&#287;&#305;n yer"><span class="lbl-resume">Kald&#305;&#287;&#305;n yer</span></a></td><td class="tbf">&nbsp;</td><td class="tbc"><a href="index.html" id="tb-start" class="tbtn tstart" title="Anasayfa"><span class="lbl-tab">Anasayfa</span></a></td><td class="tbf">&nbsp;</td><td class="tbx">&nbsp;</td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>Satran&#231; - Bota kar&#351;&#305;</h1>
+<div class="top" id="addr"><a href="index.html">&larr; Konu listesi</a></div>
+<div class="main">
+
+<div id="nojs" class="note">Bu oyun JavaScript gerektirir. Taray&#305;c&#305;nda JavaScript'i a&#231;&#305;p sayfay&#305; yenile.</div>
+
+<div id="game" style="display:none">
+<div id="status" class="status">&nbsp;</div>
+
+<table class="board" cellspacing="0" cellpadding="0"><tbody id="bd"></tbody></table>
+
+<div id="promo" class="status" style="display:none"></div>
+
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return ChessUI.newGame()">Yeni oyun</a>
+<a class="solbtn" href="#" onclick="return ChessUI.undo()">Geri al</a>
+<a class="solbtn" href="#" onclick="return ChessUI.level()">Seviye: <span id="lv">Orta</span></a>
+<a class="solbtn" href="#" onclick="return ChessUI.color()">Renk: <span id="cl">Beyaz</span></a>
+</div>
+
+<h2>Hamleler</h2>
+<div id="moves" class="movelist">&nbsp;</div>
+
+<div class="note">Bir ta&#351;&#305; se&#231;, sonra gidece&#287;i kareyi se&#231;. Renk ve seviye bir sonraki <b>Yeni oyun</b>da ge&#231;erli olur (seviye hemen de&#287;i&#351;ir). Hamle yaz&#305;m&#305;: &#350; &#351;ah, V vezir, K kale, F fil, A at, O-O k&#305;sa rok, O-O-O uzun rok.</div>
+</div>
+
+
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra forum</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+<script type="text/javascript" src="js/satranc_motor.js"></script>
+<script type="text/javascript" src="js/satranc.js"></script>
+</body>
+</html>

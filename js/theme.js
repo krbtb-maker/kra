@@ -1,4 +1,4 @@
-/* BlackBerry OS 5 uyumlu (ES3). Ortak yardimcilar, kayit, tema, menu gorunurlugu.
+/* ikra forum - BlackBerry OS 5 / Symbian uyumlu (ES3). Ortak yardimcilar, kayit, tema, menu gorunurlugu.
    Kayit: cookie + localStorage + window.name (hangisi calisirsa). */
 function hasClass(el, c) {
   return (' ' + el.className + ' ').indexOf(' ' + c + ' ') > -1;
@@ -65,11 +65,22 @@ function toggleTheme() {
   return false;
 }
 
-/* ---- menu gorunurlugu ---- */
+/* ---- menu gorunurlugu ----
+   Dar ekranda (telefon) menu acilinca tam genislikte gosterilir (menuonly); bir ogeye
+   dokunulunca otomatik gizlenir (smgo). */
+function syncMenuOnly() {
+  var b = document.body;
+  removeClass(b, 'menuonly'); /* dar ekranda da menu yari genislikte, icerik yaninda */
+}
 function toggleMenu() {
   if (hasClass(document.body, 'nomenu')) { removeClass(document.body, 'nomenu'); sset('menu', '1'); }
   else { addClass(document.body, 'nomenu'); sset('menu', '0'); }
+  syncMenuOnly();
   return false;
+}
+function smgo() {
+  if (hasClass(document.body, 'narrow')) { sset('menu', '0'); }
+  return true;
 }
 
 /* ---- cozumu goster / gizle ---- */
@@ -100,6 +111,8 @@ applyTheme(sget('tema') === 'dark' ? 'dark' : 'light');
 (function () {
   var pref = sget('menu'), w = 0;
   try { w = screen.width || 0; } catch (e) {}
-  if (pref === '') { pref = (w >= 700) ? '1' : '0'; }  /* kucuk ekranda varsayilan: gizli */
+  if (w > 0 && w <= 480) { addClass(document.body, 'narrow'); if (/Android/i.test(navigator.userAgent || '')) { addClass(document.body, 'andr'); } }
+  if (pref === '') { pref = '0'; }  /* varsayilan: menu kapali */
   if (pref === '0') { addClass(document.body, 'nomenu'); }
+  syncMenuOnly();
 })();
