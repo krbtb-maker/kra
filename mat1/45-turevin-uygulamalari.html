@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Türevin Uygulamaları | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="../index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>AYT Matematik 7. Türevin Uygulamaları</h1>
+<div class="top" id="addr"><a href="../index.html">← Konu listesi</a></div>
+<div class="main">
+
+
+<h2>Türev = anlık değişim hızı</h2>
+<p>f'(a), grafiğin x = a'daki <b>teğetinin eğimi</b> ve fonksiyonun o andaki <b>değişim hızıdır</b>. Uygulamaların tamamı bu iki yorumdan çıkar: eğim yorumu teğet ve grafik incelemeyi, hız yorumu fizik ve optimizasyon problemlerini verir.</p>
+
+<h2>Teğet ve normal denklemi</h2>
+<div class="formula">Teğet: y − f(a) = f'(a)·(x − a)<br>Normal (teğete dik): eğim = −1 / f'(a)</div>
+<p>Örnek: f(x) = x² − 4x + 1 için x = 3'te f(3) = −2, f'(x) = 2x − 4 → f'(3) = 2. Teğet: y + 2 = 2(x − 3) → <b>y = 2x − 8</b>.</p>
+
+<h2>Artan–azalan ve yerel ekstremum</h2>
+<ul>
+<li>f'(x) > 0 olan aralıkta f <b>artan</b>, f'(x) &lt; 0 olan aralıkta <b>azalan</b>dır.</li>
+<li>f'(a) = 0 olan ve f'nin işaret değiştirdiği noktalar <b>yerel ekstremum</b>dur: + den − ye geçişte yerel maksimum, − den + ya geçişte yerel minimum.</li>
+<li>f'(a) = 0 olduğu hâlde işaret değişmiyorsa (f(x) = x³'te x = 0) ekstremum yoktur.</li>
+</ul>
+<div class="note">Örnek: f(x) = x³ − 3x² için f'(x) = 3x² − 6x = 3x(x − 2). İşaret tablosu: x &lt; 0'da +, 0 ile 2 arasında −, x > 2'de +. Yani x = 0'da yerel maksimum (f = 0), x = 2'de yerel minimum (f = −4).</div>
+
+<h2>İkinci türev: eğrilik ve büküm</h2>
+<ul>
+<li>f''(x) > 0 → grafik yukarı doğru bükük (konveks, "gülümseyen"); f''(x) &lt; 0 → aşağı doğru bükük (konkav).</li>
+<li>f''nin işaret değiştirdiği noktaya <b>büküm (dönüm) noktası</b> denir.</li>
+<li>İkinci türev testi: f'(a) = 0 ve f''(a) &lt; 0 ise yerel maksimum; f''(a) > 0 ise yerel minimum.</li>
+</ul>
+<p>Yukarıdaki örnekte f''(x) = 6x − 6 = 0 → x = 1; büküm noktası (1, −2).</p>
+
+<h2>Mutlak ekstremum ve optimizasyon</h2>
+<p>Kapalı bir [a, b] aralığında fonksiyonun en büyük ve en küçük değerlerini bulmak için:</p>
+<p>1. f'(x) = 0 olan (ve türevin tanımsız olduğu) iç noktaları bulun.</p>
+<p>2. Bu noktalardaki ve uç noktalardaki (a ve b) fonksiyon değerlerini hesaplayın.</p>
+<p>3. En büyüğü mutlak maksimum, en küçüğü mutlak minimumdur.</p>
+<h3>Optimizasyon problemleri</h3>
+<p>1. En büyük ya da en küçük yapılacak niceliği <b>tek değişkenli</b> bir fonksiyon olarak yazın (verilen koşulu kullanarak değişken sayısını bire indirin).</p>
+<p>2. Türevi sıfıra eşitleyin, uygun kökü seçin.</p>
+<p>3. Bulduğunuz değerin gerçekten en büyük/en küçük olduğunu kontrol edin.</p>
+<p>Örnek: Çevresi 40 m olan dikdörtgenin en büyük alanı: kenarlar x ve 20 − x; A(x) = x(20 − x) = 20x − x²; A'(x) = 20 − 2x = 0 → x = 10. En büyük alan 100 m² (kare).</p>
+
+<h2>Hız ve ivme</h2>
+<p>Konum s(t) ise hız v(t) = s'(t), ivme a(t) = v'(t) = s''(t). Hızın sıfır olduğu anlarda hareketli durur ve yön değiştirebilir.</p>
+
+<h2>Kısa özet</h2>
+<p>Teğet denklemi y − f(a) = f'(a)(x − a)'dır. f' > 0 artan, f' &lt; 0 azalan; f' işaret değiştirdiği noktalar yerel ekstremumdur. f'' bükülme yönünü, işaret değiştirdiği nokta bükümü verir. Optimizasyonda nicelik tek değişkenli yazılıp türevi sıfırlanır; kapalı aralıkta uç noktalar da kontrol edilir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>f'(a) = 0 olan her noktayı ekstremum sanmak.</li>
+<li>Kapalı aralıkta mutlak ekstremum ararken uç noktaları unutmak.</li>
+<li>Optimizasyonda fonksiyonu iki değişkenle bırakmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> f(x) = x² − 4x + 1 eğrisine x = 3 noktasında çizilen teğetin denklemi nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f(3) = −2, f'(3) = 2: <span class="ans">y = 2x − 8</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> f(x) = x³ − 3x² fonksiyonunun yerel minimum noktası nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f'(x) = 3x(x − 2); x = 2'de − den + ya geçiş: <span class="ans">(2, −4)</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> f(x) = x³ − 3x² fonksiyonunun büküm noktası nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">f''(x) = 6x − 6 = 0 → x = 1: <span class="ans">(1, −2)</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> Çevresi 40 m olan dikdörtgenlerden alanı en büyük olanın alanı kaç m²'dir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">A = x(20 − x), A' = 0 → x = 10: <span class="ans">100 m²</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> Konumu s(t) = t³ − 6t² + 9t olan hareketlinin ivmesinin sıfır olduğu an nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">v = 3t² − 12t + 9, a = 6t − 12 = 0: <span class="ans">t = 2</span>.</div></div></div>
+<div class="pager"><a href="35-turev.html">← Türev</a><a href="36-integral.html">Sonraki: İntegral →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="../index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

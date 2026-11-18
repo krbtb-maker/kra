@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WordPad | Donat&#305;lar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wpbody">
+<script type="text/javascript" src="js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>WordPad &ndash; Metin Yaz&#305;c&#305;</h1>
+<div class="top" id="addr"><a href="index.html">&larr; Konu listesi</a></div>
+<div class="main">
+<div id="nojs" class="note">Bu sayfa JavaScript gerektirir. Taray&#305;c&#305;nda JavaScript'i a&#231;&#305;p sayfay&#305; yenile.</div>
+
+<div id="wp" class="wpad" style="display:none">
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Wp.fresh()">Yeni</a> <a class="solbtn" href="#" onclick="return Wp.save()"><b>Kaydet (.txt)</b></a> <a class="solbtn" href="#" onclick="return Wp.sel()">Se&#231;</a> <a class="solbtn" href="#" onclick="return Wp.copy()">Kopyala</a> <a class="solbtn" href="#" onclick="return Wp.stamp()">Saat</a>
+</div>
+<div class="wpr">Dosya ad&#305;: <input type="text" id="wname" size="10" maxlength="60" value="belge"> .txt</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Wp.font()">Yaz&#305;: <span id="wfn">Courier New</span></a> <a class="solbtn" href="#" onclick="return Wp.size()">Boyut: <span id="wsz">16</span></a> <a class="solbtn" href="#" onclick="return Wp.wrap()">Kayd&#305;r: <span id="wwr">A&#231;&#305;k</span></a> <a class="solbtn" href="#" onclick="return Wp.bom()">BOM: <span id="wbm">Var</span></a>
+</div>
+<div id="wopen" style="display:none" class="gbtns wpopen">A&#231; (.txt):<br><input type="file" id="wfile" accept=".txt,text/plain"></div>
+
+<div class="wpbox"><textarea id="wtxt" rows="12" cols="12" style="width:94%"></textarea></div>
+<div id="wst" class="status">&nbsp;</div>
+<div id="wmsg"></div>
+<div id="wout"></div>
+
+<div class="note"><b>Nas&#305;l kullan&#305;l&#305;r:</b> Kutuya yaz&#305;; yaz&#305;n otomatik saklan&#305;r, sayfay&#305; kapat&#305;p a&#231;san da durur. <b>Kaydet (.txt)</b> d&#252;z metin dosyas&#305; haz&#305;rlar; bilgisayarda ç&#305;kan d&#252;&#287;me dosyay&#305; indirir, telefonda indirme &#231;al&#305;&#351;mazsa <b>Se&#231;</b> / <b>Kopyala</b> ile ba&#351;ka bir uygulamaya aktar&#305;rs&#305;n. <i>Yaz&#305;</i> (yaz&#305; tipi), <i>Boyut</i> ve <i>Kayd&#305;r</i> (sat&#305;r kayd&#305;rma) yaln&#305;zca ekrandaki g&#246;r&#252;n&#252;m&#252; de&#287;i&#351;tirir; .txt d&#252;z metindir, bi&#231;im ta&#351;&#305;maz. <i>BOM: Var</i> (UTF-8 imzas&#305;) T&#252;rk&#231;e karakterlerin eski Not Defteri'nde de do&#287;ru a&#231;&#305;lmas&#305;n&#305; sa&#287;lar. Bu taray&#305;cıda dosya a&#231;ma destekleniyorsa <b>A&#231;</b> ile var olan bir .txt dosyas&#305;n&#305; da y&#252;kleyebilirsin.</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+<script type="text/javascript" src="js/wordpad.js"></script>
+</body>
+</html>

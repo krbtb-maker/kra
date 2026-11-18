@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problemler IV: Grafik, Tablo ve Sayısal Mantık | TYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="../index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>16. Problemler IV: Grafik, Tablo ve Sayısal Mantık</h1>
+<div class="top" id="addr"><a href="../index.html">← Konu listesi</a></div>
+<div class="main">
+
+
+<h2>Yeni nesil sorular neyi ölçer?</h2>
+<p>TYT'deki grafik, tablo ve "rutin olmayan" problemler formül bilgisinden çok <b>veriyi okuma, model kurma ve düzenli düşünme</b> becerisini ölçer. Ortak strateji şudur: Soruyu okurken verilenleri bir tabloya ya da kısa notlara dökün, bilinmeyeni adlandırın ve küçük bir örnekle deneyerek kuralı bulun.</p>
+
+<h2>Grafik problemleri</h2>
+<ul>
+<li><b>Doğrusal grafik</b> (düz çizgi): Değişim sabittir. Eğim = birim zamandaki değişim (hız, dolma hızı, fiyat artışı).</li>
+</ul>
+<div class="formula">Eğim = (y₂ − y₁) / (x₂ − x₁)<br>Doğrusal model: y = başlangıç değeri + (değişim hızı) · x</div>
+<ul>
+<li>Yol–zaman grafiğinde eğim <b>hız</b>dır; doğru yatay ise araç durmaktadır.</li>
+<li>İki grafiğin <b>kesişim noktası</b>, iki niceliğin eşit olduğu anı verir (iki aracın yan yana gelmesi, iki depodaki suyun eşitlenmesi).</li>
+<li>Tablo ya da sütun grafiğinde önce eksenlerin <b>neyi ve hangi birimle</b> gösterdiğine bakın.</li>
+</ul>
+<div class="note">Bir depo 100 litreyle başlayıp saatte 20 litre doluyorsa miktar = 100 + 20t'dir. 5 saat sonra 200 litre olur. Böyle bir soruda grafiği çizmeye gerek yoktur; modeli yazmak yeter.</div>
+
+<h2>En kötü durum (garanti) problemleri</h2>
+<p>"<b>En az kaç</b> tane alınırsa kesinlikle…" diye soran problemlerde, şanssız olduğumuzu varsayarak <b>istenmeyen durumu olabildiğince uzatırız</b>; bir sonraki seçim garantiyi sağlar. Bu, güvercin yuvası ilkesinin uygulamasıdır.</p>
+<p>Örnek: Torbada 5 kırmızı, 6 mavi, 7 yeşil top var. Aynı renkten 3 top elde etmeyi garanti etmek için en kötü durumda her renkten 2'şer top çekilir (6 top); 7. top mutlaka bir rengi 3'e tamamlar.</p>
+
+<h2>Örüntüler</h2>
+<ul>
+<li>Ardışık terimler arasındaki <b>farka</b> bakın: 2, 5, 10, 17, 26 → farklar 3, 5, 7, 9 (her seferinde 2 artıyor) → sonraki terim 26 + 11 = 37.</li>
+<li>Fark sabit değilse <b>oranı</b> deneyin (geometrik), kareler ve küplerle karşılaştırın (n² + 1).</li>
+<li>Şekil örüntülerinde 1., 2., 3. adımdaki eleman sayılarını tabloya yazıp genel kuralı bulun.</li>
+</ul>
+
+<h2>Sayma ve basamak problemleri</h2>
+<p>Sistematik sayım hatayı önler. "1'den 100'e kadar sayılar yazılırken 7 rakamı kaç kez kullanılır?" Birler basamağında 10 kez (7, 17, …, 97), onlar basamağında 10 kez (70–79): toplam 20.</p>
+
+<h2>Sayısal mantık ve yerleştirme</h2>
+<p>Kişileri sıraya dizme, tabloya yerleştirme, şifre çözme gibi sorularda:</p>
+<p>1. Verilen bilgileri en kesin olandan başlayarak işleyin ("X en sondadır" gibi).</p>
+<p>2. Olasılıkları bir tablo ya da şemayla gösterin.</p>
+<p>3. Kalan koşulları her olasılıkta kontrol edin; çelişki çıkan durumu eleyin.</p>
+
+<h2>Kısa özet</h2>
+<p>Grafik problemlerinde eğim değişim hızıdır, kesişim noktası eşitlik anıdır; doğrusal durumlarda y = başlangıç + hız · x modeli kurulur. "Kesinlikle" soran problemlerde en kötü durum düşünülür. Örüntülerde önce farklara, sonra oranlara bakılır. Sayısal mantık sorularında kesin bilgiden başlayıp tabloyla ilerlenir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Grafikte eksen birimlerini (dakika–saat) gözden kaçırmak.</li>
+<li>En kötü durum sorusunda "şanslı" durumu hesaplamak.</li>
+<li>Örüntüde yalnızca ilk iki farka bakıp genelleme yapmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> A aracı 240 km'yi 4 saatte, B aracı aynı yolu 3 saatte sabit hızla alıyor. Hızları farkı kaç km/sa'tir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">240/3 − 240/4 = 80 − 60 = <span class="ans">20 km/sa</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> Torbada 5 kırmızı, 6 mavi, 7 yeşil top vardır. Aynı renkten 3 top garantilemek için en az kaç top çekilmelidir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Her renkten 2 → 6 top; bir sonraki top garanti: <span class="ans">7</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> 2, 5, 10, 17, 26, … örüntüsünde bir sonraki terim kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Farklar 3, 5, 7, 9, 11: <span class="ans">37</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> 1'den 100'e kadar sayılar yazılırken 7 rakamı kaç kez kullanılır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">Birler 10, onlar 10: <span class="ans">20</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> İçinde 100 L su bulunan depoya saatte 20 L su ekleniyor. Kaç saat sonra depoda 260 L su olur?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">100 + 20t = 260 → <span class="ans">t = 8 saat</span>.</div></div></div>
+<div class="pager"><a href="15-problemler-3-hareket-isci-havuz.html">← Problemler III: Hareket, İşçi–Havuz</a><a href="16-kumeler.html">Sonraki: Kümeler →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="../index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

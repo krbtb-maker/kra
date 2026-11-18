@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dama | Oyunlar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>Dama - Bota kar&#351;&#305;</h1>
+<div class="top" id="addr"><a href="index.html">&larr; Konu listesi</a></div>
+<div class="main">
+
+<div id="nojs" class="note">Bu oyun JavaScript gerektirir. Taray&#305;c&#305;nda JavaScript'i a&#231;&#305;p sayfay&#305; yenile.</div>
+
+<div id="game" style="display:none">
+<div id="status" class="status">&nbsp;</div>
+
+<table class="board" cellspacing="0" cellpadding="0"><tbody id="bd"></tbody></table>
+
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Dama.newGame()">Yeni oyun</a>
+<a class="solbtn" href="#" onclick="return Dama.undo()">Geri al</a>
+<a class="solbtn" href="#" onclick="return Dama.level()">Seviye: <span id="dlv">Orta</span></a>
+<a class="solbtn" href="#" onclick="return Dama.color()">Renk: <span id="dcl">Beyaz</span></a>
+<a class="solbtn" href="#" onclick="return Dama.size()">Tahta: <span id="dsz">32</span></a>
+</div>
+
+<h2>Hamleler</h2>
+<div id="moves" class="movelist">&nbsp;</div>
+
+<div class="note">Bir ta&#351;&#305; se&#231;, sonra gidece&#287;i kareyi se&#231;. Ta&#351;lar <b>ileri ya da yana</b> bir kare gider (geri gitmez). Rakip ta&#351;&#305; &#246;n&#252;nden ya da yan&#305;ndan atlayarak yakalars&#305;n; <b>yakalama zorunludur</b> ve en &#231;ok ta&#351; alan yol se&#231;ilmelidir. Son s&#305;raya ula&#351;an ta&#351; <b>dama</b> (alt&#305;n noktal&#305;) olur: her y&#246;ne istedi&#287;i kadar gider, yakalarken rakip ta&#351;&#305;n arkas&#305;ndaki bo&#351; karelerden birine iner. Rakibin t&#252;m ta&#351;lar&#305;n&#305; bitiren ya da hamlesiz b&#305;rakan kazan&#305;r. Renk bir sonraki <b>Yeni oyun</b>da ge&#231;erli olur (seviye hemen de&#287;i&#351;ir). Hamle yaz&#305;m&#305;: a3-a4 y&#252;r&#252;me, a3xa5 yakalama. Bot, seviyeye g&#246;re 0,3 - 4 saniye d&#252;&#351;&#252;n&#252;r; telefonda daha yava&#351; olabilir.</div>
+</div>
+
+
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+<script type="text/javascript" src="js/dama.js"></script>
+</body>
+</html>

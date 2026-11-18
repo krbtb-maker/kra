@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilardo | Oyunlar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>Bilardo - T&#252;m toplar&#305; sok</h1>
+<div class="top" id="addr"><a href="index.html">&larr; Konu listesi</a></div>
+<div class="main">
+
+<div id="nojs" class="note">Bu oyun JavaScript gerektirir. Taray&#305;c&#305;nda JavaScript'i a&#231;&#305;p sayfay&#305; yenile.</div>
+
+<div id="game" style="display:none">
+<div id="status" class="status">&nbsp;</div>
+
+<div class="poolbox"><div id="tbl" class="pool"></div></div>
+
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pool.aim(-10)" title="Sola 10 derece">&lt;&lt;</a>
+<a class="solbtn" href="#" onclick="return Pool.aim(-2)" title="Sola 2 derece">&lt;</a>
+<a class="solbtn" href="#" onclick="return Pool.aim(2)" title="Sa&#287;a 2 derece">&gt;</a>
+<a class="solbtn" href="#" onclick="return Pool.aim(10)" title="Sa&#287;a 10 derece">&gt;&gt;</a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pool.power()">G&#252;&#231;: <span id="pw">Orta</span></a>
+<a class="solbtn" href="#" onclick="return Pool.shoot()"><b>VUR!</b></a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pool.newGame()">Yeni oyun</a>
+<a class="solbtn" href="#" onclick="return Pool.size()">Masa: <span id="psz">K&#252;&#231;&#252;k</span></a>
+<a class="solbtn" href="#" onclick="return Pool.rmode()" title="Toplar kayboluyorsa modu de&#287;i&#351;tir">&#199;izim: <span id="prm">G&#252;venli</span></a>
+</div>
+
+<div class="note">Hedef: 9 rengin hepsini cebe sok, en az vuru&#351;la. <b>&lt;&lt; &lt; &gt; &gt;&gt;</b> d&#252;&#287;meleriyle (ya da masaya dokunarak) beyaz topun y&#246;n&#252;n&#252; ayarla, <b>G&#252;&#231;</b> ile vuru&#351; g&#252;c&#252;n&#252; se&#231; (noktal&#305; &#231;izgi g&#252;ce g&#246;re uzar), sonra <b>VUR!</b>. Beyaz top cebe d&#252;&#351;erse +2 ceza al&#305;rs&#305;n ve top ba&#351;lang&#305;&#231; noktas&#305;na d&#246;ner. Puan = vuru&#351; + ceza; en iyi puan&#305;n hat&#305;rlan&#305;r. <b>Masa</b> d&#252;&#287;mesi tablo boyutunu de&#287;i&#351;tirir. Toplar ekranda kayboluyor ya da izli kal&#305;yorsa <b>&#199;izim</b> d&#252;&#287;mesiyle G&#252;venli / H&#305;zl&#305; modu de&#287;i&#351;tir.</div>
+</div>
+
+
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+<script type="text/javascript" src="js/bilardo.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piksel Sanat 60x60 | Oyunlar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>Piksel Sanat 60x60</h1>
+<div class="top" id="addr"><a href="index.html">&larr; Konu listesi</a></div>
+<div class="main">
+
+<div id="nojs" class="note">Bu b&#246;l&#252;m JavaScript gerektirir. Taray&#305;c&#305;nda JavaScript'i a&#231;&#305;p sayfay&#305; yenile.</div>
+
+<div id="game" style="display:none">
+<div id="pinfo" class="status">&nbsp;</div>
+
+<table class="pv" cellspacing="1" cellpadding="0"><tbody id="pv"></tbody></table>
+
+<table class="pal" cellspacing="2" cellpadding="0"><tbody id="ppal"></tbody></table>
+
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pix.up5()">&#171;&#9650;</a> <a class="solbtn" href="#" onclick="return Pix.up()">&#9650;</a> <a class="solbtn" href="#" onclick="return Pix.down()">&#9660;</a> <a class="solbtn" href="#" onclick="return Pix.down5()">&#9660;&#187;</a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pix.left5()">&#171;&#9668;</a> <a class="solbtn" href="#" onclick="return Pix.left()">&#9668;</a> <a class="solbtn" href="#" onclick="return Pix.right()">&#9658;</a> <a class="solbtn" href="#" onclick="return Pix.right5()">&#9658;&#187;</a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pix.paint()"><b>Boya</b></a> <a class="solbtn" href="#" onclick="return Pix.undo()">Geri al</a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pix.tool()">Ara&#231;: <span id="ptool">Kalem</span></a> <a class="solbtn" href="#" onclick="return Pix.pen()">Kalem: <span id="ppen">Kalk&#305;k</span></a> <a class="solbtn" href="#" onclick="return Pix.clear()">Temizle</a>
+</div>
+
+<div class="gbtns">
+ <a class="solbtn" href="#" onclick="return Pix.zoom()">Kare: <span id="pzm">14</span></a> <a class="solbtn" href="#" onclick="return Pix.scale()">&#199;&#305;kt&#305;: <span id="pos">8x</span></a>
+</div>
+<div class="gbtns">
+<a class="solbtn" href="#" onclick="return Pix.jpg()"><b>JPG olu&#351;tur</b></a> 
+</div>
+
+<div id="pout"></div>
+
+<div class="note"><b>Nas&#305;l &#231;izilir:</b> &#304;&#351;aret&#231;i / iz topuyla bir kareye gelip t&#305;klay&#305;nca o kare boyan&#305;r. Kare ba&#351;&#305;na t&#305;klamak yerine <b>Kalem: Bas&#305;l&#305;</b> yaparsan iz topuyla gezdi&#287;in her kare boyan&#305;r. Ok d&#252;&#287;meleri imleci 1 (veya <b>&#171; &#187;</b> ile 5) kare kayd&#305;r&#305;r; <b>Boya</b> imle&#231;teki kareyi boyar. Tuval boyutunu men&#252;den (Piksel Sanat klas&#246;r&#252;) se&#231;ersin; ekranda 15x15'lik bir pencere g&#246;r&#252;n&#252;r ve imle&#231; kenara gelince kayar. Her boyut kendi resmini ayr&#305; saklar, &#231;izim otomatik kaydedilir. Ara&#231;lar: Kalem, Silgi, Kova (b&#246;lgeyi doldurur), Damlal&#305;k (renk se&#231;er). Klavye k&#305;sayollar&#305;: Z geri al, T ara&#231;, P kalem, B boya.<br><br><b>JPG:</b> <i>&#199;&#305;kt&#305; &#246;l&#231;e&#287;i</i> her pikselin ka&#231; &#231;&#305;kt&#305; pikseli olaca&#287;&#305;n&#305; belirler (8x ve 16x'de kenarlar keskin kal&#305;r; 1x'de JPG s&#305;k&#305;&#351;mas&#305; renkleri hafif bozabilir). <b>JPG olu&#351;tur</b> resmi haz&#305;rlar, sonra kaydedersin.</div>
+</div>
+
+
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript">initMenu('');</script>
+<script type="text/javascript">var PIX_FIXED = 60;</script>
+<script type="text/javascript" src="js/gridlib.js"></script>
+<script type="text/javascript" src="js/pixjpeg.js"></script>
+<script type="text/javascript" src="js/piksel.js"></script>
+</body>
+</html>

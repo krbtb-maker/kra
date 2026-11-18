@@ -15,6 +15,22 @@
   var gen = 0;
 
   function $(id) { return document.getElementById(id); }
+  /* kucuk ekran (BlackBerry 320 px vb.): 28 px kare + kucuk tas seti; digerlerinde 32 px */
+  var small = false;
+  try { small = (screen.width || 9999) <= 340; } catch (e) {}
+  /* tahta boyutlari: 32 / 28 / 24 / 20 px kare. Varsayilan: kucuk ekranda 24, digerlerinde 32.
+     "Tahta" dugmesiyle degisir, secim hatirlanir. */
+  var SIZES = [32, 28, 24, 20], SDIRS = ['img/', 'img/s28/', 'img/s24/', 'img/s20/'];
+  var si = small ? 2 : 0, SZ = SIZES[si], PDIR = SDIRS[si], sv = parseInt(sget('chsz'), 10);
+  if (sv >= 0 && sv < SIZES.length) { si = sv; SZ = SIZES[si]; PDIR = SDIRS[si]; }
+  if (small) { addClass(document.body, 'bsm'); }
+  function bodySize() {
+    var i;
+    for (i = 0; i < SIZES.length; i++) { removeClass(document.body, 'b' + SIZES[i]); }
+    addClass(document.body, 'b' + SZ);
+  }
+  bodySize();
+
   function pimg(p) { return p === 0 ? 'blank' : 'p_' + (p > 0 ? 'w' : 'b') + NAMES.charAt((p < 0 ? -p : p) - 1); }
 
   function setHtml(id, h) { var e = $(id); if (e) e.innerHTML = h; }
@@ -36,7 +52,7 @@
         td = document.createElement('td'); td.className = 'sq l';
         a = document.createElement('a'); a.href = '#';
         im = document.createElement('img');
-        im.src = imgBase + 'blank.gif'; im.width = 32; im.height = 32; im.alt = '';
+        im.src = imgBase + 'blank.gif'; im.width = SZ; im.height = SZ; im.alt = '';
         a.appendChild(im); td.appendChild(a); tr.appendChild(td);
         a.onclick = clickFn(r, c);
         cells[r * 8 + c] = td; imgs[r * 8 + c] = im;
@@ -51,7 +67,7 @@
       fileLab[c] = td; tr.appendChild(td);
     }
     tb.appendChild(tr);
-    for (i = 0; i < 12; i++) { pre[i] = new Image(); pre[i].src = imgBase + 'p_' + (i < 6 ? 'w' : 'b') + NAMES.charAt(i % 6) + '.gif'; }
+    for (i = 0; i < 12; i++) { pre[i] = new Image(); pre[i].src = PDIR + 'p_' + (i < 6 ? 'w' : 'b') + NAMES.charAt(i % 6) + '.gif'; }
   }
 
   function clickFn(r, c) { return function () { onSquare(sqOf(r, c)); return false; }; }
@@ -70,7 +86,7 @@
         if (s === sel) cls += ' sel';
         if (s === ks) cls += ' chk';
         if (cells[r * 8 + c].className !== cls) cells[r * 8 + c].className = cls;
-        name = 'img/' + pimg(p) + '.gif';
+        name = (p === 0 ? 'img/' : PDIR) + pimg(p) + '.gif';
         if (imgs[r * 8 + c].getAttribute('data-p') !== name) {
           imgs[r * 8 + c].src = name; imgs[r * 8 + c].setAttribute('data-p', name);
         }
@@ -91,6 +107,7 @@
   function labels() {
     setHtml('lv', LV[level].name);
     setHtml('cl', colorPref === 1 ? 'Beyaz' : 'Siyah');
+    setHtml('sz', String(SZ));
   }
 
   function turnMsg() {
@@ -204,6 +221,19 @@
 
   function setLevel() { if (busy) return false; level = (level + 1) % LV.length; labels(); return false; }
   function setColor() { colorPref = -colorPref; labels(); return false; }
+  function setSize() {
+    var i, j;
+    si = (si + 1) % SIZES.length; SZ = SIZES[si]; PDIR = SDIRS[si];
+    sset('chsz', si);
+    bodySize();
+    for (i = 0; i < 64; i++) {
+      imgs[i].width = SZ; imgs[i].height = SZ;
+      imgs[i].setAttribute('data-p', '');
+    }
+    for (j = 0; j < 12; j++) { pre[j] = new Image(); pre[j].src = PDIR + 'p_' + (j < 6 ? 'w' : 'b') + NAMES.charAt(j % 6) + '.gif'; }
+    labels(); render();
+    return false;
+  }
 
   function init() {
     build(); labels(); render(); movesText();
@@ -212,7 +242,7 @@
     turnMsg();
   }
 
-  window.ChessUI = { promo: promo, newGame: newGame, undo: undo, level: setLevel, color: setColor };
+  window.ChessUI = { promo: promo, newGame: newGame, undo: undo, level: setLevel, color: setColor, size: setSize };
   if (window.addEventListener) window.addEventListener('load', init, false);
   else window.onload = init;
 })();

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İntegralin Uygulamaları | AYT Matematik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<script type="text/javascript" src="../js/theme.js"></script>
+<div class="tbw"><table class="tbar" cellspacing="0" cellpadding="0"><tr><td class="tbs"><a href="#" id="tb-menu" class="tbtn" onclick="return toggleMenu();"><span class="lbl-mhide">Men&uuml;</span><span class="lbl-mshow">Men&uuml;</span></a></td><td class="tbg"><div class="grip"></div></td><td class="tbb" id="tb-tabs">&nbsp;</td><td class="tbs"><a href="../index.html" id="tb-start" class="tbtn" title="Anasayfa"><span class="lbl-home">&nbsp;</span></a></td><td class="tbs"><a href="#" id="tb-theme" class="tbtn" title="Gece / g&uuml;nd&uuml;z modu" onclick="return toggleTheme();"><span class="lbl-night">&nbsp;</span><span class="lbl-day">&nbsp;</span></a></td><td class="tbr"><div class="tray"><span id="clock">&nbsp;</span></div></td></tr></table></div>
+<table class="layout"><tr><td class="side" id="side"></td><td class="content">
+<div class="xw cw">
+<a name="top"></a>
+<h1>AYT Matematik 9. İntegralin Uygulamaları</h1>
+<div class="top" id="addr"><a href="../index.html">← Konu listesi</a></div>
+<div class="main">
+
+
+<h2>Belirli integral = işaretli alan</h2>
+<p>∫<sub>a</sub><sup>b</sup> f(x) dx, f'nin grafiği ile x ekseni arasında, x = a ile x = b arasındaki bölgenin <b>işaretli alanıdır</b>: Eksenin üstündeki kısımlar pozitif, altındakiler negatif sayılır. Temel teorem bu değeri hesaplamayı sağlar:</p>
+<div class="formula">∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)   (F' = f)</div>
+
+<h2>Belirli integralin özellikleri</h2>
+<ul>
+<li>∫<sub>a</sub><sup>a</sup> f(x) dx = 0;   ∫<sub>a</sub><sup>b</sup> f(x) dx = −∫<sub>b</sub><sup>a</sup> f(x) dx</li>
+<li>∫<sub>a</sub><sup>c</sup> f(x) dx = ∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>b</sub><sup>c</sup> f(x) dx (aralığı bölmek)</li>
+<li>∫ [k·f(x) ± g(x)] dx = k·∫ f(x) dx ± ∫ g(x) dx</li>
+<li>Tek fonksiyon için ∫<sub>−a</sub><sup>a</sup> f(x) dx = 0; çift fonksiyon için 2·∫<sub>0</sub><sup>a</sup> f(x) dx.</li>
+</ul>
+
+<h2>Değişken değiştirme</h2>
+<p>İntegralin içinde bir ifade ile onun türevi (ya da türevinin katı) birlikte bulunuyorsa, o ifadeye u denir:</p>
+<div class="formula">∫ f(g(x))·g'(x) dx = ∫ f(u) du   (u = g(x), du = g'(x)dx)</div>
+<p>Örnek: ∫ 2x·(x² + 1)³ dx için u = x² + 1, du = 2x dx → ∫ u³ du = u⁴/4 + C = <b>(x² + 1)⁴/4 + C</b>.</p>
+<p>Belirli integralde değişken değiştirirken sınırlar da u'ya göre değiştirilir.</p>
+
+<h2>Alan hesabı</h2>
+<h3>Eğri ile x ekseni arasındaki alan</h3>
+<p>Alan hiçbir zaman negatif olamaz. Fonksiyon eksenin altına iniyorsa o kısmın integrali negatif çıkar; alan için mutlak değeri alınır:</p>
+<div class="formula">Alan = ∫<sub>a</sub><sup>b</sup> |f(x)| dx</div>
+<p>Fonksiyonun aralıkta işaret değiştirdiği noktalarda (kökler) integral parçalara bölünür.</p>
+<h3>İki eğri arasındaki alan</h3>
+<div class="formula">Alan = ∫<sub>a</sub><sup>b</sup> [üstteki fonksiyon − alttaki fonksiyon] dx</div>
+<p>a ve b genellikle iki eğrinin kesişim noktalarıdır; önce f(x) = g(x) denklemi çözülür.</p>
+<div class="note">Örnek: y = x ile y = x² arasındaki alan. Kesişim: x = x² → x = 0 ve x = 1. Bu aralıkta x ≥ x² olduğundan alan = ∫<sub>0</sub><sup>1</sup> (x − x²) dx = 1/2 − 1/3 = <b>1/6</b>.</div>
+
+<h2>Riemann toplamı ve uygulama</h2>
+<p>Eğri altındaki alan, ince dikdörtgenlerin alanları toplanarak yaklaşık hesaplanabilir; dikdörtgen sayısı arttıkça toplam belirli integrale yaklaşır. Bu fikir, hız–zaman grafiğinin altındaki alanın <b>yer değiştirmeyi</b>, debi–zaman grafiğinin altındaki alanın <b>toplam miktarı</b> vermesini açıklar.</p>
+
+<h2>Kısa özet</h2>
+<p>Belirli integral işaretli alandır ve F(b) − F(a) ile hesaplanır. İçinde bir ifade ile türevi bulunan integrallerde değişken değiştirme uygulanır. Alan için eksenin altındaki kısımların mutlak değeri alınır; iki eğri arasındaki alan "üst − alt" fonksiyonun integralidir.</p>
+
+<h2>Sık yapılan hatalar</h2>
+<ul>
+<li>Eksenin altında kalan kısmı negatif alan olarak bırakmak.</li>
+<li>İki eğri arasındaki alanda üst ve alt fonksiyonu karıştırmak.</li>
+<li>Değişken değiştirmede belirli integralin sınırlarını değiştirmeyi unutmak.</li>
+</ul>
+
+<h2>Örnek sorular</h2>
+<div class="q"><p><b>Soru 1.</b> ∫<sub>0</sub><sup>2</sup> 3x² dx değeri kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">[x³]₀² = <span class="ans">8</span>.</div></div></div>
+<div class="q"><p><b>Soru 2.</b> y = x² eğrisi, x ekseni ve x = 3 doğrusu arasında kalan alan kaç birimkaredir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">∫<sub>0</sub><sup>3</sup> x² dx = 27/3 = <span class="ans">9</span>.</div></div></div>
+<div class="q"><p><b>Soru 3.</b> y = x ile y = x² eğrileri arasında kalan alan kaç birimkaredir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">∫<sub>0</sub><sup>1</sup> (x − x²) dx = 1/2 − 1/3 = <span class="ans">1/6</span>.</div></div></div>
+<div class="q"><p><b>Soru 4.</b> ∫ 2x·(x² + 1)³ dx integralinin sonucu nedir?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">u = x² + 1: <span class="ans">(x² + 1)⁴/4 + C</span>.</div></div></div>
+<div class="q"><p><b>Soru 5.</b> y = x − 2 doğrusu ile x ekseni arasında x = 0 ile x = 2 arasında kalan alan kaçtır?</p>
+<div class="sol"><a href="#" class="solbtn" onclick="return tg(this);"><span class="s1">Çözümü göster</span><span class="s2">Çözümü gizle</span></a><div class="solbody">∫<sub>0</sub><sup>2</sup> (x − 2) dx = 2 − 4 = −2; alan mutlak değer: <span class="ans">2</span>.</div></div></div>
+<div class="pager"><a href="36-integral.html">← İntegral</a><a href="37-parabol.html">Sonraki: Parabol →</a></div>
+<p class="totop"><a href="#top">&uarr; Ba&#351;a d&ouml;n</a></p>
+</div>
+</div>
+</td></tr></table>
+<table class="footer" cellspacing="0" cellpadding="0"><tr><td><b>ikra blog</b> &middot; Konu anlat&#305;mlar&#305; ve okumalar</td><td class="fr"><a href="../index.html">Ana sayfa</a> &middot; <a href="#top">Ba&#351;a d&ouml;n</a></td></tr></table>
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">initMenu('../');</script>
+</body>
+</html>

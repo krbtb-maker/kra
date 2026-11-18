@@ -153,7 +153,7 @@ svg{color:#000000}
 body.dark svg{color:#ffffff}
 
 /* ======================================================================
-   ikra forum - Windows 95 yerlesimi: gorev cubugu (ust), Baslat menusu (sol), Gezgin pencereleri (sag)
+   ikra blog - Windows 95 yerlesimi: gorev cubugu (ust), Baslat menusu (sol), Gezgin pencereleri (sag)
    Yalniz CSS 2.1 (BlackBerry OS 5 / Symbian uyumlu): gradient, calc, media query, fixed yok.
    Gorev cubugu ve Baslat menusu ../img/*.gif simgeleri kullanir.
    ====================================================================== */
@@ -164,8 +164,7 @@ table.tbar{width:100%;margin:0;border-collapse:separate;border-spacing:0;table-l
 body.dark table.tbar{background:#2e2e2e;border-color:#6b6b6b #000000 #000000 #6b6b6b}
 body table.tbar td{border:0;padding:6px 3px;vertical-align:middle;background:transparent;font-size:14px}
 body table.tbar td.tbs{width:1%;padding-left:3px;white-space:nowrap}
-body table.tbar td.tbb{width:188px}
-body table.tbar td.tbc{width:188px;padding:6px 3px}
+body table.tbar td.tbb{width:100%;padding:4px 3px}
 body table.tbar td.tbx{width:190px;padding:0}
 body table.tbar td.tbr{width:1%;padding-right:3px;white-space:nowrap}
 body table.tbar td.tbg{width:6px;padding:3px 3px}
@@ -174,10 +173,6 @@ div.tray{padding:4px 8px;font-size:14px;line-height:18px;color:#000000;border:1p
 body.dark div.tray{color:#ffffff;border-color:#000000 #6b6b6b #6b6b6b #000000}
 /* gorev dugmeleri: kabarik; "acik" olan = cokuk (noktali zemin) */
 table.tbar a.tbtn{display:block;padding:11px 9px;line-height:20px;font-size:14px;font-weight:normal;text-decoration:none;white-space:nowrap;overflow:hidden;background:#c0c0c0;color:#000000;border:2px solid #ffffff;border-color:#ffffff #404040 #404040 #ffffff}
-table.tbar a.tstart{font-weight:bold;color:#000080}
-table.tbar td.tbc a.tbtn{text-align:center;font-size:15px}
-table.tbar a#tb-start{background:#c0c0c0 url(../img/check.gif);color:#000080;border-color:#404040 #ffffff #ffffff #404040}
-body.dark table.tbar a#tb-start{background:#1a1a1a;color:#ffff00;border-color:#000000 #6b6b6b #6b6b6b #000000}
 body.dark table.tbar a.tbtn{background:#2e2e2e;color:#ffffff;border-color:#6b6b6b #000000 #000000 #6b6b6b}
 table.tbar a.tbtn:hover,table.tbar a.tbtn:focus{background:#c0c0c0;color:#000000}
 body.dark table.tbar a.tbtn:hover,body.dark table.tbar a.tbtn:focus{background:#2e2e2e;color:#ffffff}
@@ -190,8 +185,7 @@ table.tbar a#tb-theme{font-weight:normal}
 body.dark table.tbar a#tb-theme{font-weight:bold}
 table.tbar a.dis,body.dark table.tbar a.dis{color:#808080}
 /* dugme simgeleri */
-.lbl-tab{padding:1px 0}
-.lbl-resume{padding:1px 0 1px 22px;background:transparent url(../img/resume.gif) no-repeat 0 50%}
+.lbl-home{padding:1px 0 1px 18px;background:transparent url(../img/home.gif) no-repeat 0 50%}
 .lbl-day{display:none}
 body.dark .lbl-day{display:inline}
 body.dark .lbl-night{display:none}
@@ -295,19 +289,16 @@ a.wbtn:hover,a.wbtn:focus{background:#c0c0c0;color:#000000}
 body.dark a.wbtn,body.dark a.wbtn:hover,body.dark a.wbtn:focus{background:#2e2e2e;color:#ffffff;border-color:#6b6b6b #000000 #000000 #6b6b6b}
 
 /* icerik sayfasi penceresi: baslik cubugu (h1) + adres cubugu + beyaz belge alani */
-.xw h1{margin:0;padding:4px 62px 4px 8px;font-size:17px;line-height:1.25;background:#000080 url(../img/tb_btns.gif) no-repeat right 50%;color:#ffffff}
+.xw h1{margin:0;padding:4px 70px 4px 8px;font-size:17px;line-height:1.25;background:#000080;position:relative;color:#ffffff}
 body .xw .top{margin:3px 0 0 0;padding:2px 3px;background:transparent;border:0;font-size:15px}
 .xw .main{margin:3px 0 0 0}
 
 /* ---- dar ekran (telefon): gorev cubugu sikisir ---- */
 body.narrow table.tbar td{padding:2px 1px}
-body.narrow table.tbar td.tbb,body.narrow table.tbar td.tbc{width:auto}
 body.narrow table.tbar td.tbs{width:1%}
 body.narrow table.tbar td.tbr,body.narrow table.tbar td.tbg,body.narrow table.tbar td.tbf,body.narrow table.tbar td.tbx{display:none}
 body.narrow table.tbar a.tbtn{padding:6px 3px;font-size:12px;line-height:14px;white-space:normal;text-align:center}
-body.narrow table.tbar a.tstart{padding:3px 4px}
-body.narrow table.tbar td.tbc a.tbtn{font-size:11px;padding:5px 1px}
-body.narrow .lbl-resume,body.narrow .lbl-mhide,body.narrow .lbl-mshow{padding-left:0;background:none}
+body.narrow .lbl-mhide,body.narrow .lbl-mshow{padding-left:0;background:none}
 body.narrow .xw h1{font-size:16px}
 body.narrow td.fn a{padding:9px 4px}
 
@@ -415,11 +406,9 @@ body.narrow td.xau a.xbtn{padding:4px 6px;font-size:13px}
 body.narrow table.layout td.content{padding-left:0}
 body.narrow a.ic.tx{width:76px;font-size:12px;margin:2px 0 6px 0}
 body.narrow .xbd{padding:3px}
-body.narrow .xw h1{padding-right:56px}
+body.narrow .xw h1{padding-right:70px}
 
 body table.layout td.content{padding-top:4px}
-body.narrow table.tbar td.tbc,body.narrow table.tbar td.tbb{width:40%}
-body.narrow table.tbar td.tbc a.tbtn{font-size:13px}
 
 /* Android (dar ekran): menu yukaridan asagi acilir, sayfa menunun altinda gorunmeye devam eder.
    Eski telefonlarda (BB OS 5, Symbian) menu sayfanin yarisini kaplar, icerik yaninda kalir. */
@@ -428,3 +417,152 @@ body.narrow.andr table.layout td.side{padding:0 0 4px 0}
 body.narrow.andr.nomenu table.layout td.side{display:none}
 body.narrow.andr table.layout td.content{padding-top:0}
 body.narrow.andr a.smi{padding:16px 6px 16px 50px;font-size:15px}
+
+/* ---- gorev cubugu sekmeleri (son acilan konular) ---- */
+table.tbar table.tabs{width:auto;margin:0;border-collapse:separate;border-spacing:0;table-layout:auto}
+body table.tbar table.tabs td{padding:0 3px 0 0;border:0;background:transparent}
+table.tbar a.tab{padding:11px 6px;white-space:nowrap}
+table.tbar a.tab img{vertical-align:middle;margin:0 6px 0 0;border:0}
+table.tbar a.tab.on{font-weight:bold;background:#c0c0c0 url(../img/check.gif);color:#000000;border-color:#404040 #ffffff #ffffff #404040}
+body.dark table.tbar a.tab.on{background:#1a1a1a;color:#ffffff;border-color:#000000 #6b6b6b #6b6b6b #000000}
+
+/* ---- icerik penceresi: kucult / kapat dugmeleri (baslik cubugunda) ---- */
+.hbt{position:absolute;right:3px;top:50%;margin-top:-10px;font-size:13px;line-height:12px}
+.hbt a.wbtn{float:left;margin:0 0 0 2px;font-size:13px}
+.xw.min .main,.xw.min .npm{display:none}
+body.narrow table.tbar a.tab{white-space:nowrap;text-align:left;padding:6px 3px;font-size:12px}
+body.narrow table.tbar a.tab img{margin-right:2px}
+body.narrow table.tbar table.tabs td{padding-right:2px}
+body.narrow table.tbar td.tbb{padding:2px 1px}
+
+/* satranc tahtasi: kucuk ekranda (320 px) 28 px kare */
+body.bsm table.board{margin:4px 0;border-width:1px}
+body.bsm table.board td.co{width:10px;padding:0 1px;font-size:11px;line-height:12px}
+body.b28 table.board td.sq,body.b28 table.board a{width:28px;height:28px}
+body.b24 table.board td.sq,body.b24 table.board a{width:24px;height:24px}
+body.b20 table.board td.sq,body.b20 table.board a{width:20px;height:20px}
+body.b24 table.board td.co,body.b20 table.board td.co{width:10px;padding:0 1px;font-size:11px;line-height:12px}
+
+/* ---- Bilardo (bilardo.html): toplar/ceplar <img>, canvas yok ---- */
+div.poolbox{margin:4px 0 6px 0;padding:10px 12px}
+div.pool{position:relative;margin:0;border:6px solid #804000;border-color:#b06820 #603000 #603000 #b06820;background:#008000;overflow:visible}
+div.pool img{position:absolute;display:block;border:0;margin:0;padding:0}
+
+/* tam ekran dugmesi (_ ile X arasinda): kutu simgesi css ile cizilir */
+a.wmx{position:relative;overflow:hidden}
+a.wmx span{position:absolute;display:block;border:1px solid #000000;border-top-width:2px;background:#c0c0c0;font-size:0;line-height:0}
+a.wmx span.mx{left:4px;top:3px;width:6px;height:5px}
+a.wmx span.mr1,a.wmx span.mr2{display:none;width:5px;height:3px}
+a.wmx span.mr1{left:7px;top:2px}
+a.wmx span.mr2{left:3px;top:5px}
+body.full a.wmx span.mx{display:none}
+body.full a.wmx span.mr1,body.full a.wmx span.mr2{display:block}
+body.dark a.wmx span{border-color:#ffffff;background:#2e2e2e}
+/* tam ekran kipi */
+body.full div.tbw,body.full table.footer,body.full .xin{display:none !important}
+body.full table.layout td.side{display:none !important}
+body.full table.layout td.content{width:100%;padding:0 !important}
+body.full .cw{margin-left:0 !important}
+
+body table.board td.l{background:#c0c0c0}
+
+/* ---- Piksel sanat (piksel.html) ---- */
+body table.pv{width:auto;margin:6px 0;border-collapse:separate;border-spacing:1px;border:3px solid #808080;border-color:#808080 #ffffff #ffffff #808080;background:#808080}
+body table.pv td{width:auto;height:auto;padding:0;border:0;background:#808080;line-height:0;font-size:1px}
+body table.pv td.cur{padding:2px;background:#ff00ff}
+body table.pv a,body table.pal a{display:block;margin:0;padding:0;border:0;background:transparent;line-height:0;font-size:1px;text-decoration:none}
+body table.pv img,body table.pal img{display:block;border:0;margin:0;padding:0}
+body table.pal{width:auto;margin:6px 0;border-collapse:separate;border-spacing:2px;border:0;background:transparent}
+body table.pal td{width:auto;height:auto;padding:2px;border:0;background:#808080;line-height:0;font-size:1px}
+body table.pal td.sel{background:#ff00ff}
+.pxcol{border:1px solid #000000;vertical-align:middle}
+/* oyun alani: iz topu orta tusu icin buyuk baglanti (gorunumu bozma) */
+body a.padlink,body a.padlink:hover,body a.padlink:focus{display:inline-block;background:transparent;color:inherit;text-decoration:none;border:0;font-weight:normal}
+body a.padlink:focus{outline:2px dotted #ff0000}
+a.padlink img{border:0}
+/* namaz takvimi */
+table.nsel{width:auto;margin:6px 0;border:0}
+table.nsel td{border:0;padding:2px 4px;background:transparent}
+table.ntab1{width:auto;margin:4px 0}
+td.nt{font-weight:bold;font-size:17px;text-align:center}
+div#ntum{overflow:auto}
+table.ntab{width:auto;font-size:12px;margin:6px 0}
+table.ntab th,table.ntab td{padding:2px 4px;text-align:center}
+table.ntab tr.sel td{background:#000080;color:#ffffff}
+table.ntab tr.sel td a{color:#ffffff}
+body.dark table.ntab tr.sel td{background:#ffff00;color:#000000}
+body.dark table.ntab tr.sel td a{color:#000000}
+
+
+/* dar ekran (320 px): icerik tablolari ve sayfa kenar boslugu */
+body.narrow table.ct th,body.narrow table.ct td{padding:3px 3px;font-size:13px;line-height:1.3;word-wrap:break-word}
+body.narrow .main{padding-left:5px;padding-right:5px}
+
+/* sigmayan genis tablolar: sabit yerlesim, sutunlar esit paylasir, kelimeler gerekirse bolunur (sayfayi genisletmez) */
+body.narrow table.cf{table-layout:fixed;width:100%}
+body.narrow table.cf th,body.narrow table.cf td{padding:2px 2px;font-size:12px;line-height:1.25;word-wrap:break-word}
+body.narrow li,body.narrow p{word-wrap:break-word}
+
+/* namaz takvimi aylik tablo (9 sutun): dar ekranda sabit yerlesim, kucuk yazi */
+body.narrow table.ntab{table-layout:fixed;width:100%;font-size:10px}
+body.narrow table.ntab th,body.narrow table.ntab td{padding:1px 0;font-size:10px;line-height:1.2;word-wrap:break-word}
+body.narrow table.ntab th{font-size:9px}
+body.narrow h1,body.narrow h2,body.narrow h3,body.narrow .main li,body.narrow .main div{word-wrap:break-word}
+
+/* WordPad: dar ekranda (BB Curve 9300 vb.) sayfa sagiya tasmasin */
+body.wpbody table.layout{table-layout:fixed}
+body.wpbody .main{overflow:hidden;word-wrap:break-word}
+.wpad{width:100%;overflow:hidden}
+.wpad .gbtns a.solbtn{white-space:normal;margin:0 3px 5px 0;padding:4px 8px}
+.wpad #wout a.solbtn{word-wrap:break-word}
+.wpad .wpr{margin:6px 0}
+.wpad .wpr input{max-width:60%}
+.wpad .wpbox{width:100%;overflow:hidden}
+.wpad textarea{margin:0;overflow:auto;max-width:100%}
+.wpad .wpopen input{max-width:98%}
+.wpad .status,.wpad .note{word-wrap:break-word}
+
+/* okuma ilerlemesi: Win95 ilerleme cubugu + "Okudum" kutusu */
+div.pbo{width:100px;height:12px;padding:1px;overflow:hidden;background:#ffffff;border:2px solid #808080;border-color:#808080 #ffffff #ffffff #808080}
+div.pbi{height:12px;overflow:hidden;background:url(../img/pb.gif) repeat-x 0 0}
+body.dark div.pbo{background:#000000;border-color:#000000 #6b6b6b #6b6b6b #000000}
+body.dark div.pbi{background-image:url(../img/pbd.gif)}
+table.okst{width:100%;margin:0;border-collapse:collapse}
+body table.okst td{border:0;padding:1px 3px;vertical-align:middle;background:transparent;font-size:13px;line-height:1.3;color:#000000}
+body.dark table.okst td{color:#ffffff}
+body table.okst td.okb{width:1%;white-space:nowrap}
+body table.okst td.okr{text-align:right;white-space:nowrap}
+.okst{margin:6px 0 0 0;padding:3px 4px}
+a.okck{display:block;padding:2px 0;color:#000000;text-decoration:none;font-size:14px}
+body.dark a.okck{color:#ffffff}
+a.okck:hover,a.okck:focus,body.dark a.okck:hover,body.dark a.okck:focus{background:transparent;color:#000000;text-decoration:underline}
+body.dark a.okck:hover,body.dark a.okck:focus{color:#ffffff}
+a.okck span.cb{float:left;width:9px;height:9px;margin:0 6px 0 0;background:#ffffff;border:2px solid #808080;border-color:#808080 #ffffff #ffffff #808080}
+body.dark a.okck span.cb{background:#000000;border-color:#000000 #6b6b6b #6b6b6b #000000}
+a.okck.on span.cb{background:#ffffff url(../img/ck.gif) no-repeat 0 0}
+body.dark a.okck.on span.cb{background:#000000 url(../img/ckd.gif) no-repeat 0 0}
+.xw.min .okst{display:none}
+table.pgt{width:100%;margin:0;border-collapse:collapse}
+body table.pgt td,body table.pgt th{border:0;border-bottom:1px solid #c0c0c0;padding:3px 4px;font-size:14px;line-height:1.25;background:transparent;color:#000000;font-weight:normal;text-align:left;vertical-align:middle}
+body table.pgt th{font-weight:bold;background:#c0c0c0;border:1px solid #ffffff;border-color:#ffffff #404040 #404040 #ffffff;padding:2px 4px}
+body.dark table.pgt td{color:#ffffff;border-bottom-color:#404040}
+body.dark table.pgt th{background:#2e2e2e;color:#ffffff;border-color:#6b6b6b #000000 #000000 #6b6b6b}
+body table.pgt td.pgb{width:1%;white-space:nowrap}
+body table.pgt td.pgp{width:1%;white-space:nowrap;text-align:right}
+body table.pgt tr.pgtot td{font-weight:bold;border-bottom:0}
+body.narrow table.pgt td,body.narrow table.pgt th{padding:3px 2px;font-size:13px}
+a.ic.rd span{font-weight:bold}
+a.ic span img.ckm{display:inline;float:none;margin:0 3px 0 0;border:0}
+
+body table.pgt tr.pgsec td{font-weight:bold;background:#c0c0c0;border-bottom:1px solid #808080}
+body.dark table.pgt tr.pgsec td{background:#2e2e2e}
+.ktc{margin:8px 0;padding:6px;border:2px solid #808080;border-color:#808080 #ffffff #ffffff #808080;background:#ffffff;color:#000000}
+body.dark .ktc{background:#000000;color:#ffffff;border-color:#000000 #6b6b6b #6b6b6b #000000}
+.ktc b.ktn{font-size:16px}
+.ktc .ktm{margin:4px 0;font-size:14px}
+.ktc input.ktp{width:60px}
+.ktf{margin:8px 0}
+.ktf p{margin:6px 0}
+.ktf input.kti{width:90%;max-width:90%}
+.ktf input.ktnum{width:80px}
+.ktx textarea{width:94%;max-width:100%;margin:0}
