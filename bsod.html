@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windows</title>
+<style type="text/css">
+html, body { margin: 0; padding: 0; background: #0000aa; color: #ffffff; }
+body { font-family: "Courier New", Courier, monospace; font-size: 14px; line-height: 1.4; }
+#bs { padding: 20px 16px; max-width: 640px; margin: 0 auto; }
+.bar { text-align: center; margin: 0 0 18px 0; }
+.bar span { background: #aaaaaa; color: #0000aa; padding: 1px 10px; font-weight: bold; }
+p { margin: 0 0 16px 0; }
+a, a:visited { color: #ffffff; text-decoration: none; }
+</style>
+</head>
+<body>
+<div id="bs"><a href="index.html">
+<div class="bar"><span>Windows</span></div>
+<p>A fatal exception 0E has occurred at 0028:C0011E36 in VXD VMM(01) + 00010E36. The current application will be terminated.</p>
+<p>* Press any key to terminate the current application.<br>
+* Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.</p>
+<p>Press any key to continue <span id="cur">_</span></p>
+</a></div>
+<script type="text/javascript">
+function go() { window.location.href = 'index.html'; return false; }
+document.onkeydown = go;
+document.onclick = go;
+/* hata sesi: once snd/hata.mp3 (gercek XP sesi); dosya yoksa kodla uretilen alcalan uc "bip".
+   Tarayici sesi engellerse ya da desteklemezse sessiz kalir. */
+function bip(c, f, t0, dur) {
+  var o = c.createOscillator(), g = c.createGain ? c.createGain() : c.createGainNode(), t = c.currentTime + t0;
+  o.type = 'square';
+  o.frequency.value = f;
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(0.1, t + 0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g);
+  g.connect(c.destination);
+  if (o.start) { o.start(t); o.stop(t + dur + 0.02); } else { o.noteOn(t); o.noteOff(t + dur + 0.02); }
+}
+function synthBeeps() {
+  try {
+    var AC = window.AudioContext || window.webkitAudioContext, ctx;
+    if (!AC) { return; }
+    ctx = new AC();
+    if (ctx.resume) { ctx.resume(); }
+    bip(ctx, 740, 0, 0.18);
+    bip(ctx, 555, 0.2, 0.18);
+    bip(ctx, 370, 0.4, 0.45);
+  } catch (e) {}
+}
+try {
+  if (typeof Audio === 'undefined') { synthBeeps(); }
+  else {
+    var snd = new Audio('snd/hata.mp3');
+    snd.onerror = synthBeeps;
+    var pr = snd.play();
+    if (pr && pr.catch) { pr.catch(function () {}); }
+  }
+} catch (e) { synthBeeps(); }
+var on = true;
+setInterval(function () {
+  on = !on;
+  document.getElementById('cur').innerHTML = on ? '_' : '&nbsp;';
+}, 500);
+</script>
+</body>
+</html>
