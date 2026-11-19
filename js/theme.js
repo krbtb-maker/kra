@@ -253,11 +253,10 @@ function okMount(item) {
 
 /* ana sayfa: ilerleme tablosu (okunan konusu olan her ders/kitap; satir siniri yok) */
 function okHomeWin() {
-  var U, i, u, st, h = '', tot = 0, dn = 0, rows = 0, ps, bk = [], b, bs;
+  var U, i, u, st, h = '', tot = 0, dn = 0, rows = 0, ps;
   try { U = okUnits(); } catch (e) { return ''; }
-  try { bk = ktLoad(); } catch (e2) { bk = []; }
   for (i = 0; i < U.length; i++) {
-    u = U[i]; st = okStat(u.leaves);
+    u = U[i]; st = okStat(U[i].leaves);
     tot += st.t; dn += st.d;
     if (st.d) {
       rows++;
@@ -267,20 +266,25 @@ function okHomeWin() {
   ps = { d: dn, t: tot };
   if (rows) {
     h += '<tr class="pgtot"><td>Genel (' + dn + '/' + tot + ')</td><td class="pgb">' + okBar(ps) + '</td><td class="pgp">%' + okPct(ps) + '</td></tr>';
-  }
-  if (bk.length) {
-    h += '<tr class="pgsec"><td colspan="3"><a href="' + MENU_ROOT + 'kitaplik.html">Kitapl&#305;&#287;&#305;m</a> (fiziksel kitaplar)</td></tr>';
-    for (i = 0; i < bk.length; i++) {
-      b = bk[i]; bs = { d: b.c, t: b.t };
-      h += '<tr><td>' + esc(b.n) + ' <small>(' + b.c + '/' + b.t + ' sayfa)</small></td><td class="pgb">' + okBar(bs) + '</td><td class="pgp">%' + okPct(bs) + '</td></tr>';
-    }
-  }
-  if (!rows && !bk.length) {
-    h = '<tr><td colspan="3">Hen&uuml;z okundu i&#351;aretlenen konu yok. Bir konu sayfas&#305;n&#305;n alt&#305;ndaki <b>Okudum</b> kutusunu i&#351;aretle ya da <a href="' + MENU_ROOT + 'kitaplik.html">Kitapl&#305;&#287;&#305;m</a>a kitap ekle.</td></tr>';
+  } else {
+    h = '<tr><td colspan="3">Hen&uuml;z okundu i&#351;aretlenen konu yok. Bir konu sayfas&#305;n&#305;n alt&#305;ndaki <b>Okudum</b> kutusunu i&#351;aretle.</td></tr>';
   }
   return '<div class="xw xact" id="win-prog">' + titleBar('doc.gif', '&#304;lerleme Durumu', minBtn()) +
     '<div class="xbd xbl"><table class="pgt" cellspacing="0" cellpadding="0"><tr><th>Ders / Kitap</th><th>&#304;lerleme</th><th>%</th></tr>' + h + '</table></div>' +
-    '<div class="xst">' + (rows + bk.length) + ' ders/kitap</div></div>';
+    '<div class="xst">' + rows + ' ders/kitap</div></div>';
+}
+/* ana sayfa: ayri "Kitapligim" penceresi (fiziksel kitaplar; ilerleme tablosundan bagimsiz) */
+function ktHomeWin() {
+  var bk = [], i, b, bs, h = '';
+  try { bk = ktLoad(); } catch (e) { bk = []; }
+  if (!bk.length) { return ''; }
+  for (i = 0; i < bk.length; i++) {
+    b = bk[i]; bs = { d: b.c, t: b.t };
+    h += '<tr><td>' + esc(b.n) + ' <small>(' + b.c + '/' + b.t + ' sayfa)</small></td><td class="pgb">' + okBar(bs) + '</td><td class="pgp">%' + okPct(bs) + '</td></tr>';
+  }
+  return '<div class="xw xact" id="win-kt">' + titleBar('doc.gif', 'Kitapl&#305;&#287;&#305;m', minBtn()) +
+    '<div class="xbd xbl"><table class="pgt" cellspacing="0" cellpadding="0"><tr><th>Kitap</th><th>&#304;lerleme</th><th>%</th></tr>' + h + '</table></div>' +
+    '<div class="xst"><a href="' + MENU_ROOT + 'kitaplik.html">' + bk.length + ' kitap &middot; d&uuml;zenle</a></div></div>';
 }
 
 /* ---- kitaplik: fiziksel kitaplar (ad, toplam sayfa, kalinan sayfa, konum, not) ----
